@@ -46,7 +46,7 @@ namespace GOAP
         /// <param name="state"></param>
         /// <param name="expectedValue"></param>
         /// <returns></returns>
-        public virtual bool TestState(G_State state, object expectedValue/*, G_StateComparison comparison*/)
+        public virtual bool TestState(G_State state, object expectedValue, G_StateComparison comparison)
         {
             Debug.LogWarning($"Base class G_State has no state testing implemented - returning false for {state.name}");
             // if we see that message, this means the planner is reading the base class version rather than any of the inheriting classes.
@@ -70,7 +70,7 @@ namespace GOAP
         /// Returns true if the state type has an implementation for the given comaprison type
         /// </summary>
         /// <returns></returns>
-        public virtual bool StateSupportsComparison(/*G_StateComparison comparison*/)
+        public virtual bool StateSupportsComparison(G_StateComparison comparison)
         {
             Debug.LogWarning($"Base class G_State doesn't support any comparison - returning false");
             return false;

@@ -48,7 +48,7 @@ namespace GOAP
         /// </summary>
         /// <param name="effect"></param>
         /// <returns></returns>
-        public bool CompareConditionEffect (G_Condition effect)
+        public bool CompareConditionToEffect (G_Condition effect)
         {
             if(state.TestValueMatch(effect.state.GetValue()))
             {

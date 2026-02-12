@@ -46,7 +46,7 @@ namespace GOAP
         /// <param name="state"></param>
         /// <param name="expectedValue"></param>
         /// <returns></returns>
-        public virtual bool TestState(G_State state, object expectedValue, G_StateComparison comparison)
+        public virtual bool TestState(G_State state, G_StateComparison comparison, object expectedValue)
         {
             Debug.LogWarning($"Base class G_State has no state testing implemented - returning false for {state.name}");
             // if we see that message, this means the planner is reading the base class version rather than any of the inheriting classes.
@@ -60,7 +60,7 @@ namespace GOAP
         /// This function returns true if the two given conditions match their states, expected values, and comparisons
         /// </summary>
         /// <returns></returns>
-        public virtual bool TestStateConditionMatch(/*G_Condition precondition, G_Condition effect*/)
+        public virtual bool TestStateConditionMatch(G_Condition precondition, G_Condition effect)
         {
             Debug.LogWarning($"Base class G_State has no condition comparisons implemented - returning false");
             return false;

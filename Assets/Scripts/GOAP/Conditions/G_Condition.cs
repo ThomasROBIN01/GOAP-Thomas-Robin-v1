@@ -65,7 +65,7 @@ namespace GOAP
         /// Returns true if the condition defined in this condition instance is actually correct
         /// </summary>
         /// <returns></returns>
-        public bool DoesStateMeetCondition()
+        public bool DoesStateMeetCondition()        // for the stored state
         {
             return state.TestState(state, comparison, expectedValue);
         }
@@ -75,7 +75,7 @@ namespace GOAP
         /// </summary>
         /// <param name="stateToTest"></param>
         /// <returns></returns>
-        public bool DoesStateMeetCondition(G_State stateToTest)
+        public bool DoesStateMeetCondition(G_State stateToTest)     // for external state
         {
             bool success = false;
 

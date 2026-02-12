@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GOAP\States\G_State.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_StateComparison.cs" />
+    <Compile Include="Assets\Scripts\GOAP\Actions\G_Action.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_Condition.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>

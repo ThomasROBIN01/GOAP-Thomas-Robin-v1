@@ -50,7 +50,8 @@ namespace GOAP
         /// <returns></returns>
         public bool CompareConditionToEffect (G_Condition effect)
         {
-            if(state.TestValueMatch(effect.state.GetValue()))
+            if(IsStateTheConditionState(effect.state)
+                && state.TestValueMatch(effect.state.GetValue()))       // we are basically checking does the state has the same name and does the state the same type of value
             {
                 return state.TestStateConditionMatch(this, effect);
             }

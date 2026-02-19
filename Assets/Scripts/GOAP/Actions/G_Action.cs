@@ -69,8 +69,8 @@ namespace GOAP
         public bool DoesEffectMatch (G_Condition unmetPrecondition)
         {
             G_Condition relevantEffect = effects.Find(      // "Find" iterates through every item in the list. it requires a function argument that takes a parameter of 1 of the item in the list (G_Condition for example) and then compare and return true if the conditions are met.
-                (effect) => effect.IsStateTheConditionState(unmetPrecondition.State)        // we check if the name match // anonymous method created within a line thanks to the "=>". On the left of it are the parameters required for the anonymous method (in this case the parameter name (effect)), and on the right side of the "=>" is the method body
-                && unmetPrecondition.CompareConditionToEffect(effect)                       // check if the CompareConditionToEffect is true
+                (effect) => /*effect.IsStateTheConditionState(unmetPrecondition.State)        // we check if the name match // anonymous method created within a line thanks to the "=>". On the left of it are the parameters required for the anonymous method (in this case the parameter name (effect)), and on the right side of the "=>" is the method body
+                && */ unmetPrecondition.CompareConditionToEffect(effect)                       // check if the CompareConditionToEffect is true
                 );                                                                          // if both parameters are true, what's inside the Find function will return true, and the Find function will be successful and will return the first item in the list that meet the conditions
             
             return relevantEffect != null;

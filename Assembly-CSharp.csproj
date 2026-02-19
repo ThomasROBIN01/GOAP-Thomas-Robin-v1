@@ -49,13 +49,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.6f1-x86_64\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GOAP\States\G_State.cs" />
-    <Compile Include="Assets\Scripts\GOAP\Conditions\G_StateComparison.cs" />
-    <Compile Include="Assets\Scripts\GOAP\Actions\G_Action.cs" />
-    <Compile Include="Assets\Scripts\GOAP\Conditions\G_Condition.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\GOAP\Goals\G_Goal.cs" />
-    <Compile Include="Assets\Scripts\GOAP\States\G_BoolState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1316,6 +1310,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Main.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

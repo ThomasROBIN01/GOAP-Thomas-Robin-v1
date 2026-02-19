@@ -44,7 +44,7 @@ namespace GOAP
         #region Functions
 
         /// <summary>
-        /// Returns true if this condition mataches the effect condition parameter
+        /// Returns true if this condition matches the effect condition parameter
         /// </summary>
         /// <param name="effect"></param>
         /// <returns></returns>

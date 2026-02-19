@@ -1,0 +1,52 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace GOAP
+{
+
+    [CreateAssetMenu(fileName = "G_Goal", menuName = "Scriptable Objects/G_Goal")]
+    public class G_Goal : ScriptableObject
+    {
+        public int priority = 0;
+
+        public List<G_Condition> triggerConditions = new List<G_Condition>();
+
+        public List<G_Condition> goalEffects = new List<G_Condition>();
+
+        public void Construct (string name,
+            List<G_Condition> triggerConditions,
+            List<G_Condition> goalEffects,
+            int priority = 0)
+        {
+            this.name = name;
+            this.triggerConditions = triggerConditions;
+            this.goalEffects = goalEffects;
+            this.priority = priority;
+        }
+
+        public virtual G_Goal Clone()
+        {
+            G_Goal clonedGoal = ScriptableObject.CreateInstance<G_Goal>();
+            List<G_Condition> cloneTriggers = new List<G_Condition>();
+            List<G_Condition> clonedEffects = new List<G_Condition>();
+
+            for (int i = 0; i < this.triggerConditions.Count; i++)
+            {
+                cloneTriggers.Add(G_Condition.Clone(triggerConditions[i]));
+            }
+
+            for (int i = 0; i < this.goalEffects.Count; i++)
+            {
+                clonedEffects.Add(G_Condition.Clone(goalEffects[i]));
+            }
+
+            clonedGoal.Construct(this.name,
+                cloneTriggers,
+                clonedEffects,
+                this.priority);
+
+            return clonedGoal;
+        }
+    }
+}

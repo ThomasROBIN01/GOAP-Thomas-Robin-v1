@@ -7,13 +7,13 @@ namespace GOAP
     public class G_State : ScriptableObject
     {
         // the value we are storing
-        object value;   // object type can be of any type of variable
+        object value;   // "object" type can be of any type of variable
 
         #region Basic Controls
 
         public virtual void Construct(string name, object value)       // virtual type to be overwritten by inheriting classes
         {
-            this.name = name;   // we didn't declare this name variable at the beginning, because the object type contain by default a name, which we are referencing here.
+            this.name = name;   // we didn't declare this name variable at the beginning, because the "object" type contain by default a name, which we are referencing here.
             SetValue(value);
         }
 
@@ -41,7 +41,7 @@ namespace GOAP
         #region Testing Controls
 
         /// <summary>
-        /// Tests the given state against the expected value using the chosen comparison, returning true if the comaprison is correct and false if not
+        /// Tests the given state against the expected value using the chosen comparison, returning true if the comparison is correct and false if not
         /// </summary>
         /// <param name="state"></param>
         /// <param name="expectedValue"></param>
@@ -67,7 +67,7 @@ namespace GOAP
         }
 
         /// <summary>
-        /// Returns true if the state type has an implementation for the given comaprison type
+        /// Returns true if the state type has an implementation for the given comparison type
         /// </summary>
         /// <returns></returns>
         public virtual bool StateSupportsComparison(G_StateComparison comparison)

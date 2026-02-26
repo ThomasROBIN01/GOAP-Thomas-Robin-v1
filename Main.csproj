@@ -57,8 +57,10 @@
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_BoolStateBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\Actions\G_Action.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_Condition.cs" />
+    <Compile Include="Assets\Scripts\GOAP\States\G_IntState.cs" />
     <Compile Include="Assets\Scripts\GOAP\Goals\G_Goal.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_BoolState.cs" />
+    <Compile Include="Assets\Scripts\GOAP\States\G_FloatState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Main.asmdef" />

@@ -12,9 +12,21 @@ public class BoolStateTests
     {
         // Use the Assert class to test conditions
 
-        G_BoolState testState= ScriptableObject.CreateInstance<G_BoolState>();
+        G_BoolState testState= ScriptableObject.CreateInstance<G_BoolState>();  // Everytime we are creating a new object, we create a new instance, and then construct it (below)
 
         testState.Construct("test", true);
+
+        testState = A.BoolState().WithName("test").WithValue(true);     // Creation of a bool state builder using chaining (with the ".").
+                                                                        // As testState is a BoolState type, this triggers the automatic Build from G_BoolStateBuilder, 
+                                                                        // and we don't need to Build it here: we don't need the testState.Build() as below:
+     // testState = A.BoolState().WithName("test").WithValue(true).Build();
+
+        // if we didn't use the "return,this" in the withName and withValue in the G_BoolStateBuilder, but instead having them as void functions (returning nothing), we would have to do this:
+        //G_BoolStateBuilder builder = A.BoolState();
+        //builder.WithName("test");
+        //builder.WithValue(true);
+        //testState = builder.Build();
+        // that's much more cumbersome
 
         Assert.AreEqual("test", testState.name);
         Assert.AreEqual(true, (bool)testState.GetValue());
@@ -61,5 +73,4 @@ public class BoolStateTests
     //    yield return null;
     //}
 
-    // Stopped at 1 of Session 2, next: start 2
 }

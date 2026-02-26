@@ -10,24 +10,15 @@ public class BoolStateTests
     [Test]
     public void Construct()
     {
+        G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();  // Everytime we are creating a new object, we create a new instance, and then construct it (below)
+
+        testState.Construct("test", true);  
+        
+        // This allows to test the Construct function, but we could have used the more readibable, instead of these 2 previous lines:
+        // G_BoolState testState = A.BoolState().WithName("test").WithValue(true);
+
+
         // Use the Assert class to test conditions
-
-        G_BoolState testState= ScriptableObject.CreateInstance<G_BoolState>();  // Everytime we are creating a new object, we create a new instance, and then construct it (below)
-
-        testState.Construct("test", true);
-
-        testState = A.BoolState().WithName("test").WithValue(true);     // Creation of a bool state builder using chaining (with the ".").
-                                                                        // As testState is a BoolState type, this triggers the automatic Build from G_BoolStateBuilder, 
-                                                                        // and we don't need to Build it here: we don't need the testState.Build() as below:
-     // testState = A.BoolState().WithName("test").WithValue(true).Build();
-
-        // if we didn't use the "return,this" in the withName and withValue in the G_BoolStateBuilder, but instead having them as void functions (returning nothing), we would have to do this:
-        //G_BoolStateBuilder builder = A.BoolState();
-        //builder.WithName("test");
-        //builder.WithValue(true);
-        //testState = builder.Build();
-        // that's much more cumbersome
-
         Assert.AreEqual("test", testState.name);
         Assert.AreEqual(true, (bool)testState.GetValue());
     }
@@ -35,8 +26,22 @@ public class BoolStateTests
     [Test]
     public void Clone()
     {
-        G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();
-        testState.Construct("test", true);
+        //G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();
+        //testState.Construct("test", true);
+
+        // We don't need the 2 previous lines anymore as the one below is doing this in a more readable manner:
+
+        G_BoolState testState = A.BoolState().WithName("test").WithValue(true);     // Creation of a bool state builder using chaining (with the ".").
+                                                                                    // As testState is a BoolState type, this triggers the automatic Build from G_BoolStateBuilder, 
+                                                                                    // and we don't need to Build it here: we don't need the testState.Build() as below:
+                                                                                    // testState = A.BoolState().WithName("test").WithValue(true).Build();
+
+        // if we didn't use the "return,this" in the withName and withValue in the G_BoolStateBuilder, but instead having them as void functions (returning nothing), we would have to do this:
+        //G_BoolStateBuilder builder = A.BoolState();
+        //builder.WithName("test");
+        //builder.WithValue(true);
+        //testState = builder.Build();
+        // that's much more cumbersome
 
         G_State cloneState = testState.Clone();
 
@@ -52,8 +57,12 @@ public class BoolStateTests
     [TestCase(false, G_StateComparison.not_equal, false, false)]
     public void TestState(bool actualValue, G_StateComparison comparison, bool expectedValue, bool expectedResult)
     {
-        G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();
-        testState.Construct("test", actualValue);
+        //G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();
+        //testState.Construct("test", actualValue);
+
+        // We don't need the 2 previous lines anymore as the one below is doing this in a more readable manner:
+
+        G_BoolState testState = A.BoolState().WithName("test").WithValue(actualValue);
 
         bool result = testState.TestState(testState, comparison, expectedValue);
 

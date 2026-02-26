@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GOAP\States\G_State.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\An.cs" />
+    <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\BuilderTemplate.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\A.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_StateComparison.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_BoolStateBuilder.cs" />

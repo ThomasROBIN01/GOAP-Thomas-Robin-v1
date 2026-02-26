@@ -3,7 +3,6 @@ using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 namespace GOAP
 {
-
     public class G_BoolStateBuilder
     {
         #region Basic Values

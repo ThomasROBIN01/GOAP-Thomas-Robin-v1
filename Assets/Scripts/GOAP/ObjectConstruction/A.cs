@@ -14,5 +14,10 @@ namespace GOAP
         {
             return new G_FloatStateBuilder();
         }
+
+        public static G_ConditionBuilder Condition()
+        {
+            return new G_ConditionBuilder();
+        }
     }
 }

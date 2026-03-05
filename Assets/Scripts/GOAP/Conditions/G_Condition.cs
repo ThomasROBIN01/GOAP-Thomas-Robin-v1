@@ -113,7 +113,14 @@ namespace GOAP
 
         public static G_Condition Clone (G_Condition conditionToClone)
         {
-            return new G_Condition(conditionToClone.state, conditionToClone.expectedValue, conditionToClone.comparison, conditionToClone.met);
+            //return new G_Condition(conditionToClone.state, conditionToClone.expectedValue, conditionToClone.comparison, conditionToClone.met);
+
+            // using the builder instead of previous line:
+            return A.Condition()
+                .WithState(conditionToClone.state)
+                .WithComparison(conditionToClone.comparison)
+                .WithExpectedValue(conditionToClone.expectedValue)
+                .WithMet(conditionToClone.met);
         }
 
         #endregion

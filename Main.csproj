@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_Condition.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_IntState.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_IntStateBuilder.cs" />
+    <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_ConditionBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\Goals\G_Goal.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_BoolState.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_FloatState.cs" />

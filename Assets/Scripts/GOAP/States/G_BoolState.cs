@@ -103,8 +103,8 @@ namespace GOAP
         /// <returns></returns>
         public override bool TestStateConditionMatch(G_Condition precondition, G_Condition effect)
         {
-            bool preValue = (bool)precondition.State.GetValue();
-            bool effectValue = (bool)effect.State.GetValue();
+            bool preValue = (bool)precondition.ExpectedValue;
+            bool effectValue = (bool)effect.ExpectedValue;
             bool preComparedValid = StateSupportsComparison(precondition.Comparison);       // this will check and ensure that the comparison is valid for the state 
             bool effectComparedValid = StateSupportsComparison(effect.Comparison);          // this will check and ensure that the comparison is valid for the state 
 
@@ -159,7 +159,7 @@ namespace GOAP
         {
             return preconditionCompare == G_StateComparison.not_equal 
                 && effectCompare == G_StateComparison.not_equal 
-                && preValue != effectValue;
+                && preValue == effectValue;
         }
 
         #endregion

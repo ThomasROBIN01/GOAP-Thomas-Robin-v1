@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GOAP\States\G_State.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\An.cs" />
+    <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_FloatStateBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\BuilderTemplate.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\A.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_StateComparison.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Assets\Scripts\GOAP\Actions\G_Action.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_Condition.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_IntState.cs" />
+    <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_IntStateBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\Goals\G_Goal.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_BoolState.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_FloatState.cs" />

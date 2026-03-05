@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 37
+  controlID: 102
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
   m_Spl:
-    ID: 1148
+    ID: 135
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 12}
     runProgress:
-      RunGuid: a0871773-43e2-47e4-94e9-516b8c917f8e
+      RunGuid: 6bccae89-46b5-4268-a0f8-c3fc09b02f17
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - BoolStateTests.Construct
+          - BoolStateTests
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -385,7 +385,7 @@ MonoBehaviour:
       name: GOAP-Thomas-Robin-v1
       fullName: GOAP-Thomas-Robin-v1
       resultStatus: 1
-      duration: 0.0145762
+      duration: 0.0136928
       messages: 
       output: 
       stacktrace: 
@@ -401,7 +401,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0145762
+      duration: 0.0136928
       messages: 
       output: 
       stacktrace: 
@@ -417,7 +417,7 @@ MonoBehaviour:
       name: BoolStateTests
       fullName: BoolStateTests
       resultStatus: 1
-      duration: 0.0145762
+      duration: 0.0136928
       messages: 
       output: 
       stacktrace: 
@@ -433,7 +433,7 @@ MonoBehaviour:
       name: Clone
       fullName: BoolStateTests.Clone
       resultStatus: 1
-      duration: 0.0008131
+      duration: 0.0123737
       messages: 
       output: 
       stacktrace: 
@@ -450,7 +450,7 @@ MonoBehaviour:
       name: Construct
       fullName: BoolStateTests.Construct
       resultStatus: 1
-      duration: 0.0127112
+      duration: 0.0003549
       messages: 
       output: 
       stacktrace: 
@@ -467,7 +467,7 @@ MonoBehaviour:
       name: TestState
       fullName: BoolStateTests.TestState
       resultStatus: 1
-      duration: 0.0010519
+      duration: 0.0009642
       messages: 
       output: 
       stacktrace: 
@@ -483,7 +483,7 @@ MonoBehaviour:
       name: TestState(True,equal,True,True)
       fullName: BoolStateTests.TestState(True,equal,True,True)
       resultStatus: 1
-      duration: 0.0006168
+      duration: 0.0005561
       messages: 
       output: 
       stacktrace: 
@@ -500,7 +500,7 @@ MonoBehaviour:
       name: TestState(False,equal,True,False)
       fullName: BoolStateTests.TestState(False,equal,True,False)
       resultStatus: 1
-      duration: 0.0001965
+      duration: 0.0001679
       messages: 
       output: 
       stacktrace: 
@@ -517,7 +517,7 @@ MonoBehaviour:
       name: TestState(True,not_equal,False,True)
       fullName: BoolStateTests.TestState(True,not_equal,False,True)
       resultStatus: 1
-      duration: 0.0001384
+      duration: 0.0001452
       messages: 
       output: 
       stacktrace: 
@@ -534,7 +534,7 @@ MonoBehaviour:
       name: TestState(False,not_equal,False,False)
       fullName: BoolStateTests.TestState(False,not_equal,False,False)
       resultStatus: 1
-      duration: 0.0001002
+      duration: 0.000095
       messages: 
       output: 
       stacktrace: 
@@ -546,12 +546,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1008
       parentUniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.TestState][suite]'
-    m_ResultText: Construct (0.013s)
+    m_ResultText: BoolStateTests (6 tests) (0.014s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f9a8fd95
-      m_LastClickedID: -1778538247
+      m_SelectedIDs: 05cbf609
+      m_LastClickedID: 167168773
       m_ExpandedIDs: c896e1a11b8ba0f125fd99fb05cbf6093d7cba49ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -582,7 +582,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: a0871773-43e2-47e4-94e9-516b8c917f8e
+      RunGuid: 6bccae89-46b5-4268-a0f8-c3fc09b02f17
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - BoolStateTests.Construct
+          - BoolStateTests
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -649,7 +649,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: a0871773-43e2-47e4-94e9-516b8c917f8e
+      RunGuid: 6bccae89-46b5-4268-a0f8-c3fc09b02f17
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - BoolStateTests.Construct
+          - BoolStateTests
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests/Edit Mode Tests
+    - Assets/Scripts/GOAP
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Tests/Edit Mode Tests
+  - Assets/Scripts/GOAP
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\robint\Documents\GitHub\GOAP-Thomas-Robin-v1
   m_LockTracker:
@@ -1086,13 +1086,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs:
-    - m_Data: 46522
+    - m_Data: 46072
     m_LastClickedID:
-      m_Data: 46522
+      m_Data: 46072
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45776
-    - m_Data: 45778
+    - m_Data: 45800
+    - m_Data: 45802
+    - m_Data: 45804
+    - m_Data: 45806
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1125,8 +1127,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45776
-    - m_Data: 45778
+    - m_Data: 45800
+    - m_Data: 45802
+    - m_Data: 45804
+    - m_Data: 45806
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1154,8 +1158,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 46442
-    m_LastClickedInstanceID: 46442
+    - m_Data: 46144
+    m_LastClickedInstanceID: 46144
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -1231,7 +1235,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 46442
+  m_LastInspectedObjectInstanceID: 46144
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1283,13 +1287,7 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -28172
-      - m_Data: -27186
-      - m_Data: -26200
-      - m_Data: -25214
-      - m_Data: -22738
-      - m_Data: -21756
-      - m_Data: -20732
+      - m_Data: -10840
       - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -2039,10 +2037,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 694
-    width: 960.5
-    height: 303
+    x: 1920
+    y: 679
+    width: 1068
+    height: 307
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

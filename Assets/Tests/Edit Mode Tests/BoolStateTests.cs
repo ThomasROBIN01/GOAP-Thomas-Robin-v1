@@ -51,10 +51,10 @@ public class BoolStateTests
     }
 
 
-    [TestCase(true, G_StateComparison.equal, true, true)]           // TestCase to enter an argument. TestCase allows us to run different test by changing the arguments we pass in it
-    [TestCase(false, G_StateComparison.equal, true, false)]
-    [TestCase(true, G_StateComparison.not_equal, false, true)]
-    [TestCase(false, G_StateComparison.not_equal, false, false)]
+    [TestCase(true, G_StateComparison.equal, true, true, TestName = "Equals - True")]           // TestCase to enter an argument. TestCase allows us to run different test by changing the arguments we pass in it
+    [TestCase(false, G_StateComparison.equal, true, false, TestName = "Equals - False")]
+    [TestCase(true, G_StateComparison.not_equal, false, true, TestName = "Not Equals - True")]
+    [TestCase(false, G_StateComparison.not_equal, false, false, TestName = "Not Equals - False")]
     public void TestState(bool actualValue, G_StateComparison comparison, bool expectedValue, bool expectedResult)
     {
         //G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();

@@ -32,9 +32,14 @@ namespace GOAP
 
         public override G_State Clone()
         {
-            G_IntState clone = CreateInstance<G_IntState>();
-            clone.Construct(this.name, this.value);
-            return clone;
+            //G_IntState clone = CreateInstance<G_IntState>();
+            //clone.Construct(this.name, this.value);
+            //return clone;
+
+            // Replaced with:
+
+            return An.IntState().WithName(name).WithValue(value);   // This is just a much more efficient clone than what was above.
+
         }
 
         #endregion

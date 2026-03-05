@@ -57,8 +57,6 @@ namespace GOAP
         {
             return builder.Build();
         }
-
-
         #endregion
 
     }

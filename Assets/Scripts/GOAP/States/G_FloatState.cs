@@ -111,6 +111,9 @@ namespace GOAP
         public override bool TestStateConditionMatch(G_Condition precondition, G_Condition effect)
         {
             bool result = false;
+
+            G_NumberConditionComparer.CompareNumberCondition((float)precondition.ExpectedValue, precondition.Comparison, (float)effect.ExpectedValue, effect.Comparison);
+
             return result;
         }
 

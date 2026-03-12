@@ -54,6 +54,7 @@
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_FloatStateBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\BuilderTemplate.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\A.cs" />
+    <Compile Include="Assets\Scripts\GOAP\States\G_NumberConditionComparer.cs" />
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_StateComparison.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_BoolStateBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\Actions\G_Action.cs" />

@@ -165,7 +165,8 @@ namespace GOAP
             // return preconditionCompare == G_StateComparison.equal && effectCompare == G_StateComparison.equal && preValue == effectValue;
 
             // After getting some errors from with the ConditionTests scripts with the Equal vs Not Equal, and Not Equals vs Equal tests, this has been modified as follow:
-            return preconditionCompare == effectCompare && preValue == effectValue;
+            return preconditionCompare == effectCompare && preValue == effectValue;     // Return true only if preconditionCompare == effectCompare, and preValue == effectValue,
+                                                                                        // return false othwerwise
 
         }
 
@@ -175,7 +176,9 @@ namespace GOAP
             // return preconditionCompare == G_StateComparison.not_equal && effectCompare == G_StateComparison.not_equal && preValue == effectValue;
 
             // After getting some errors from with the ConditionTests scripts with the Equal vs Not Equal, and Not Equals vs Equal tests, this has been modified as follow:
-            return preconditionCompare != effectCompare && preValue != effectValue;
+            return preconditionCompare != effectCompare && preValue != effectValue;     // Return true only if preconditionCompare is different than effectCompare, and preValue is different than effectValue,
+                                                                                        // return false othwerwise
+
         }
 
         #endregion

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 43
     width: 1920
     height: 989
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 37
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -94,7 +94,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 278
+    width: 279
     height: 600
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
@@ -268,9 +268,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 278
+    x: 279
     y: 0
-    width: 791
+    width: 790
     height: 600
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
   m_Spl:
-    ID: 135
+    ID: 131
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 12}
     runProgress:
-      RunGuid: 6bccae89-46b5-4268-a0f8-c3fc09b02f17
+      RunGuid: d71c708f-fbd6-46ac-9bb9-598d9f9a2704
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - BoolStateTests
+          - ConditionTests.CompareConditionToEffect_Bool
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -376,7 +376,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 0.99999976
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -385,7 +385,7 @@ MonoBehaviour:
       name: GOAP-Thomas-Robin-v1
       fullName: GOAP-Thomas-Robin-v1
       resultStatus: 1
-      duration: 0.0136928
+      duration: 0.0468902
       messages: 
       output: 
       stacktrace: 
@@ -396,12 +396,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1009
+    - id: 1056
       uniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0136928
+      duration: 0.0468902
       messages: 
       output: 
       stacktrace: 
@@ -417,7 +417,7 @@ MonoBehaviour:
       name: BoolStateTests
       fullName: BoolStateTests
       resultStatus: 1
-      duration: 0.0136928
+      duration: 0.0245294
       messages: 
       output: 
       stacktrace: 
@@ -426,14 +426,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1009
+      parentId: 1056
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1003
       uniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.Clone]'
       name: Clone
       fullName: BoolStateTests.Clone
       resultStatus: 1
-      duration: 0.0123737
+      duration: 0.0120674
       messages: 
       output: 
       stacktrace: 
@@ -450,7 +450,7 @@ MonoBehaviour:
       name: Construct
       fullName: BoolStateTests.Construct
       resultStatus: 1
-      duration: 0.0003549
+      duration: 0.0002613
       messages: 
       output: 
       stacktrace: 
@@ -467,7 +467,7 @@ MonoBehaviour:
       name: TestState
       fullName: BoolStateTests.TestState
       resultStatus: 1
-      duration: 0.0009642
+      duration: 0.012200699
       messages: 
       output: 
       stacktrace: 
@@ -479,11 +479,12 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: 'Tests.dll/[Tests][BoolStateTests][suite]'
     - id: 1004
-      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.TestState(True,equal,True,True)]'
-      name: TestState(True,equal,True,True)
-      fullName: BoolStateTests.TestState(True,equal,True,True)
+      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.Equals
+        - True]'
+      name: Equals - True
+      fullName: BoolStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0005561
+      duration: 0.0116479
       messages: 
       output: 
       stacktrace: 
@@ -496,11 +497,12 @@ MonoBehaviour:
       parentId: 1008
       parentUniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.TestState][suite]'
     - id: 1005
-      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.TestState(False,equal,True,False)]'
-      name: TestState(False,equal,True,False)
-      fullName: BoolStateTests.TestState(False,equal,True,False)
+      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.Equals
+        - False]'
+      name: Equals - False
+      fullName: BoolStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0001679
+      duration: 0.0002493
       messages: 
       output: 
       stacktrace: 
@@ -513,11 +515,12 @@ MonoBehaviour:
       parentId: 1008
       parentUniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.TestState][suite]'
     - id: 1006
-      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.TestState(True,not_equal,False,True)]'
-      name: TestState(True,not_equal,False,True)
-      fullName: BoolStateTests.TestState(True,not_equal,False,True)
+      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.Not Equals
+        - True]'
+      name: Not Equals - True
+      fullName: BoolStateTests.Not Equals - True
       resultStatus: 1
-      duration: 0.0001452
+      duration: 0.0001905
       messages: 
       output: 
       stacktrace: 
@@ -530,11 +533,12 @@ MonoBehaviour:
       parentId: 1008
       parentUniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.TestState][suite]'
     - id: 1007
-      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.TestState(False,not_equal,False,False)]'
-      name: TestState(False,not_equal,False,False)
-      fullName: BoolStateTests.TestState(False,not_equal,False,False)
+      uniqueId: 'Tests.dll/BoolStateTests/TestState/[Tests][BoolStateTests.Not Equals
+        - False]'
+      name: Not Equals - False
+      fullName: BoolStateTests.Not Equals - False
       resultStatus: 1
-      duration: 0.000095
+      duration: 0.000113
       messages: 
       output: 
       stacktrace: 
@@ -546,13 +550,843 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1008
       parentUniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.TestState][suite]'
-    m_ResultText: BoolStateTests (6 tests) (0.014s)
+    - id: 1009
+      uniqueId: 'Tests.dll/[Tests][ConditionTests][suite]'
+      name: ConditionTests
+      fullName: ConditionTests
+      resultStatus: 1
+      duration: 0.0156075
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1021
+      uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+      name: CompareConditionToEffect_Bool
+      fullName: ConditionTests.CompareConditionToEffect_Bool
+      resultStatus: 1
+      duration: 0.0147114005
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: 'Tests.dll/[Tests][ConditionTests][suite]'
+    - id: 1013
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        True vs Equal True]'
+      name: Equal True vs Equal True
+      fullName: ConditionTests.Equal True vs Equal True
+      resultStatus: 1
+      duration: 0.0137534
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1014
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        True vs Equal False]'
+      name: Equal True vs Equal False
+      fullName: ConditionTests.Equal True vs Equal False
+      resultStatus: 1
+      duration: 0.0002795
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1015
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        False vs Equal True]'
+      name: Equal False vs Equal True
+      fullName: ConditionTests.Equal False vs Equal True
+      resultStatus: 1
+      duration: 0.0001628
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1016
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        False vs Equal False]'
+      name: Equal False vs Equal False
+      fullName: ConditionTests.Equal False vs Equal False
+      resultStatus: 1
+      duration: 0.0001216
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1017
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal True vs Not Equal True]'
+      name: Not Equal True vs Not Equal True
+      fullName: ConditionTests.Not Equal True vs Not Equal True
+      resultStatus: 1
+      duration: 0.0001036
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1018
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal True vs Not Equal False]'
+      name: Not Equal True vs Not Equal False
+      fullName: ConditionTests.Not Equal True vs Not Equal False
+      resultStatus: 1
+      duration: 0.0000929
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1019
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal False vs Not Equal True]'
+      name: Not Equal False vs Not Equal True
+      fullName: ConditionTests.Not Equal False vs Not Equal True
+      resultStatus: 1
+      duration: 0.0001042
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1020
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal False vs Not Equal False]'
+      name: Not Equal False vs Not Equal False
+      fullName: ConditionTests.Not Equal False vs Not Equal False
+      resultStatus: 1
+      duration: 0.0000934
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1012
+      uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
+      name: DoesStateMeetCondition
+      fullName: ConditionTests.DoesStateMeetCondition
+      resultStatus: 1
+      duration: 0.0008961
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: 'Tests.dll/[Tests][ConditionTests][suite]'
+    - id: 1010
+      uniqueId: 'Tests.dll/ConditionTests/DoesStateMeetCondition/[Tests][ConditionTests.Use
+        Internal State]'
+      name: Use Internal State
+      fullName: ConditionTests.Use Internal State
+      resultStatus: 1
+      duration: 0.000733
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
+    - id: 1011
+      uniqueId: 'Tests.dll/ConditionTests/DoesStateMeetCondition/[Tests][ConditionTests.Use
+        Parameter State]'
+      name: Use Parameter State
+      fullName: ConditionTests.Use Parameter State
+      resultStatus: 1
+      duration: 0.0001631
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
+    - id: 1022
+      uniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
+      name: FloatStateTests
+      fullName: FloatStateTests
+      resultStatus: 1
+      duration: 0.0035692002
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1010
+      uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.Clone]'
+      name: Clone
+      fullName: FloatStateTests.Clone
+      resultStatus: 1
+      duration: 0.0013582
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
+    - id: 1038
+      uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+      name: TestState
+      fullName: FloatStateTests.TestState
+      resultStatus: 1
+      duration: 0.002211
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
+    - id: 1010
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Equals
+        - True]'
+      name: Equals - True
+      fullName: FloatStateTests.Equals - True
+      resultStatus: 1
+      duration: 0.0005496
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1011
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Equals
+        - False]'
+      name: Equals - False
+      fullName: FloatStateTests.Equals - False
+      resultStatus: 1
+      duration: 0.0001824
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1012
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Greater
+        - Lesser Test Value]'
+      name: Greater - Lesser Test Value
+      fullName: FloatStateTests.Greater - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001546
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1013
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Greater
+        - Equal Test Value]'
+      name: Greater - Equal Test Value
+      fullName: FloatStateTests.Greater - Equal Test Value
+      resultStatus: 1
+      duration: 0.0001156
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1014
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Greater
+        - Greater Test Value]'
+      name: Greater - Greater Test Value
+      fullName: FloatStateTests.Greater - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001152
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1015
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Greater
+        or Equal - Lesser Test Value]'
+      name: Greater or Equal - Lesser Test Value
+      fullName: FloatStateTests.Greater or Equal - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001435
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1016
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Greater
+        or Equal - Equal Test Value]'
+      name: Greater or Equal - Equal Test Value
+      fullName: FloatStateTests.Greater or Equal - Equal Test Value
+      resultStatus: 1
+      duration: 0.0001285
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1017
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Greater
+        or Equal - Greater Test Value]'
+      name: Greater or Equal - Greater Test Value
+      fullName: FloatStateTests.Greater or Equal - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001304
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1018
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Lesser
+        - Lesser Test Value]'
+      name: Lesser - Lesser Test Value
+      fullName: FloatStateTests.Lesser - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001159
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1019
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Lesser
+        - Equal Test Value]'
+      name: Lesser - Equal Test Value
+      fullName: FloatStateTests.Lesser - Equal Test Value
+      resultStatus: 1
+      duration: 0.000115
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1020
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Lesser
+        - Greater Test Value]'
+      name: Lesser - Greater Test Value
+      fullName: FloatStateTests.Lesser - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001261
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1021
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Lesser
+        or Equal - Lesser Test Value]'
+      name: Lesser or Equal - Lesser Test Value
+      fullName: FloatStateTests.Lesser or Equal - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001081
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1022
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Lesser
+        or Equal - Equal Test Value]'
+      name: Lesser or Equal - Equal Test Value
+      fullName: FloatStateTests.Lesser or Equal - Equal Test Value
+      resultStatus: 1
+      duration: 0.0001156
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1023
+      uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Lesser
+        or Equal - Greater Test Value]'
+      name: Lesser or Equal - Greater Test Value
+      fullName: FloatStateTests.Lesser or Equal - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001105
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
+    - id: 1039
+      uniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
+      name: IntStateTests
+      fullName: IntStateTests
+      resultStatus: 1
+      duration: 0.0031841
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1027
+      uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.Clone]'
+      name: Clone
+      fullName: IntStateTests.Clone
+      resultStatus: 1
+      duration: 0.0011314
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
+    - id: 1055
+      uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+      name: TestState
+      fullName: IntStateTests.TestState
+      resultStatus: 1
+      duration: 0.0020527
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1039
+      parentUniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
+    - id: 1028
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Equals -
+        True]'
+      name: Equals - True
+      fullName: IntStateTests.Equals - True
+      resultStatus: 1
+      duration: 0.0004868
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1029
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Equals -
+        False]'
+      name: Equals - False
+      fullName: IntStateTests.Equals - False
+      resultStatus: 1
+      duration: 0.0001227
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1030
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Greater
+        - Lesser Test Value]'
+      name: Greater - Lesser Test Value
+      fullName: IntStateTests.Greater - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001063
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1031
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Greater
+        - Equal Test Value]'
+      name: Greater - Equal Test Value
+      fullName: IntStateTests.Greater - Equal Test Value
+      resultStatus: 1
+      duration: 0.0001127
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1032
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Greater
+        - Greater Test Value]'
+      name: Greater - Greater Test Value
+      fullName: IntStateTests.Greater - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001184
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1033
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Greater
+        or Equal - Lesser Test Value]'
+      name: Greater or Equal - Lesser Test Value
+      fullName: IntStateTests.Greater or Equal - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001327
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1034
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Greater
+        or Equal - Equal Test Value]'
+      name: Greater or Equal - Equal Test Value
+      fullName: IntStateTests.Greater or Equal - Equal Test Value
+      resultStatus: 1
+      duration: 0.0001319
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1035
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Greater
+        or Equal - Greater Test Value]'
+      name: Greater or Equal - Greater Test Value
+      fullName: IntStateTests.Greater or Equal - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001068
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1036
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Lesser -
+        Lesser Test Value]'
+      name: Lesser - Lesser Test Value
+      fullName: IntStateTests.Lesser - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001233
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1037
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Lesser -
+        Equal Test Value]'
+      name: Lesser - Equal Test Value
+      fullName: IntStateTests.Lesser - Equal Test Value
+      resultStatus: 1
+      duration: 0.0000993
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1038
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Lesser -
+        Greater Test Value]'
+      name: Lesser - Greater Test Value
+      fullName: IntStateTests.Lesser - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001177
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1039
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Lesser or
+        Equal - Lesser Test Value]'
+      name: Lesser or Equal - Lesser Test Value
+      fullName: IntStateTests.Lesser or Equal - Lesser Test Value
+      resultStatus: 1
+      duration: 0.0001321
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1040
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Lesser or
+        Equal - Equal Test Value]'
+      name: Lesser or Equal - Equal Test Value
+      fullName: IntStateTests.Lesser or Equal - Equal Test Value
+      resultStatus: 1
+      duration: 0.0001286
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    - id: 1041
+      uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Lesser or
+        Equal - Greater Test Value]'
+      name: Lesser or Equal - Greater Test Value
+      fullName: IntStateTests.Lesser or Equal - Greater Test Value
+      resultStatus: 1
+      duration: 0.0001334
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
+    m_ResultText: CompareConditionToEffect_Bool (8 tests) (0.015s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 05cbf609
-      m_LastClickedID: 167168773
-      m_ExpandedIDs: c896e1a11b8ba0f125fd99fb05cbf6093d7cba49ffffff7f
+      m_SelectedIDs: c58bea5a
+      m_LastClickedID: 1525320645
+      m_ExpandedIDs: c896e1a1388ed2db1b8ba0f125fd99fb6dfb670ec58bea5ae7777c6dededd771ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -582,7 +1416,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: 6bccae89-46b5-4268-a0f8-c3fc09b02f17
+      RunGuid: d71c708f-fbd6-46ac-9bb9-598d9f9a2704
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -595,7 +1429,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - BoolStateTests
+          - ConditionTests.CompareConditionToEffect_Bool
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -610,7 +1444,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 0.99999976
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -649,7 +1483,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: 6bccae89-46b5-4268-a0f8-c3fc09b02f17
+      RunGuid: d71c708f-fbd6-46ac-9bb9-598d9f9a2704
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -662,7 +1496,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - BoolStateTests
+          - ConditionTests.CompareConditionToEffect_Bool
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -677,7 +1511,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 0.99999976
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -1067,7 +1901,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/GOAP
+    - Assets/Tests/Edit Mode Tests
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1077,7 +1911,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/GOAP
+  - Assets/Tests/Edit Mode Tests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\robint\Documents\GitHub\GOAP-Thomas-Robin-v1
   m_LockTracker:
@@ -1086,15 +1920,16 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs:
-    - m_Data: 46072
+    - m_Data: 46112
     m_LastClickedID:
-      m_Data: 46072
+      m_Data: 46112
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45800
-    - m_Data: 45802
-    - m_Data: 45804
-    - m_Data: 45806
+    - m_Data: 45824
+    - m_Data: 45826
+    - m_Data: 45828
+    - m_Data: 45830
+    - m_Data: 45832
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1127,10 +1962,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45800
-    - m_Data: 45802
-    - m_Data: 45804
-    - m_Data: 45806
+    - m_Data: 45824
+    - m_Data: 45826
+    - m_Data: 45828
+    - m_Data: 45830
+    - m_Data: 45832
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1158,8 +1994,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 46144
-    m_LastClickedInstanceID: 46144
+    - m_Data: 47134
+    m_LastClickedInstanceID: 47134
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -1212,7 +2048,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2989
+    x: 1069
     y: 79
     width: 850
     height: 907
@@ -1235,7 +2071,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 46144
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1265,7 +2101,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 24
-    width: 277
+    width: 278
     height: 574
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1287,7 +2123,25 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -10840
+      - m_Data: -31942
+      - m_Data: -31070
+      - m_Data: -29606
+      - m_Data: -28678
+      - m_Data: -26126
+      - m_Data: -22862
+      - m_Data: -19674
+      - m_Data: -18198
+      - m_Data: -17204
+      - m_Data: -16228
+      - m_Data: -14628
+      - m_Data: -13640
+      - m_Data: -12772
+      - m_Data: -11836
+      - m_Data: -10892
+      - m_Data: -9994
+      - m_Data: -9592
+      - m_Data: -9198
+      - m_Data: -2712
       - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1335,9 +2189,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 279
+    x: 280
     y: 24
-    width: 789
+    width: 788
     height: 574
   m_SerializedDataModeController:
     m_DataMode: 0

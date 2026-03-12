@@ -145,21 +145,37 @@ namespace GOAP
 
         bool CompareConditions (G_StateComparison preconditionCompare, G_StateComparison effectCompare, bool preValue, bool effectValue)
         {
-            return CompareEqual(preconditionCompare, effectCompare, preValue, effectValue) || CompareNotEqual(preconditionCompare, effectCompare, preValue, effectValue);
+            // First version:
+            // return CompareEqual(preconditionCompare, effectCompare, preValue, effectValue) || CompareNotEqual(preconditionCompare, effectCompare, preValue, effectValue);
+
+            // After getting some errors from with the ConditionTests scripts with the Equal vs Not Equal, and Not Equals vs Equal tests, this has been modified as follow:
+            bool result = false;
+            
+            if (CompareSameCondition(preconditionCompare, effectCompare, preValue, effectValue)
+                || CompareOppositeCondition(preconditionCompare, effectCompare, preValue, effectValue))
+            {
+                return true; 
+            }
+            return result;
         }
 
-        bool CompareEqual(G_StateComparison preconditionCompare, G_StateComparison effectCompare, bool preValue, bool effectValue)
+        bool CompareSameCondition(G_StateComparison preconditionCompare, G_StateComparison effectCompare, bool preValue, bool effectValue)
         {
-            return preconditionCompare == G_StateComparison.equal 
-                && effectCompare == G_StateComparison.equal 
-                && preValue == effectValue;
+            // First version:
+            // return preconditionCompare == G_StateComparison.equal && effectCompare == G_StateComparison.equal && preValue == effectValue;
+
+            // After getting some errors from with the ConditionTests scripts with the Equal vs Not Equal, and Not Equals vs Equal tests, this has been modified as follow:
+            return preconditionCompare == effectCompare && preValue == effectValue;
+
         }
 
-        bool CompareNotEqual(G_StateComparison preconditionCompare, G_StateComparison effectCompare, bool preValue, bool effectValue)
+        bool CompareOppositeCondition(G_StateComparison preconditionCompare, G_StateComparison effectCompare, bool preValue, bool effectValue)
         {
-            return preconditionCompare == G_StateComparison.not_equal 
-                && effectCompare == G_StateComparison.not_equal 
-                && preValue == effectValue;
+            // First version:
+            // return preconditionCompare == G_StateComparison.not_equal && effectCompare == G_StateComparison.not_equal && preValue == effectValue;
+
+            // After getting some errors from with the ConditionTests scripts with the Equal vs Not Equal, and Not Equals vs Equal tests, this has been modified as follow:
+            return preconditionCompare != effectCompare && preValue != effectValue;
         }
 
         #endregion

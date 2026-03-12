@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1920
-    height: 989
+    x: 1921
+    y: 51
+    width: 1918
+    height: 980
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Test Runner
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1920
-    height: 933
+    width: 1918
+    height: 924
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 37
+  controlID: 97
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -65,10 +65,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1069
+    x: 1068
     y: 0
-    width: 851
-    height: 933
+    width: 850
+    height: 924
   m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 12}
@@ -95,7 +95,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 279
-    height: 600
+    height: 594
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 17}
@@ -119,9 +119,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 600
-    width: 1069
-    height: 333
+    y: 594
+    width: 1068
+    height: 330
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
   m_ActualView: {fileID: 15}
@@ -150,8 +150,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 989
+    width: 1918
+    height: 980
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -175,7 +175,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1918
     height: 36
   m_MinSize: {x: 50, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -196,8 +196,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 969
-    width: 1920
+    y: 960
+    width: 1918
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -220,8 +220,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1069
-    height: 933
+    width: 1068
+    height: 924
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
@@ -246,8 +246,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1069
-    height: 600
+    width: 1068
+    height: 594
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -270,8 +270,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 279
     y: 0
-    width: 790
-    height: 600
+    width: 789
+    height: 594
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 18}
@@ -303,10 +303,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Test Runner\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1070
+    x: 1069
     y: 24
-    width: 850
-    height: 907
+    width: 849
+    height: 898
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -321,15 +321,15 @@ MonoBehaviour:
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
   m_Spl:
-    ID: 131
-    splitterInitialOffset: 0
+    ID: 130
+    splitterInitialOffset: 677
     currentActiveSplitter: -1
     realSizes:
     - 628
     - 209
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.7502987
+    - 0.24970132
     minSizes:
     - 32
     - 32
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 12}
     runProgress:
-      RunGuid: d71c708f-fbd6-46ac-9bb9-598d9f9a2704
+      RunGuid: c145763e-df52-46bf-b38c-ef5af1ace48f
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - ConditionTests.CompareConditionToEffect_Bool
+          - ConditionTests.CompareConditionToEffect_Float
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -376,7 +376,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999976
+      Progress: 0.9999998
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -384,8 +384,8 @@ MonoBehaviour:
       uniqueId: '[GOAP-Thomas-Robin-v1][suite]'
       name: GOAP-Thomas-Robin-v1
       fullName: GOAP-Thomas-Robin-v1
-      resultStatus: 1
-      duration: 0.0468902
+      resultStatus: 2
+      duration: 0.0420303
       messages: 
       output: 
       stacktrace: 
@@ -396,12 +396,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1056
+    - id: 1076
       uniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 0.0468902
+      resultStatus: 2
+      duration: 0.0420303
       messages: 
       output: 
       stacktrace: 
@@ -410,14 +410,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
+      parentId: 1085
       parentUniqueId: '[GOAP-Thomas-Robin-v1][suite]'
     - id: 1001
       uniqueId: 'Tests.dll/[Tests][BoolStateTests][suite]'
       name: BoolStateTests
       fullName: BoolStateTests
       resultStatus: 1
-      duration: 0.0245294
+      duration: 0.0139226
       messages: 
       output: 
       stacktrace: 
@@ -426,14 +426,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1056
+      parentId: 1076
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1003
       uniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.Clone]'
       name: Clone
       fullName: BoolStateTests.Clone
       resultStatus: 1
-      duration: 0.0120674
+      duration: 0.0127732
       messages: 
       output: 
       stacktrace: 
@@ -450,7 +450,7 @@ MonoBehaviour:
       name: Construct
       fullName: BoolStateTests.Construct
       resultStatus: 1
-      duration: 0.0002613
+      duration: 0.0002755
       messages: 
       output: 
       stacktrace: 
@@ -467,7 +467,7 @@ MonoBehaviour:
       name: TestState
       fullName: BoolStateTests.TestState
       resultStatus: 1
-      duration: 0.012200699
+      duration: 0.00087389996
       messages: 
       output: 
       stacktrace: 
@@ -484,7 +484,7 @@ MonoBehaviour:
       name: Equals - True
       fullName: BoolStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0116479
+      duration: 0.0005552
       messages: 
       output: 
       stacktrace: 
@@ -502,7 +502,7 @@ MonoBehaviour:
       name: Equals - False
       fullName: BoolStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0002493
+      duration: 0.0001097
       messages: 
       output: 
       stacktrace: 
@@ -520,7 +520,7 @@ MonoBehaviour:
       name: Not Equals - True
       fullName: BoolStateTests.Not Equals - True
       resultStatus: 1
-      duration: 0.0001905
+      duration: 0.000106
       messages: 
       output: 
       stacktrace: 
@@ -538,7 +538,7 @@ MonoBehaviour:
       name: Not Equals - False
       fullName: BoolStateTests.Not Equals - False
       resultStatus: 1
-      duration: 0.000113
+      duration: 0.000103
       messages: 
       output: 
       stacktrace: 
@@ -554,8 +554,8 @@ MonoBehaviour:
       uniqueId: 'Tests.dll/[Tests][ConditionTests][suite]'
       name: ConditionTests
       fullName: ConditionTests
-      resultStatus: 1
-      duration: 0.0156075
+      resultStatus: 2
+      duration: 0.0218305
       messages: 
       output: 
       stacktrace: 
@@ -564,14 +564,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1056
+      parentId: 1076
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1021
+    - id: 1029
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
       name: CompareConditionToEffect_Bool
       fullName: ConditionTests.CompareConditionToEffect_Bool
       resultStatus: 1
-      duration: 0.0147114005
+      duration: 0.015999699
       messages: 
       output: 
       stacktrace: 
@@ -588,7 +588,7 @@ MonoBehaviour:
       name: Equal True vs Equal True
       fullName: ConditionTests.Equal True vs Equal True
       resultStatus: 1
-      duration: 0.0137534
+      duration: 0.0134839
       messages: 
       output: 
       stacktrace: 
@@ -606,7 +606,7 @@ MonoBehaviour:
       name: Equal True vs Equal False
       fullName: ConditionTests.Equal True vs Equal False
       resultStatus: 1
-      duration: 0.0002795
+      duration: 0.0002276
       messages: 
       output: 
       stacktrace: 
@@ -624,7 +624,7 @@ MonoBehaviour:
       name: Equal False vs Equal True
       fullName: ConditionTests.Equal False vs Equal True
       resultStatus: 1
-      duration: 0.0001628
+      duration: 0.000157
       messages: 
       output: 
       stacktrace: 
@@ -642,7 +642,7 @@ MonoBehaviour:
       name: Equal False vs Equal False
       fullName: ConditionTests.Equal False vs Equal False
       resultStatus: 1
-      duration: 0.0001216
+      duration: 0.0001617
       messages: 
       output: 
       stacktrace: 
@@ -660,7 +660,7 @@ MonoBehaviour:
       name: Not Equal True vs Not Equal True
       fullName: ConditionTests.Not Equal True vs Not Equal True
       resultStatus: 1
-      duration: 0.0001036
+      duration: 0.0002014
       messages: 
       output: 
       stacktrace: 
@@ -678,7 +678,7 @@ MonoBehaviour:
       name: Not Equal True vs Not Equal False
       fullName: ConditionTests.Not Equal True vs Not Equal False
       resultStatus: 1
-      duration: 0.0000929
+      duration: 0.0001615
       messages: 
       output: 
       stacktrace: 
@@ -696,7 +696,7 @@ MonoBehaviour:
       name: Not Equal False vs Not Equal True
       fullName: ConditionTests.Not Equal False vs Not Equal True
       resultStatus: 1
-      duration: 0.0001042
+      duration: 0.0001572
       messages: 
       output: 
       stacktrace: 
@@ -714,7 +714,7 @@ MonoBehaviour:
       name: Not Equal False vs Not Equal False
       fullName: ConditionTests.Not Equal False vs Not Equal False
       resultStatus: 1
-      duration: 0.0000934
+      duration: 0.0001672
       messages: 
       output: 
       stacktrace: 
@@ -726,12 +726,502 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1021
       parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1021
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        True vs Not Equal True]'
+      name: Equal True vs Not Equal True
+      fullName: ConditionTests.Equal True vs Not Equal True
+      resultStatus: 1
+      duration: 0.0001639
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1022
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        True vs Not Equal False]'
+      name: Equal True vs Not Equal False
+      fullName: ConditionTests.Equal True vs Not Equal False
+      resultStatus: 1
+      duration: 0.0001619
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1023
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        False vs Not Equal True]'
+      name: Equal False vs Not Equal True
+      fullName: ConditionTests.Equal False vs Not Equal True
+      resultStatus: 1
+      duration: 0.0001692
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1024
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Equal
+        False vs Not Equal False]'
+      name: Equal False vs Not Equal False
+      fullName: ConditionTests.Equal False vs Not Equal False
+      resultStatus: 1
+      duration: 0.0001603
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1025
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal True vs Equal True]'
+      name: Not Equal True vs Equal True
+      fullName: ConditionTests.Not Equal True vs Equal True
+      resultStatus: 1
+      duration: 0.0001604
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1026
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal True vs Equal False]'
+      name: Not Equal True vs Equal False
+      fullName: ConditionTests.Not Equal True vs Equal False
+      resultStatus: 1
+      duration: 0.0001506
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1027
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal False vs Equal True]'
+      name: Not Equal False vs Equal True
+      fullName: ConditionTests.Not Equal False vs Equal True
+      resultStatus: 1
+      duration: 0.0001692
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1028
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Bool/[Tests][ConditionTests.Not
+        Equal False vs Equal False]'
+      name: Not Equal False vs Equal False
+      fullName: ConditionTests.Not Equal False vs Equal False
+      resultStatus: 1
+      duration: 0.0001467
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
+    - id: 1041
+      uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+      name: CompareConditionToEffect_Float
+      fullName: ConditionTests.CompareConditionToEffect_Float
+      resultStatus: 2
+      duration: 0.0052969
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: 'Tests.dll/[Tests][ConditionTests][suite]'
+    - id: 1030
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Equal
+        5 vs Equal 5]'
+      name: Equal 5 vs Equal 5
+      fullName: ConditionTests.Equal 5 vs Equal 5
+      resultStatus: 2
+      duration: 0.0035076
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1031
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Equal
+        5 vs Equal 4]'
+      name: Equal 5 vs Equal 4
+      fullName: ConditionTests.Equal 5 vs Equal 4
+      resultStatus: 2
+      duration: 0.0002014
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1032
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect = 4]'
+      name: Precondition > 5 vs Effect = 4
+      fullName: ConditionTests.Precondition > 5 vs Effect = 4
+      resultStatus: 2
+      duration: 0.000218
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1033
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect = 5]'
+      name: Precondition > 5 vs Effect = 5
+      fullName: ConditionTests.Precondition > 5 vs Effect = 5
+      resultStatus: 2
+      duration: 0.000195
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1034
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect = 6]'
+      name: Precondition > 5 vs Effect = 6
+      fullName: ConditionTests.Precondition > 5 vs Effect = 6
+      resultStatus: 2
+      duration: 0.0002252
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1035
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect > 4]'
+      name: Precondition > 5 vs Effect > 4
+      fullName: ConditionTests.Precondition > 5 vs Effect > 4
+      resultStatus: 2
+      duration: 0.0001351
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1036
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect > 5]'
+      name: Precondition > 5 vs Effect > 5
+      fullName: ConditionTests.Precondition > 5 vs Effect > 5
+      resultStatus: 2
+      duration: 0.0001474
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1037
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect > 6]'
+      name: Precondition > 5 vs Effect > 6
+      fullName: ConditionTests.Precondition > 5 vs Effect > 6
+      resultStatus: 2
+      duration: 0.0001433
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1038
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect >= 4]'
+      name: Precondition > 5 vs Effect >= 4
+      fullName: ConditionTests.Precondition > 5 vs Effect >= 4
+      resultStatus: 2
+      duration: 0.0002116
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1039
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect >= 5]'
+      name: Precondition > 5 vs Effect >= 5
+      fullName: ConditionTests.Precondition > 5 vs Effect >= 5
+      resultStatus: 2
+      duration: 0.000163
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1040
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect >= 6]'
+      name: Precondition > 5 vs Effect >= 6
+      fullName: ConditionTests.Precondition > 5 vs Effect >= 6
+      resultStatus: 2
+      duration: 0.0001493
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
     - id: 1012
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
       name: DoesStateMeetCondition
       fullName: ConditionTests.DoesStateMeetCondition
       resultStatus: 1
-      duration: 0.0008961
+      duration: 0.0005339
       messages: 
       output: 
       stacktrace: 
@@ -748,7 +1238,7 @@ MonoBehaviour:
       name: Use Internal State
       fullName: ConditionTests.Use Internal State
       resultStatus: 1
-      duration: 0.000733
+      duration: 0.0003871
       messages: 
       output: 
       stacktrace: 
@@ -766,7 +1256,7 @@ MonoBehaviour:
       name: Use Parameter State
       fullName: ConditionTests.Use Parameter State
       resultStatus: 1
-      duration: 0.0001631
+      duration: 0.0001468
       messages: 
       output: 
       stacktrace: 
@@ -778,12 +1268,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1012
       parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
-    - id: 1022
+    - id: 1042
       uniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
       name: FloatStateTests
       fullName: FloatStateTests
       resultStatus: 1
-      duration: 0.0035692002
+      duration: 0.0033570002
       messages: 
       output: 
       stacktrace: 
@@ -792,14 +1282,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1056
+      parentId: 1076
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1010
       uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.Clone]'
       name: Clone
       fullName: FloatStateTests.Clone
       resultStatus: 1
-      duration: 0.0013582
+      duration: 0.0014292
       messages: 
       output: 
       stacktrace: 
@@ -811,12 +1301,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1009
       parentUniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
-    - id: 1038
+    - id: 1058
       uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
       name: TestState
       fullName: FloatStateTests.TestState
       resultStatus: 1
-      duration: 0.002211
+      duration: 0.0019278
       messages: 
       output: 
       stacktrace: 
@@ -825,7 +1315,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1022
+      parentId: 1042
       parentUniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
     - id: 1010
       uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Equals
@@ -833,7 +1323,7 @@ MonoBehaviour:
       name: Equals - True
       fullName: FloatStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0005496
+      duration: 0.000532
       messages: 
       output: 
       stacktrace: 
@@ -851,7 +1341,7 @@ MonoBehaviour:
       name: Equals - False
       fullName: FloatStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0001824
+      duration: 0.0001342
       messages: 
       output: 
       stacktrace: 
@@ -869,7 +1359,7 @@ MonoBehaviour:
       name: Greater - Lesser Test Value
       fullName: FloatStateTests.Greater - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001546
+      duration: 0.0001237
       messages: 
       output: 
       stacktrace: 
@@ -887,7 +1377,7 @@ MonoBehaviour:
       name: Greater - Equal Test Value
       fullName: FloatStateTests.Greater - Equal Test Value
       resultStatus: 1
-      duration: 0.0001156
+      duration: 0.0001032
       messages: 
       output: 
       stacktrace: 
@@ -905,7 +1395,7 @@ MonoBehaviour:
       name: Greater - Greater Test Value
       fullName: FloatStateTests.Greater - Greater Test Value
       resultStatus: 1
-      duration: 0.0001152
+      duration: 0.0001033
       messages: 
       output: 
       stacktrace: 
@@ -923,7 +1413,7 @@ MonoBehaviour:
       name: Greater or Equal - Lesser Test Value
       fullName: FloatStateTests.Greater or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001435
+      duration: 0.0001045
       messages: 
       output: 
       stacktrace: 
@@ -941,7 +1431,7 @@ MonoBehaviour:
       name: Greater or Equal - Equal Test Value
       fullName: FloatStateTests.Greater or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001285
+      duration: 0.0000999
       messages: 
       output: 
       stacktrace: 
@@ -959,7 +1449,7 @@ MonoBehaviour:
       name: Greater or Equal - Greater Test Value
       fullName: FloatStateTests.Greater or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001304
+      duration: 0.00012
       messages: 
       output: 
       stacktrace: 
@@ -977,7 +1467,7 @@ MonoBehaviour:
       name: Lesser - Lesser Test Value
       fullName: FloatStateTests.Lesser - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001159
+      duration: 0.0001011
       messages: 
       output: 
       stacktrace: 
@@ -995,7 +1485,7 @@ MonoBehaviour:
       name: Lesser - Equal Test Value
       fullName: FloatStateTests.Lesser - Equal Test Value
       resultStatus: 1
-      duration: 0.000115
+      duration: 0.0000986
       messages: 
       output: 
       stacktrace: 
@@ -1013,7 +1503,7 @@ MonoBehaviour:
       name: Lesser - Greater Test Value
       fullName: FloatStateTests.Lesser - Greater Test Value
       resultStatus: 1
-      duration: 0.0001261
+      duration: 0.0000995
       messages: 
       output: 
       stacktrace: 
@@ -1031,7 +1521,7 @@ MonoBehaviour:
       name: Lesser or Equal - Lesser Test Value
       fullName: FloatStateTests.Lesser or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001081
+      duration: 0.0001015
       messages: 
       output: 
       stacktrace: 
@@ -1049,7 +1539,7 @@ MonoBehaviour:
       name: Lesser or Equal - Equal Test Value
       fullName: FloatStateTests.Lesser or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001156
+      duration: 0.0001055
       messages: 
       output: 
       stacktrace: 
@@ -1067,7 +1557,7 @@ MonoBehaviour:
       name: Lesser or Equal - Greater Test Value
       fullName: FloatStateTests.Lesser or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001105
+      duration: 0.0001008
       messages: 
       output: 
       stacktrace: 
@@ -1079,12 +1569,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1024
       parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
-    - id: 1039
+    - id: 1059
       uniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
       name: IntStateTests
       fullName: IntStateTests
       resultStatus: 1
-      duration: 0.0031841
+      duration: 0.0029202001
       messages: 
       output: 
       stacktrace: 
@@ -1093,14 +1583,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1056
+      parentId: 1076
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1027
       uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.Clone]'
       name: Clone
       fullName: IntStateTests.Clone
       resultStatus: 1
-      duration: 0.0011314
+      duration: 0.0009819
       messages: 
       output: 
       stacktrace: 
@@ -1112,12 +1602,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
-    - id: 1055
+    - id: 1075
       uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
       name: TestState
       fullName: IntStateTests.TestState
       resultStatus: 1
-      duration: 0.0020527
+      duration: 0.0019383
       messages: 
       output: 
       stacktrace: 
@@ -1126,7 +1616,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1039
+      parentId: 1059
       parentUniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
     - id: 1028
       uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Equals -
@@ -1134,7 +1624,7 @@ MonoBehaviour:
       name: Equals - True
       fullName: IntStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0004868
+      duration: 0.0005889
       messages: 
       output: 
       stacktrace: 
@@ -1152,7 +1642,7 @@ MonoBehaviour:
       name: Equals - False
       fullName: IntStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0001227
+      duration: 0.0001228
       messages: 
       output: 
       stacktrace: 
@@ -1170,7 +1660,7 @@ MonoBehaviour:
       name: Greater - Lesser Test Value
       fullName: IntStateTests.Greater - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001063
+      duration: 0.000112
       messages: 
       output: 
       stacktrace: 
@@ -1188,7 +1678,7 @@ MonoBehaviour:
       name: Greater - Equal Test Value
       fullName: IntStateTests.Greater - Equal Test Value
       resultStatus: 1
-      duration: 0.0001127
+      duration: 0.0001052
       messages: 
       output: 
       stacktrace: 
@@ -1206,7 +1696,7 @@ MonoBehaviour:
       name: Greater - Greater Test Value
       fullName: IntStateTests.Greater - Greater Test Value
       resultStatus: 1
-      duration: 0.0001184
+      duration: 0.0001014
       messages: 
       output: 
       stacktrace: 
@@ -1224,7 +1714,7 @@ MonoBehaviour:
       name: Greater or Equal - Lesser Test Value
       fullName: IntStateTests.Greater or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001327
+      duration: 0.0001047
       messages: 
       output: 
       stacktrace: 
@@ -1242,7 +1732,7 @@ MonoBehaviour:
       name: Greater or Equal - Equal Test Value
       fullName: IntStateTests.Greater or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001319
+      duration: 0.0001003
       messages: 
       output: 
       stacktrace: 
@@ -1260,7 +1750,7 @@ MonoBehaviour:
       name: Greater or Equal - Greater Test Value
       fullName: IntStateTests.Greater or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001068
+      duration: 0.0001004
       messages: 
       output: 
       stacktrace: 
@@ -1278,7 +1768,7 @@ MonoBehaviour:
       name: Lesser - Lesser Test Value
       fullName: IntStateTests.Lesser - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001233
+      duration: 0.0001
       messages: 
       output: 
       stacktrace: 
@@ -1296,7 +1786,7 @@ MonoBehaviour:
       name: Lesser - Equal Test Value
       fullName: IntStateTests.Lesser - Equal Test Value
       resultStatus: 1
-      duration: 0.0000993
+      duration: 0.0001016
       messages: 
       output: 
       stacktrace: 
@@ -1314,7 +1804,7 @@ MonoBehaviour:
       name: Lesser - Greater Test Value
       fullName: IntStateTests.Lesser - Greater Test Value
       resultStatus: 1
-      duration: 0.0001177
+      duration: 0.0001016
       messages: 
       output: 
       stacktrace: 
@@ -1332,7 +1822,7 @@ MonoBehaviour:
       name: Lesser or Equal - Lesser Test Value
       fullName: IntStateTests.Lesser or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001321
+      duration: 0.0001004
       messages: 
       output: 
       stacktrace: 
@@ -1350,7 +1840,7 @@ MonoBehaviour:
       name: Lesser or Equal - Equal Test Value
       fullName: IntStateTests.Lesser or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001286
+      duration: 0.0000998
       messages: 
       output: 
       stacktrace: 
@@ -1368,7 +1858,7 @@ MonoBehaviour:
       name: Lesser or Equal - Greater Test Value
       fullName: IntStateTests.Lesser or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001334
+      duration: 0.0000992
       messages: 
       output: 
       stacktrace: 
@@ -1380,13 +1870,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1042
       parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
-    m_ResultText: CompareConditionToEffect_Bool (8 tests) (0.015s)
+    m_ResultText: Equal True vs Equal False (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c58bea5a
-      m_LastClickedID: 1525320645
-      m_ExpandedIDs: c896e1a1388ed2db1b8ba0f125fd99fb6dfb670ec58bea5ae7777c6dededd771ffffff7f
+      m_SelectedIDs: d8ebd56a
+      m_LastClickedID: 1792404440
+      m_ExpandedIDs: c896e1a1337b46a3388ed2db1b8ba0f125fd99fb6dfb670ec58bea5ae7777c6dededd771ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1416,7 +1906,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: d71c708f-fbd6-46ac-9bb9-598d9f9a2704
+      RunGuid: c145763e-df52-46bf-b38c-ef5af1ace48f
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -1429,7 +1919,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - ConditionTests.CompareConditionToEffect_Bool
+          - ConditionTests.CompareConditionToEffect_Float
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -1444,7 +1934,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999976
+      Progress: 0.9999998
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -1483,7 +1973,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: d71c708f-fbd6-46ac-9bb9-598d9f9a2704
+      RunGuid: c145763e-df52-46bf-b38c-ef5af1ace48f
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -1496,7 +1986,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - ConditionTests.CompareConditionToEffect_Bool
+          - ConditionTests.CompareConditionToEffect_Float
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -1511,7 +2001,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999976
+      Progress: 0.9999998
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -1571,7 +2061,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1918
     height: 36
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1874,9 +2364,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 624
-    width: 1068
-    height: 307
+    y: 618
+    width: 1067
+    height: 304
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1920,16 +2410,16 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs:
-    - m_Data: 46112
+    - m_Data: 46138
     m_LastClickedID:
-      m_Data: 46112
+      m_Data: 46138
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45824
-    - m_Data: 45826
     - m_Data: 45828
     - m_Data: 45830
     - m_Data: 45832
+    - m_Data: 45834
+    - m_Data: 45836
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1962,11 +2452,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45824
-    - m_Data: 45826
     - m_Data: 45828
     - m_Data: 45830
     - m_Data: 45832
+    - m_Data: 45834
+    - m_Data: 45836
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1993,9 +2483,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 47134
-    m_LastClickedInstanceID: 47134
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -2102,7 +2591,7 @@ MonoBehaviour:
     x: 0
     y: 24
     width: 278
-    height: 574
+    height: 568
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2123,25 +2612,22 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -31942
-      - m_Data: -31070
-      - m_Data: -29606
-      - m_Data: -28678
-      - m_Data: -26126
-      - m_Data: -22862
-      - m_Data: -19674
-      - m_Data: -18198
-      - m_Data: -17204
-      - m_Data: -16228
-      - m_Data: -14628
-      - m_Data: -13640
-      - m_Data: -12772
-      - m_Data: -11836
-      - m_Data: -10892
-      - m_Data: -9994
-      - m_Data: -9592
-      - m_Data: -9198
-      - m_Data: -2712
+      - m_Data: -32648
+      - m_Data: -32230
+      - m_Data: -31246
+      - m_Data: -29126
+      - m_Data: -27542
+      - m_Data: -26548
+      - m_Data: -26048
+      - m_Data: -24428
+      - m_Data: -23404
+      - m_Data: -23010
+      - m_Data: -22576
+      - m_Data: -21556
+      - m_Data: -21160
+      - m_Data: -20746
+      - m_Data: -7944
+      - m_Data: -5220
       - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -2191,8 +2677,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 280
     y: 24
-    width: 788
-    height: 574
+    width: 787
+    height: 568
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

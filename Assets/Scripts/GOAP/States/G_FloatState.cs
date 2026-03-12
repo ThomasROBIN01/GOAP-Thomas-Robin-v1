@@ -112,7 +112,7 @@ namespace GOAP
         {
             bool result = false;
 
-            G_NumberConditionComparer.CompareNumberCondition((float)precondition.ExpectedValue, precondition.Comparison, (float)effect.ExpectedValue, effect.Comparison);
+            result = G_NumberConditionComparer.CompareNumberCondition((float)precondition.ExpectedValue, precondition.Comparison, (float)effect.ExpectedValue, effect.Comparison);
 
             return result;
         }

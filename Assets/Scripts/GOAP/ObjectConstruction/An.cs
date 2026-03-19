@@ -9,5 +9,10 @@ namespace GOAP
         {
             return new G_IntStateBuilder();
         }
+
+        public static G_AtLocationBuilder AtLocation()
+        {
+            return new G_AtLocationBuilder();
+        }
     }
 }

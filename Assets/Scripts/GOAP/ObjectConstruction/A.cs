@@ -19,5 +19,9 @@ namespace GOAP
         {
             return new G_ConditionBuilder();
         }
+        public static LocationTypeBuilder LocationType(string name)
+        {
+            return new LocationTypeBuilder(name);
+        }
     }
 }

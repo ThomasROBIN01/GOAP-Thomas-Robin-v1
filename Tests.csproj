@@ -52,6 +52,7 @@
     <Compile Include="Assets\Tests\Edit Mode Tests\FloatStateTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\ConditionTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\BoolStateTests.cs" />
+    <Compile Include="Assets\Tests\Edit Mode Tests\AtLocationTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\IntStateTests.cs" />
   </ItemGroup>
   <ItemGroup>

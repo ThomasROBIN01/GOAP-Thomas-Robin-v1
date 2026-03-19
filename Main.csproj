@@ -53,6 +53,7 @@
     <Compile Include="Assets\Scripts\GOAP\States\G_StateTemplate.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\An.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_FloatStateBuilder.cs" />
+    <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\Game Data Builders\LocationTypeBuilder.cs" />
     <Compile Include="Assets\Scripts\Game Scripts\Data\Locations\LocationType.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\BuilderTemplate.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\A.cs" />

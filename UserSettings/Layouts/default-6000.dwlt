@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 38
+  controlID: 49
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -325,8 +325,8 @@ MonoBehaviour:
     splitterInitialOffset: 677
     currentActiveSplitter: -1
     realSizes:
-    - 628
-    - 209
+    - 621
+    - 207
     relativeSizes:
     - 0.7502987
     - 0.24970132
@@ -336,7 +336,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 837
+    lastTotalSize: 828
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 12}
     runProgress:
-      RunGuid: c145763e-df52-46bf-b38c-ef5af1ace48f
+      RunGuid: b31e4ad0-8c05-4c89-ac05-917831b51dcd
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -376,7 +376,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999998
+      Progress: 0.99999976
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -385,7 +385,7 @@ MonoBehaviour:
       name: GOAP-Thomas-Robin-v1
       fullName: GOAP-Thomas-Robin-v1
       resultStatus: 2
-      duration: 0.0420303
+      duration: 0.0405866
       messages: 
       output: 
       stacktrace: 
@@ -396,12 +396,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1076
+    - id: 1085
       uniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.0420303
+      duration: 0.0405866
       messages: 
       output: 
       stacktrace: 
@@ -410,7 +410,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1085
+      parentId: 1094
       parentUniqueId: '[GOAP-Thomas-Robin-v1][suite]'
     - id: 1001
       uniqueId: 'Tests.dll/[Tests][BoolStateTests][suite]'
@@ -426,7 +426,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1076
+      parentId: 1085
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1003
       uniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.Clone]'
@@ -555,7 +555,7 @@ MonoBehaviour:
       name: ConditionTests
       fullName: ConditionTests
       resultStatus: 2
-      duration: 0.0218305
+      duration: 0.020386798
       messages: 
       output: 
       stacktrace: 
@@ -564,7 +564,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1076
+      parentId: 1085
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1029
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
@@ -870,12 +870,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1029
       parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Bool][suite]'
-    - id: 1041
+    - id: 1050
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
       name: CompareConditionToEffect_Float
       fullName: ConditionTests.CompareConditionToEffect_Float
       resultStatus: 2
-      duration: 0.0052969
+      duration: 0.0038532
       messages: 
       output: 
       stacktrace: 
@@ -892,7 +892,7 @@ MonoBehaviour:
       name: Equal 5 vs Equal 5
       fullName: ConditionTests.Equal 5 vs Equal 5
       resultStatus: 2
-      duration: 0.0035076
+      duration: 0.0002881
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -922,7 +922,7 @@ MonoBehaviour:
       name: Equal 5 vs Equal 4
       fullName: ConditionTests.Equal 5 vs Equal 4
       resultStatus: 2
-      duration: 0.0002014
+      duration: 0.0002236
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -952,7 +952,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 4
       fullName: ConditionTests.Precondition > 5 vs Effect = 4
       resultStatus: 2
-      duration: 0.000218
+      duration: 0.0001846
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -982,7 +982,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 5
       fullName: ConditionTests.Precondition > 5 vs Effect = 5
       resultStatus: 2
-      duration: 0.000195
+      duration: 0.0001772
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1012,7 +1012,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 6
       fullName: ConditionTests.Precondition > 5 vs Effect = 6
       resultStatus: 2
-      duration: 0.0002252
+      duration: 0.0001785
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1042,7 +1042,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 4
       fullName: ConditionTests.Precondition > 5 vs Effect > 4
       resultStatus: 2
-      duration: 0.0001351
+      duration: 0.0001774
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1072,7 +1072,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 5
       fullName: ConditionTests.Precondition > 5 vs Effect > 5
       resultStatus: 2
-      duration: 0.0001474
+      duration: 0.0001799
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1102,7 +1102,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 6
       fullName: ConditionTests.Precondition > 5 vs Effect > 6
       resultStatus: 2
-      duration: 0.0001433
+      duration: 0.0001785
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1132,7 +1132,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 4
       fullName: ConditionTests.Precondition > 5 vs Effect >= 4
       resultStatus: 2
-      duration: 0.0002116
+      duration: 0.0001814
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1162,7 +1162,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 5
       fullName: ConditionTests.Precondition > 5 vs Effect >= 5
       resultStatus: 2
-      duration: 0.000163
+      duration: 0.0001752
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1192,7 +1192,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 6
       fullName: ConditionTests.Precondition > 5 vs Effect >= 6
       resultStatus: 2
-      duration: 0.0001493
+      duration: 0.0002167
       messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
         be converted to type ''System.Single''.'
       output: 
@@ -1215,6 +1215,276 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1041
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1041
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        < 5 vs Effect = 4]'
+      name: Precondition < 5 vs Effect = 4
+      fullName: ConditionTests.Precondition < 5 vs Effect = 4
+      resultStatus: 2
+      duration: 0.0001818
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1042
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        < 5 vs Effect = 5]'
+      name: Precondition < 5 vs Effect = 5
+      fullName: ConditionTests.Precondition < 5 vs Effect = 5
+      resultStatus: 2
+      duration: 0.0002062
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1043
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        < 5 vs Effect = 6]'
+      name: Precondition < 5 vs Effect = 6
+      fullName: ConditionTests.Precondition < 5 vs Effect = 6
+      resultStatus: 2
+      duration: 0.0001912
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1044
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        < 5 vs Effect < 4]'
+      name: Precondition < 5 vs Effect < 4
+      fullName: ConditionTests.Precondition < 5 vs Effect < 4
+      resultStatus: 2
+      duration: 0.0001754
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1045
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        < 5 vs Effect < 5]'
+      name: Precondition < 5 vs Effect < 5
+      fullName: ConditionTests.Precondition < 5 vs Effect < 5
+      resultStatus: 2
+      duration: 0.0002004
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1046
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        < 5 vs Effect < 6]'
+      name: Precondition < 5 vs Effect < 6
+      fullName: ConditionTests.Precondition < 5 vs Effect < 6
+      resultStatus: 2
+      duration: 0.0001794
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1047
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect <= 4]'
+      name: Precondition > 5 vs Effect <= 4
+      fullName: ConditionTests.Precondition > 5 vs Effect <= 4
+      resultStatus: 2
+      duration: 0.0001756
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1048
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect <= 5]'
+      name: Precondition > 5 vs Effect <= 5
+      fullName: ConditionTests.Precondition > 5 vs Effect <= 5
+      resultStatus: 2
+      duration: 0.0001924
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
+    - id: 1049
+      uniqueId: 'Tests.dll/ConditionTests/CompareConditionToEffect_Float/[Tests][ConditionTests.Precondition
+        > 5 vs Effect <= 6]'
+      name: Precondition > 5 vs Effect <= 6
+      fullName: ConditionTests.Precondition > 5 vs Effect <= 6
+      resultStatus: 2
+      duration: 0.0001897
+      messages: 'System.ArgumentException : Object of type ''System.Boolean'' cannot
+        be converted to type ''System.Single''.'
+      output: 
+      stacktrace: "  at System.RuntimeType.CheckValue (System.Object value, System.Reflection.Binder
+        binder, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00071] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.ConvertValues
+        (System.Reflection.Binder binder, System.Object[] args, System.Reflection.ParameterInfo[]
+        pinfo, System.Globalization.CultureInfo culture, System.Reflection.BindingFlags
+        invokeAttr) [0x00069] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.RuntimeMethodInfo.Invoke
+        (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder
+        binder, System.Object[] parameters, System.Globalization.CultureInfo culture)
+        [0x00040] in <1eb9db207454431c84a47bcd81e79c37>:0 \r\n  at System.Reflection.MethodBase.Invoke
+        (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0
+        \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
+        method, System.Object fixture, System.Object[] args) [0x00049] in <f577cd9686154d6ab10efd7e65e64366>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
       parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.CompareConditionToEffect_Float][suite]'
     - id: 1012
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
@@ -1268,7 +1538,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1012
       parentUniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.DoesStateMeetCondition][suite]'
-    - id: 1042
+    - id: 1051
       uniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
       name: FloatStateTests
       fullName: FloatStateTests
@@ -1282,7 +1552,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1076
+      parentId: 1085
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1010
       uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.Clone]'
@@ -1301,7 +1571,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1009
       parentUniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
-    - id: 1058
+    - id: 1067
       uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
       name: TestState
       fullName: FloatStateTests.TestState
@@ -1315,7 +1585,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1042
+      parentId: 1051
       parentUniqueId: 'Tests.dll/[Tests][FloatStateTests][suite]'
     - id: 1010
       uniqueId: 'Tests.dll/FloatStateTests/TestState/[Tests][FloatStateTests.Equals
@@ -1569,7 +1839,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1024
       parentUniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.TestState][suite]'
-    - id: 1059
+    - id: 1068
       uniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
       name: IntStateTests
       fullName: IntStateTests
@@ -1583,7 +1853,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1076
+      parentId: 1085
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1027
       uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.Clone]'
@@ -1602,7 +1872,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
-    - id: 1075
+    - id: 1084
       uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
       name: TestState
       fullName: IntStateTests.TestState
@@ -1616,7 +1886,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1059
+      parentId: 1068
       parentUniqueId: 'Tests.dll/[Tests][IntStateTests][suite]'
     - id: 1028
       uniqueId: 'Tests.dll/IntStateTests/TestState/[Tests][IntStateTests.Equals -
@@ -1870,12 +2140,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1042
       parentUniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.TestState][suite]'
-    m_ResultText: Equal True vs Equal False (0.000s)
+    m_ResultText: CompareConditionToEffect_Float (20 tests)  20 tests failed (0.004s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d8ebd56a
-      m_LastClickedID: 1792404440
+      scrollPos: {x: 0, y: 135}
+      m_SelectedIDs: 337b46a3
+      m_LastClickedID: -1555662029
       m_ExpandedIDs: c896e1a1337b46a3388ed2db1b8ba0f125fd99fb6dfb670ec58bea5ae7777c6dededd771ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1906,7 +2176,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: c145763e-df52-46bf-b38c-ef5af1ace48f
+      RunGuid: b31e4ad0-8c05-4c89-ac05-917831b51dcd
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -1934,7 +2204,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999998
+      Progress: 0.99999976
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -1973,7 +2243,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: c145763e-df52-46bf-b38c-ef5af1ace48f
+      RunGuid: b31e4ad0-8c05-4c89-ac05-917831b51dcd
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -2001,7 +2271,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999998
+      Progress: 0.99999976
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -2391,7 +2661,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests/Edit Mode Tests
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2401,7 +2671,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Tests/Edit Mode Tests
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\robint\Documents\GitHub\GOAP-Thomas-Robin-v1
   m_LockTracker:
@@ -2410,9 +2680,9 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs:
-    - m_Data: 46138
+    - m_Data: 45828
     m_LastClickedID:
-      m_Data: 46138
+      m_Data: 45828
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 45828
@@ -2485,7 +2755,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: []
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2612,22 +2882,9 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -32648
-      - m_Data: -32230
-      - m_Data: -31246
-      - m_Data: -29126
-      - m_Data: -27542
-      - m_Data: -26548
-      - m_Data: -26048
-      - m_Data: -24428
-      - m_Data: -23404
-      - m_Data: -23010
-      - m_Data: -22576
-      - m_Data: -21556
-      - m_Data: -21160
-      - m_Data: -20746
-      - m_Data: -7944
-      - m_Data: -5220
+      - m_Data: -4810
+      - m_Data: -4402
+      - m_Data: -2402
       - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0

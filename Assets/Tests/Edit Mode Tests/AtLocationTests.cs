@@ -14,13 +14,32 @@ public class AtLocationTests
     }
 
 
-    [TestCase(true, TestName = "Tree vs Tree")]
-    [TestCase(true, TestName = "Null vs Null")]
-    [TestCase(true, TestName = "Tree vs Null")]
-    [TestCase(true, TestName = "Null vs Tree")]
-    public void AtLocationTestState(bool expectedResult)
+    [TestCase(false, false, true, TestName = "State Tree vs Expected Tree")]
+    [TestCase(true, true, true, TestName = "State Null vs Expected Null")]
+    [TestCase(false, true, false, TestName = "State Tree vs Expected Null")]
+    [TestCase(true, false, false, TestName = "State Null vs Expected Tree")]
+    public void AtLocationTestState(bool nullStateLocation, bool nullExpectedLocation, bool expectedResult)
     {
-        // Use the Assert class to test conditions
+        LocationType tree = A.LocationType("tree");
+
+        LocationType stateLocation = tree;
+
+        LocationType expectedLocation = tree;
+
+        if (nullStateLocation)
+        {
+            stateLocation = null;
+        }
+        if(nullExpectedLocation)
+        {
+            expectedLocation = null;
+        }
+
+        G_AtLocation at_location = An.AtLocation().WithName("at_location").WithLocationType(stateLocation);
+
+        bool result = at_location.TestState(at_location, G_StateComparison.equal, expectedLocation);
+
+        Assert.AreEqual(expectedResult, result);
     }
 
 

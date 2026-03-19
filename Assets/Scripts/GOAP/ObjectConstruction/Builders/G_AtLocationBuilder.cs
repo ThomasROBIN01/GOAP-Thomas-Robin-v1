@@ -31,7 +31,7 @@ namespace GOAP
 
         public G_AtLocationBuilder WithLocationType(LocationType value)
         {
-            this.name = name;
+            this.value = value;
             return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
                                 // Instead, using return.this allows to chain on to the end of it. 
         }

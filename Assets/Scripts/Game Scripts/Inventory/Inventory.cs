@@ -58,10 +58,13 @@ public class Inventory : MonoBehaviour
     {
         ItemStack foundStack = null;
 
-        foundStack = inventory.Find((stack)=> stack.item == item);      // we call each item in the inventory a stack (stack) which is the parameter, on the left of the =>; and the condition on the right.
-                                                                        // So each time we assess an ItemStack in the inventory, this function should return true if stack.item == item.
-                                                                        // So if we got stack in the same item, this will return true, otherwise it will find nothing and return null
+        if (item != null)
+        {
 
+            foundStack = inventory.Find((stack) => stack.item == item);      // we call each item in the inventory a stack (stack) which is the parameter, on the left of the =>; and the condition on the right.
+                                                                             // So each time we assess an ItemStack in the inventory, this function should return true if stack.item == item.
+                                                                             // So if we got stack in the same item, this will return true, otherwise it will find nothing and return null
+        }
         return foundStack;
     }
 

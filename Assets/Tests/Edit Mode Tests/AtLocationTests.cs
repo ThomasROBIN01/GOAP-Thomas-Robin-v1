@@ -1,8 +1,9 @@
-using System.Collections;
+using GOAP;
 using NUnit.Framework;
+using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.TestTools;
-using GOAP;
 
 public class AtLocationTests
 {
@@ -10,29 +11,34 @@ public class AtLocationTests
     [Test]
     public void AtLocationClone()
     {
-        // Use the Assert class to test conditions
+        LocationType tree = A.LocationType("tree");
+        G_AtLocation at_location = An.AtLocation().WithName("at_location").WithLocationType(tree);
+
+        G_AtLocation clone = at_location.Clone() as G_AtLocation;
+
+        Assert.AreEqual(at_location.name, clone.name);
+        Assert.AreEqual(at_location.GetValue() as LocationType, clone.GetValue() as LocationType);
+
     }
 
 
-    [TestCase(false, false, true, TestName = "State Tree vs Expected Tree")]
-    [TestCase(true, true, true, TestName = "State Null vs Expected Null")]
-    [TestCase(false, true, false, TestName = "State Tree vs Expected Null")]
-    [TestCase(true, false, false, TestName = "State Null vs Expected Tree")]
-    public void AtLocationTestState(bool nullStateLocation, bool nullExpectedLocation, bool expectedResult)
+    [TestCase(true, true, true, TestName = "State Tree vs Expected Tree")]
+    [TestCase(false, false, true, TestName = "State Null vs Expected Null")]
+    [TestCase(true, false, false, TestName = "State Tree vs Expected Null")]
+    [TestCase(false, true, false, TestName = "State Null vs Expected Tree")]
+    public void AtLocationTestState(bool useLocationForState, bool useLocationForExpected, bool expectedResult)
     {
         LocationType tree = A.LocationType("tree");
+        LocationType stateLocation = null;
+        LocationType expectedLocation = null;
 
-        LocationType stateLocation = tree;
-
-        LocationType expectedLocation = tree;
-
-        if (nullStateLocation)
+        if (useLocationForState)
         {
-            stateLocation = null;
+            stateLocation = tree;
         }
-        if(nullExpectedLocation)
+        if(useLocationForExpected)
         {
-            expectedLocation = null;
+            expectedLocation = tree;
         }
 
         G_AtLocation at_location = An.AtLocation().WithName("at_location").WithLocationType(stateLocation);
@@ -40,19 +46,6 @@ public class AtLocationTests
         bool result = at_location.TestState(at_location, G_StateComparison.equal, expectedLocation);
 
         Assert.AreEqual(expectedResult, result);
-    }
-
-
-    [TestCase(true, TestName = "Equals tree vs Equals tree")]
-    [TestCase(true, TestName = "Equals null vs Equals null")]
-    [TestCase(false, TestName = "Equals null vs Equals tree")]
-    [TestCase(false, TestName = "Equals tree vs Equals null")]
-
-    [TestCase(false, TestName = "Greater tree vs Equals tree")]
-    [TestCase(false, TestName = "Greater null vs Equals null")]
-    public void AtLocationConditionCompare(bool expectedResult)
-    {
-        // Use the Assert class to test conditions
     }
 
 }

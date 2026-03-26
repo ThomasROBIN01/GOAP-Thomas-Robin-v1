@@ -71,7 +71,7 @@ namespace GOAP
                 success = CompareLocations(preLocation, effectLocation);
             }
 
-            return false;
+            return success;
         }
 
         /// <summary>

@@ -52,7 +52,7 @@ namespace GOAP
 
             if (CanTestState(stateValue, expectedValue))       // Essentially if the entered item is stacked with a null item it fails
             {
-                TestInventoryState(stateValue, comparison, expectedValue);
+                success = TestInventoryState(stateValue, comparison, expectedValue);
             }
 
             return success;

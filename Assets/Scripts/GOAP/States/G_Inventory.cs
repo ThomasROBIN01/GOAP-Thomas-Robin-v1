@@ -1,5 +1,6 @@
-using UnityEngine;
 using GOAP;
+using System;
+using UnityEngine;
 
 namespace GOAP
 {
@@ -49,23 +50,30 @@ namespace GOAP
 
             object stateValue = state.GetValue();
 
-            if (TestValueMatch(stateValue) && TestValueMatch(expectedValue) && (expectedValue as ItemStack).item != null)       // Essentially if the entered item is stacked with a null item it fails
+            if (CanTestState(stateValue, expectedValue))       // Essentially if the entered item is stacked with a null item it fails
             {
-                ItemStack expectedStack = expectedValue as ItemStack;
-                Inventory testInventory = stateValue as Inventory;
-
-                ItemStack inventoryStack = testInventory.FindInInventory(expectedStack.item);
-
-                if (inventoryStack != null)
-                {
-                    // success = G_NumberConditionComparer.TestValues(inventoryStack.quantity, comparison, expectedStack.quantity);
-                }
-                else if (inventoryStack == null  &&  comparison == G_StateComparison.equal  &&  expectedStack.quantity==0)
-                {
-                    success = true;
-                }
+                TestInventoryState(stateValue, comparison, expectedValue);
             }
 
+            return success;
+        }
+
+        bool TestInventoryState (object stateValue, G_StateComparison comparison, object expectedValue)
+        {
+            bool success = false;
+            ItemStack expectedStack = expectedValue as ItemStack;
+            Inventory testInventory = stateValue as Inventory;
+
+            ItemStack inventoryStack = testInventory.FindInInventory(expectedStack.item);
+
+            if (inventoryStack != null)
+            {
+                success = G_NumberConditionComparer.TestValues(inventoryStack.quantity, comparison, expectedStack.quantity);
+            }
+            else if (NullStackIsEqualToZero(inventoryStack, comparison, expectedStack))
+            {
+                success = true;
+            }
             return success;
         }
 
@@ -100,6 +108,19 @@ namespace GOAP
         {
 
             return testValue is ItemStack || testValue is Inventory;
+        }
+        #endregion
+
+        #region Conditions
+
+        bool CanTestState (object stateValue, object expectedValue)
+        {
+            return TestValueMatch(stateValue) && TestValueMatch(expectedValue) && (expectedValue as ItemStack).item != null;
+        }
+
+        bool NullStackIsEqualToZero(ItemStack inventoryStack, G_StateComparison comparison, ItemStack expectedStack)
+        {
+            return inventoryStack == null && comparison == G_StateComparison.equal && expectedStack.quantity == 0;
         }
 
         #endregion

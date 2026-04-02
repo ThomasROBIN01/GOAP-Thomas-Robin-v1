@@ -80,24 +80,7 @@ namespace GOAP
             int stateInt = (int)state.GetValue();
             int expectedInt = (int)expectedValue;
 
-            switch(comparison)
-            {
-                case G_StateComparison.equal:
-                    result = (stateInt == expectedInt);     // the expression into parenthesis just returns true or false
-                    break;
-                case G_StateComparison.greater:
-                    result = (stateInt > expectedInt);
-                    break;
-                case G_StateComparison.greaterOrEqual:
-                    result = (stateInt >= expectedInt);
-                    break;
-                case G_StateComparison.lesser:
-                    result = (stateInt < expectedInt);
-                    break;
-                case G_StateComparison.lesserOrEqual:
-                    result = (stateInt <= expectedInt);
-                    break;
-            }
+            result = G_NumberConditionComparer.TestValues(stateInt, comparison, expectedInt);
 
             return result;        
         }

@@ -5,6 +5,61 @@ namespace GOAP
     public static class G_NumberConditionComparer       // static class means that class cannot be instantiated, instead the class is called directly.
                                                         // Nothing in this class is stored and nothing needs to persist => static. As there is no object created (instances) => better performance
     {
+        #region TTestValues
+
+        public static bool TestValues (int stateValue, G_StateComparison comparison, int expectedValue)
+        {
+            bool result = false;
+
+            switch (comparison)
+            {
+                case G_StateComparison.equal:
+                    result = (stateValue == expectedValue);     // the expression into parenthesis just returns true or false
+                    break;
+                case G_StateComparison.greater:
+                    result = (stateValue > expectedValue);
+                    break;
+                case G_StateComparison.greaterOrEqual:
+                    result = (stateValue >= expectedValue);
+                    break;
+                case G_StateComparison.lesser:
+                    result = (stateValue < expectedValue);
+                    break;
+                case G_StateComparison.lesserOrEqual:
+                    result = (stateValue <= expectedValue);
+                    break;
+            }
+            return result;
+        }
+
+        public static bool TestValues(float stateValue, G_StateComparison comparison, float expectedValue)
+        {
+            bool result = false;
+
+            switch (comparison)
+            {
+                case G_StateComparison.equal:
+                    result = (stateValue == expectedValue);     // the expression into parenthesis just returns true or false
+                    break;
+                case G_StateComparison.greater:
+                    result = (stateValue > expectedValue);
+                    break;
+                case G_StateComparison.greaterOrEqual:
+                    result = (stateValue >= expectedValue);
+                    break;
+                case G_StateComparison.lesser:
+                    result = (stateValue < expectedValue);
+                    break;
+                case G_StateComparison.lesserOrEqual:
+                    result = (stateValue <= expectedValue);
+                    break;
+            }
+            return result;
+        }
+
+        #endregion
+
+
         #region Compare Conditions
         public static bool CompareNumberCondition(float prevalue, G_StateComparison preCompare, float effectValue, G_StateComparison effectCompare)
         {

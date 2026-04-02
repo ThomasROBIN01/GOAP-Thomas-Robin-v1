@@ -1,6 +1,7 @@
 using NUnit.Framework.Internal;
 using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace GOAP
 {
@@ -80,24 +81,7 @@ namespace GOAP
             float stateFloat = (float)state.GetValue();
             float expectedFloat = (float)expectedValue;
 
-            switch (comparison)
-            {
-                case G_StateComparison.equal:
-                    result = (stateFloat == expectedFloat);     // the expression into parenthesis just returns true or false
-                    break;
-                case G_StateComparison.greater:
-                    result = (stateFloat > expectedFloat);
-                    break;
-                case G_StateComparison.greaterOrEqual:
-                    result = (stateFloat >= expectedFloat);
-                    break;
-                case G_StateComparison.lesser:
-                    result = (stateFloat < expectedFloat);
-                    break;
-                case G_StateComparison.lesserOrEqual:
-                    result = (stateFloat <= expectedFloat);
-                    break;
-            }
+            result = G_NumberConditionComparer.TestValues(stateFloat, comparison, expectedFloat);
 
             return result;        
         }

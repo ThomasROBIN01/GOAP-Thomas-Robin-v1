@@ -3,13 +3,40 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using GOAP;
+using UnityEditor.VersionControl;
 
 public class ActionTests
 {
     [Test]
     public void ActionCloning()
     {
-        
+        SlicedBreadData breadData = new SlicedBreadData();
+
+        G_Action clone = breadData.slice_bread.Clone();
+
+        Assert.AreEqual(true, clone != null);
+        Assert.AreEqual(breadData.slice_bread.name, clone.name);
+        Assert.AreEqual(breadData.slice_bread.preconditions.Count, clone.preconditions.Count);
+
+        for (int i = 0; i < breadData.slice_bread.preconditions.Count; i++)
+        {
+            Assert.AreEqual(breadData.slice_bread.preconditions[i].State, clone.preconditions[i].State);
+            Assert.AreEqual(breadData.slice_bread.preconditions[i].Comparison, clone.preconditions[i].Comparison);
+            Assert.AreEqual(breadData.slice_bread.preconditions[i].ExpectedValue, clone.preconditions[i].ExpectedValue);
+        }
+
+        Assert.AreEqual(breadData.slice_bread.effects.Count, clone.effects.Count);
+
+        for (int i = 0; i < breadData.slice_bread.effects.Count; i++)
+        {
+            Assert.AreEqual(breadData.slice_bread.effects[i].State, clone.effects[i].State);
+            Assert.AreEqual(breadData.slice_bread.effects[i].Comparison, clone.effects[i].Comparison);
+            Assert.AreEqual(breadData.slice_bread.effects[i].ExpectedValue, clone.effects[i].ExpectedValue);
+        }
+
+        Assert.AreEqual(breadData.slice_bread.GetCost(), clone.GetCost());
+
+
     }
 
     [Test]
@@ -62,7 +89,7 @@ public class ActionTests
             go_to_kitchen = An.Action("go_to_kitchen").WithEffect(A.Condition().WithState(at_location).WithExpectedValue(kitchen));     // WithComparison is not really needed
 
             slice_bread = An.Action("slice_bread")
-                .WithPrecondition(A.Condition().WithState(inventory).WithExpectedValue(ItemStack.EmptyStack(bread_knife)).WithComparison(G_StateComparison.greater))
+                .WithPrecondition(A.Condition().WithState(inventory).WithComparison(G_StateComparison.greater).WithExpectedValue(ItemStack.EmptyStack(bread_knife)))
                 .WithPrecondition(A.Condition().WithState(inventory).WithComparison(G_StateComparison.greater).WithExpectedValue(ItemStack.EmptyStack(bread)))
                 .WithPrecondition(A.Condition().WithState(at_location).WithExpectedValue(kitchen))
                 .WithPrecondition(A.Condition().WithState(is_able).WithExpectedValue(true))

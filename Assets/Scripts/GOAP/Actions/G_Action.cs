@@ -12,7 +12,7 @@ namespace GOAP
 
         public List<G_Condition> preconditions = new List<G_Condition>();
 
-        internal List<G_Condition> effects = new List<G_Condition>();
+        public List<G_Condition> effects = new List<G_Condition>();
 
         public void Construct (string name,
             List<G_Condition> preconditions,
@@ -74,6 +74,11 @@ namespace GOAP
                 );                                                                          // if both parameters are true, what's inside the Find function will return true, and the Find function will be successful and will return the first item in the list that meet the conditions
             
             return relevantEffect != null;
+        }
+
+        public virtual int GetCost()        // virutal like this we can overwrite this.
+        {
+            return cost; 
         }
 
         /// <summary>

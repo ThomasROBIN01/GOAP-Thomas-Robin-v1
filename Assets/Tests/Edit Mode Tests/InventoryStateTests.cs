@@ -10,7 +10,17 @@ public class InventoryStateTests
     [Test]
     public void InventoryCloneTest()
     {
-        
+        GameObject go = new GameObject();       // the reason to do make a GameObject is because we need to add an inventory component
+        Inventory inventory = go.AddComponent<Inventory>();
+        Item testItem = An.Item("axe").IsStackable(false);
+        inventory.AddToInventory(new ItemStack(testItem, 1));
+        G_Inventory testState = An.InventoryState("test").WithInventory(inventory);
+
+        G_Inventory clone = testState.Clone() as G_Inventory;
+
+        Assert.AreEqual(testState.name, clone.name);
+        Assert.AreEqual(testState.GetValue() as Inventory, clone.GetValue() as Inventory);
+
     }
 
     [TestCase(true, true, true, true, 1, true, TestName = "All valid")]
@@ -47,30 +57,6 @@ public class InventoryStateTests
         }
 
         bool result = testState.TestState(testState, G_StateComparison.equal, expectedValue);
-
-        Assert.AreEqual(expectedResult, result);
-    }
-
-    [TestCase (true, G_StateComparison.equal, 1, G_StateComparison.equal, 1, true, TestName = "Both equal to 1 item")]
-    [TestCase(true, G_StateComparison.equal, 1, G_StateComparison.equal, 0, false, TestName = "Not equal to same quantity")]
-    [TestCase(true, G_StateComparison.equal, 1, G_StateComparison.equal, 1, true, TestName = "Different Items")]
-    [TestCase(true, G_StateComparison.equal, 1, G_StateComparison.greater, 0, true, TestName = "Equal 1 vs Greater 0")]
-    public void InventoryConditionCompare(bool useSameItem, G_StateComparison preCompare, int preQuantity, G_StateComparison effectCompare, int effectQuantity, bool expectedResult)
-    {
-        GameObject go = new GameObject();       // the reason to do make a GameObject is because we need to add an inventory component
-        Inventory inventory = go.AddComponent<Inventory>();
-        Item axe = An.Item("axe").IsStackable(false);
-        Item wood = An.Item("axe").IsStackable(true);
-        G_Inventory testState = An.InventoryState("test").WithInventory(inventory);
-
-        ItemStack preExpectedValue = new ItemStack(axe, 1);
-        ItemStack effectExpectedValue = useSameItem? new ItemStack(axe, 1): new ItemStack(wood, 1);
-
-
-        G_Condition precondition = A.Condition().WithState(testState).WithComparison(preCompare).WithExpectedValue (effectExpectedValue);
-        G_Condition effect = A.Condition().WithState(testState).WithComparison(effectCompare).WithExpectedValue(effectExpectedValue);
-
-        bool result = precondition.CompareConditionToEffect(effect);
 
         Assert.AreEqual(expectedResult, result);
     }

@@ -127,7 +127,8 @@ namespace GOAP
                 && TestValueMatch(precondition.ExpectedValue)
                 && TestValueMatch(effect.ExpectedValue)
                 && preExpectedStack.item != null                            // no point to do it if the data is not right
-                && effectExpectedStack.item != null;                        // no point to do it if the data is not right
+                && effectExpectedStack.item != null                        // no point to do it if the data is not right
+                && preExpectedStack.item == effectExpectedStack.item;
         }
 
         #endregion

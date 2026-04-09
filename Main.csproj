@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\GOAP\Conditions\G_Condition.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_IntState.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\Game Data Builders\ItemBuilder.cs" />
+    <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_ActionBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_AtLocation.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_InventoryBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_IntStateBuilder.cs" />

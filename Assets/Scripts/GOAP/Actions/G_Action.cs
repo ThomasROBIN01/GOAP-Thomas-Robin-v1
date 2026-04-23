@@ -31,35 +31,27 @@ namespace GOAP
         /// <summary>
         /// Receives a bunch of unmet preconditions and returns a list of any of them that are met by this Action's effect
         /// </summary>
-        /// <param name="unmetPreconditions"></param>
+        /// <param name="preconditions"></param>
         /// <returns></returns>
-        public List<G_Condition> TestEffectsAgainstPreconditions (List<G_Condition> unmetPreconditions)
+        public bool TestEffectsAgainstPreconditions (List<G_Condition> preconditions)
         {
-            List<G_Condition> metConditions = new List<G_Condition>();
+            bool someConditionsMet = false;
 
-            for (int i = 0; i < unmetPreconditions.Count; i++)
+            for (int i = 0; i < preconditions.Count; i++)
             {
-                if (DoesEffectMatch(unmetPreconditions[i]))
+                if (!preconditions[i].Met && DoesEffectMatch(preconditions[i]))     // we check first if the precondition has been met, if it has the second parameter is ignored (DoesEffectMatch),
+                                                                                    // it runs DoesEffectMatchon the preconditions only if the preconditions has not been met
+                                                                                    // If this expression returns true, that means the preconditions has not been previously met
+                                                                                    // but we have an effect that matches it
                 {
-                    MeetCondition(unmetPreconditions[i], metConditions);
+                    someConditionsMet = true;
+                    preconditions[i].Meet();
                 }
             }
 
-
-            return metConditions;
+            return someConditionsMet;
         }
 
-        /// <summary>
-        /// Clone the given condition, sets it as met, and then adds it to the metCondition list
-        /// </summary>
-        /// <param name="condition"></param>
-        /// <param name="metConditions"></param>
-        void MeetCondition (G_Condition condition, List<G_Condition> metConditions)
-        {
-            G_Condition clone = G_Condition.Clone(condition);    // we clone it, like this we don't modify the one in the planner
-            clone.Meet();
-            metConditions.Add(clone);
-        }
 
         /// <summary>
         /// Returns the first (if any) effect that has the same state as the unmetPrecondition and which succeeds at a Condition Comparison test

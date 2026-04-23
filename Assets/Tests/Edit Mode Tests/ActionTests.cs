@@ -42,6 +42,11 @@ public class ActionTests
     [Test]
     public void TestEffectAgainstPreconditions()
     {
+        SlicedBreadData breadData = new SlicedBreadData();
+
+        bool preconditionsMet = breadData.go_to_kitchen.TestEffectsAgainstPreconditions(breadData.slice_bread.preconditions);
+
+        Assert.AreEqual(true, preconditionsMet);
 
     }
 

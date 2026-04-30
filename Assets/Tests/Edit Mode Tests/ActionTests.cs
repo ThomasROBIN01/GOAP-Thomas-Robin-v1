@@ -15,9 +15,10 @@ public class ActionTests
         G_Action clone = breadData.slice_bread.Clone();
 
         Assert.AreEqual(true, clone != null);
-        Assert.AreEqual(breadData.slice_bread.name, clone.name);
-        Assert.AreEqual(breadData.slice_bread.preconditions.Count, clone.preconditions.Count);
 
+        Assert.AreEqual(breadData.slice_bread.name, clone.name);
+
+        Assert.AreEqual(breadData.slice_bread.preconditions.Count, clone.preconditions.Count);
         for (int i = 0; i < breadData.slice_bread.preconditions.Count; i++)
         {
             Assert.AreEqual(breadData.slice_bread.preconditions[i].State, clone.preconditions[i].State);
@@ -26,7 +27,6 @@ public class ActionTests
         }
 
         Assert.AreEqual(breadData.slice_bread.effects.Count, clone.effects.Count);
-
         for (int i = 0; i < breadData.slice_bread.effects.Count; i++)
         {
             Assert.AreEqual(breadData.slice_bread.effects[i].State, clone.effects[i].State);
@@ -56,9 +56,9 @@ public class ActionTests
         public Inventory inventoryComponent;
 
         // States:
-        G_AtLocation at_location;
-        G_Inventory inventory;
-        G_BoolState is_able;
+        public G_AtLocation at_location;
+        public G_Inventory inventory;
+        public G_BoolState is_able;
 
         // Actions:
         // precondition action

@@ -228,6 +228,45 @@ namespace GOAP
                         .WithCost(10);
 
             #endregion
+
+            #region Goals
+
+            gather_wood = A.Goal("gather_wood").WithTrigger(A.Condition().WithState(woodstock_inventory)
+                                                                         .WithComparison(G_StateComparison.lesser)
+                                                                         .WithExpectedValue(new ItemStack(chopped_wood, woodStockMax)))      // the woodstock_inventory has to be less than full
+
+                                               .WithEffect(A.Condition().WithState(woodstock_inventory)
+                                                                        .WithComparison(G_StateComparison.equal)
+                                                                        .WithExpectedValue(new ItemStack(chopped_wood, woodStockMax)))      // to complete this for this test, we'll just filled up the woodstocl inventory of chopped wood
+
+                                               .WithPriority(1);        // there's only 1 goal for this test, so we don't need to worry about this now
+
+            #endregion
+
+
+            #region World State
+
+            npc_world_state = ScriptableObject.CreateInstance<G_WorldState>();
+
+            npc_world_state.states.Add(npc_inventory);
+            npc_world_state.states.Add(workshop_inventory);
+            npc_world_state.states.Add(woodstock_inventory);
+            npc_world_state.states.Add(tree_inventory);
+            npc_world_state.states.Add(shop_inventory);
+            npc_world_state.states.Add(at_location);
+
+            npc_world_state.actionPool.Add(deliver_wood);
+            npc_world_state.actionPool.Add(go_to_woodstock);
+            npc_world_state.actionPool.Add(chop_tree);
+            npc_world_state.actionPool.Add(go_to_tree);
+            npc_world_state.actionPool.Add(take_axe);
+            npc_world_state.actionPool.Add(go_to_workshop);
+            npc_world_state.actionPool.Add(buy_wood);
+            npc_world_state.actionPool.Add(go_to_shop);
+
+            npc_world_state.goals.Add(gather_wood);
+
+            #endregion
         }
 
     }

@@ -151,7 +151,26 @@ namespace GOAP
             {
                 unmetCount += 1;
             }
+        }
 
+        /// <summary>
+        /// Set the node state to closed, success, or fail, based on current conditions
+        /// </summary>
+        /// <param name="nodePool"></param>
+        public void ProcessNode (List<G_Node> nodePool)
+        {
+            if (unmetPreconditions > 0 && nodeActionPool.Count > 0)     // the node has been processed but there's still more planning to do
+            {
+                nodeState = G_NodeState.closed;
+            }
+            else if (unmetPreconditions == 0)       // successful node
+            {
+                nodeState = G_NodeState.success;
+            }
+            else if(unmetPreconditions > 0  && nodeActionPool.Count <= 0)
+            {
+                nodeState = G_NodeState.failed;
+            }
         }
 
         #endregion

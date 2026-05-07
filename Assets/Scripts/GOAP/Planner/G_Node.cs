@@ -157,7 +157,7 @@ namespace GOAP
         /// Set the node state to closed, success, or fail, based on current conditions
         /// </summary>
         /// <param name="nodePool"></param>
-        public void ProcessNode (List<G_Node> nodePool)
+        public void ProcessNode ()
         {
             if (unmetPreconditions > 0 && nodeActionPool.Count > 0)     // the node has been processed but there's still more planning to do
             {
@@ -171,6 +171,49 @@ namespace GOAP
             {
                 nodeState = G_NodeState.failed;
             }
+        }
+
+        public List<G_Node> GenerateChildNodes ()
+        {
+            List<G_Node> newNodes = new List<G_Node>();
+
+            for (int i = 0; i < nodeActionPool.Count; i ++)
+            {
+                G_Node newNode = TestActionForNewNode(nodeActionPool[i]);
+
+                if (newNode != null)
+                {
+                    newNodes.Add(newNode);
+                }
+            }
+
+            return newNodes;
+        }
+
+        G_Node TestActionForNewNode (G_Action action)
+        {
+            G_Node newNode = null;
+
+            List<G_Condition> clonedPreconditions = new List<G_Condition>();
+
+            for (int i = 0; i< preconditions.Count; i++)
+            {
+                clonedPreconditions.Add(G_Condition.Clone(preconditions[i]));
+            }
+
+            bool someConditionMet = action.TestEffectsAgainstPreconditions(clonedPreconditions);
+
+            if (someConditionMet)   // build new node
+            {
+                for (int i = 0; i < nodeAction.preconditions.Count; i++)        // Add the new actions preconditions to the current preconditions.. and pass that to the new node
+                {
+                    clonedPreconditions.Add(G_Condition.Clone(nodeAction.preconditions[i]));
+                }
+
+                newNode = new G_Node(this, action, hCost, nodeActionPool, clonedPreconditions, worldStateRef); // pass the preconditions to the new node
+            }
+
+            return newNode;
         }
 
         #endregion

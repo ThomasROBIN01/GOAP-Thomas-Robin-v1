@@ -216,6 +216,27 @@ namespace GOAP
             return newNode;
         }
 
+        public List<G_Action> ReturnPlan ()
+        {
+            List<G_Action> plan = new List<G_Action>();
+
+            plan = AddToPlan(plan);
+
+            return plan;
+        }
+
+        List<G_Action> AddToPlan(List<G_Action> plan)
+        {
+            plan.Add(nodeAction);       // add the current node action
+
+            if (parentNode != null && !parentNode.IsGoalNode)   // if the node is valid and is not the goal node, then, we return the plan
+            {
+                plan = parentNode.AddToPlan(plan);      // basically the parent node will call its parents node and keep going up the chain until it there's no parent node or the parent is the goal node
+            }
+
+            return plan;
+        }
+
         #endregion
     }
 }

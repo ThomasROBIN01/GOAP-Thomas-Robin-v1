@@ -28,8 +28,6 @@ public class NodeTests
 
         G_Node goalNode = new G_Node(testData.npc_world_state.actionPool, testData.gather_wood.goalEffects, testData.npc_world_state);
 
-
-
         G_Node normalNode = new G_Node(goalNode, testData.deliver_wood, goalNode.HCost, testData.npc_world_state.actionPool, goalNode.preconditions, testData.npc_world_state);
 
         G_Node testNode = testGoalNode ? goalNode : normalNode;     // if testNode = testGoalNode, then test Node = goalNode; if not testNode = normalNode
@@ -54,11 +52,42 @@ public class NodeTests
         Assert.AreEqual(testGoalNode, testNode.IsGoalNode);
     }
 
-    [TestCase(TestName = "0 preconditions met by worldState")]
-    [TestCase(TestName = "Some preconditions met by worldState")]
-    public void ProcessPreconditions()
+    [TestCase(1, TestName = "0 preconditions met by worldState")]
+    [TestCase(2, TestName = "Some preconditions met by worldState")]
+    [TestCase(3, TestName = "All preconditions met by worldState")]
+    public void ProcessPreconditions(int preconsMet)
     {
+        GatherWoodTestData testData = new GatherWoodTestData();
 
+        G_Node goalNode = new G_Node(testData.npc_world_state.actionPool, testData.gather_wood.goalEffects, testData.npc_world_state);
+
+        goalNode.preconditions[0].Meet();       // forcing it to be met to simulate correct planning
+
+        G_Node normalNode = new G_Node(goalNode, 
+                                       testData.deliver_wood, 
+                                       goalNode.HCost, 
+                                       testData.npc_world_state.actionPool, 
+                                       goalNode.preconditions, 
+                                       testData.npc_world_state,
+                                       false);      // false here is to avoid running the if(processUnmetPreconditions) in the G_Node Constructor
+
+        if (preconsMet >= 2)
+        {
+            testData.npc_inventory_component.AddToInventory(new ItemStack(testData.chopped_wood, 10));  // we meet one of the preconditions by changing the world state:
+                                                                                                        // in this case we add to the inventory 10 chopped woods
+        }
+        if (preconsMet == 3)    // if = 3, we also go into the previous if >=2, so run both
+        {
+            // As all preconditions are met, we also change the location state:
+            G_AtLocation locationState = testData.npc_world_state.states.Find((state) => state.name == testData.at_location.name) as G_AtLocation;
+
+            locationState.SetValue(testData.woodstock);
+        }
+
+        int unmetPreconCount = normalNode.ProcessPreconditions(normalNode.preconditions, normalNode.WorldStateRef);
+        int assertedRemainingPrecons = 3 -preconsMet;
+
+        Assert.AreEqual(assertedRemainingPrecons, unmetPreconCount);   
     }
 
     [TestCase(TestName = "Closed")]

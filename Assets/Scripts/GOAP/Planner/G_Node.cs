@@ -15,7 +15,7 @@ namespace GOAP
         }
 
         G_Node parentNode;
-        public G_Node Parent
+        public G_Node ParentNode
         {
             get { return parentNode; }
         }

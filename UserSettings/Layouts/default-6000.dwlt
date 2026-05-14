@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 99
+  controlID: 37
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 38
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -384,7 +384,7 @@ MonoBehaviour:
       uniqueId: '[GOAP-Thomas-Robin-v1][suite]'
       name: GOAP-Thomas-Robin-v1
       fullName: GOAP-Thomas-Robin-v1
-      resultStatus: 1
+      resultStatus: 0
       duration: 0.0649994
       messages: 
       output: 
@@ -396,11 +396,11 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1186
+    - id: 1189
       uniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
+      resultStatus: 0
       duration: 0.0649994
       messages: 
       output: 
@@ -426,7 +426,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1002
       uniqueId: 'Tests.dll/ActionTests/[Tests][ActionTests.ActionCloning]'
@@ -476,7 +476,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1002
       uniqueId: 'Tests.dll/AtLocationTests/[Tests][AtLocationTests.AtLocationClone]'
@@ -597,7 +597,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1003
       uniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.Clone]'
@@ -735,7 +735,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1126
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.AtLocationConditionCompare][suite]'
@@ -2755,7 +2755,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1010
       uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.Clone]'
@@ -3056,7 +3056,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1150
       uniqueId: 'Tests.dll/GoalTests/[Tests][GoalTests.CloneTest]'
@@ -3089,7 +3089,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1027
       uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.Clone]'
@@ -3390,7 +3390,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1159
       uniqueId: 'Tests.dll/InventoryStateTests/[Tests][InventoryStateTests.InventoryCloneTest]'
@@ -3529,7 +3529,7 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1186
+      parentId: 1189
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1185
       uniqueId: 'Tests.dll/LambdaTests/[Tests][LambdaTests.ListFind][suite]'
@@ -3683,6 +3683,56 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1183
       parentUniqueId: 'Tests.dll/LambdaTests/[Tests][LambdaTests.ListFind][suite]'
+    - id: 1186
+      uniqueId: 'Tests.dll/[Tests][NodeTests][suite]'
+      name: NodeTests
+      fullName: NodeTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1189
+      parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1187
+      uniqueId: 'Tests.dll/NodeTests/[Tests][NodeTests.NodeTestsSimplePasses]'
+      name: NodeTestsSimplePasses
+      fullName: NodeTests.NodeTestsSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1186
+      parentUniqueId: 'Tests.dll/[Tests][NodeTests][suite]'
+    - id: 1188
+      uniqueId: 'Tests.dll/NodeTests/[Tests][NodeTests.NodeTestsWithEnumeratorPasses]'
+      name: NodeTestsWithEnumeratorPasses
+      fullName: NodeTests.NodeTestsWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1186
+      parentUniqueId: 'Tests.dll/[Tests][NodeTests][suite]'
     m_ResultText: CloneTest (0.016s)
     m_ResultStacktrace: 
     m_TestListState:
@@ -4204,7 +4254,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/GOAP/Planner
+    - Assets/Tests/Edit Mode Tests
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -4214,7 +4264,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/GOAP/Planner
+  - Assets/Tests/Edit Mode Tests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\robint\Documents\GitHub\GOAP-Thomas-Robin-v1
   m_LockTracker:
@@ -4223,18 +4273,18 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 180}
     m_SelectedIDs:
-    - m_Data: 46272
+    - m_Data: 46244
     m_LastClickedID:
-      m_Data: 46272
+      m_Data: 46244
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45916
-    - m_Data: 45918
-    - m_Data: 45920
-    - m_Data: 45922
     - m_Data: 45924
     - m_Data: 45926
     - m_Data: 45928
+    - m_Data: 45930
+    - m_Data: 45932
+    - m_Data: 45934
+    - m_Data: 45936
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4267,13 +4317,13 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45916
-    - m_Data: 45918
-    - m_Data: 45920
-    - m_Data: 45922
     - m_Data: 45924
     - m_Data: 45926
     - m_Data: 45928
+    - m_Data: 45930
+    - m_Data: 45932
+    - m_Data: 45934
+    - m_Data: 45936
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4301,8 +4351,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 46678
-    m_LastClickedInstanceID: 46678
+    - m_Data: 38416
+    m_LastClickedInstanceID: 38416
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -4378,7 +4428,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 46678
+  m_LastInspectedObjectInstanceID: 38416
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -4430,8 +4480,6 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -8290
-      - m_Data: -6854
       - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0

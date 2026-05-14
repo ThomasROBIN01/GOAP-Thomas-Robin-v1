@@ -7,13 +7,6 @@ using GOAP;
 
 public class NodeTests
 {
-    // Process Node - get the node's planning result
-
-    // Generate child modes
-
-    // Return plan - return the whole plan as a list
-
-
     [TestCase(true, 0, 1, 1, TestName = "Goal Node")]
     [TestCase(false, 10, 3, 3, TestName = "Normal Node")]
     public void Constructor(bool testGoalNode, int hCost, int unmetCount, int preconCount)
@@ -157,11 +150,45 @@ public class NodeTests
     }
 
 
-    [TestCase(TestName = "Generates several nodes")]
-    [TestCase(TestName = "Fails to generate any node")]
-    public void GenerateChildNodes()
+    [TestCase(2, TestName = "Generates a node")]
+    [TestCase(5, TestName = "Generates multiple nodes")]
+    [TestCase(1, TestName = "Fails to generate any node")]
+    public void GenerateChildNodes(int endNodeCount)
     {
+        GatherWoodTestData testData = new GatherWoodTestData();
 
+        List<G_Action> actionPool = testData.npc_world_state.actionPool;
+
+        if(endNodeCount == 1)
+        {
+            actionPool.Clear();
+        }
+
+        G_Node goalNode = new G_Node(testData.npc_world_state.actionPool, testData.gather_wood.goalEffects, testData.npc_world_state);
+
+        List<G_Node> nodePool = new List<G_Node>();
+        nodePool.Add(goalNode);
+
+        List<G_Node> tempNodes = goalNode.GenerateChildNodes();
+
+        nodePool.AddRange(tempNodes);
+
+        if (endNodeCount == 5)
+        {
+            tempNodes = nodePool[1].GenerateChildNodes();
+            nodePool.AddRange(tempNodes);
+
+            for (int i = 0; i < nodePool.Count; i++)
+            {
+                if(nodePool[i].IsGoalNode)
+                {
+                    continue;
+                }
+                Debug.Log($"{nodePool[i].NodeAction.name}");
+            }
+        }
+
+        Assert.AreEqual(endNodeCount, nodePool.Count);
     }
 
     [TestCase(TestName = "Standard Plan")]

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -6,16 +7,9 @@ using GOAP;
 
 public class NodeTests
 {
-    // Process preconditions test - checking for fulfilled preconditions from the world state
-
-
     // Process Node - get the node's planning result
 
-
-
     // Generate child modes
-
-
 
     // Return plan - return the whole plan as a list
 
@@ -90,11 +84,75 @@ public class NodeTests
         Assert.AreEqual(assertedRemainingPrecons, unmetPreconCount);   
     }
 
-    [TestCase(TestName = "Closed")]
-    [TestCase(TestName = "Success")]
-    [TestCase(TestName = "Failure")]
-    public void ProcessNode()
+    [TestCase(G_NodeState.closed, TestName = "Closed")]
+    [TestCase(G_NodeState.success, TestName = "Success")]
+    [TestCase(G_NodeState.failed, TestName = "Failure")]
+    public void ProcessNode(G_NodeState targetState)
     {
+        GatherWoodTestData testData = new GatherWoodTestData();
+
+        G_Node goalNode = new G_Node(testData.npc_world_state.actionPool, testData.gather_wood.goalEffects, testData.npc_world_state);
+
+        G_Node normalNode = null;
+
+        G_AtLocation locationState = null;
+
+        switch (targetState)
+        {
+            case G_NodeState.success:
+
+                goalNode.preconditions[0].Meet();
+
+                // Success state: we change the world state to have the precondictions meet:
+                testData.npc_inventory_component.AddToInventory(new ItemStack(testData.chopped_wood, 10));  // we meet one of the preconditions by changing the world state:
+                                                                                                            // in this case we add to the inventory 10 chopped woods
+
+                // As all preconditions are met, we also change the location state:
+                locationState = testData.npc_world_state.states.Find((state) => state.name == testData.at_location.name) as G_AtLocation;
+
+                locationState.SetValue(testData.woodstock);
+
+                normalNode = new G_Node(goalNode,
+                               testData.deliver_wood,
+                               goalNode.HCost,
+                               testData.npc_world_state.actionPool,
+                               goalNode.preconditions,
+                               testData.npc_world_state);
+                break;
+
+            case G_NodeState.closed:
+
+                // Closed is the same as Success but run without unmet preconditions:
+                testData.npc_inventory_component.AddToInventory(new ItemStack(testData.chopped_wood, 10));  // we meet one of the preconditions by changing the world state:
+                                                                                                            // in this case we add to the inventory 10 chopped woods
+
+                // As all preconditions are met, we also change the location state:
+                locationState = testData.npc_world_state.states.Find((state) => state.name == testData.at_location.name) as G_AtLocation;
+
+                locationState.SetValue(testData.woodstock);
+
+                normalNode = new G_Node(goalNode,
+                               testData.deliver_wood,
+                               goalNode.HCost,
+                               testData.npc_world_state.actionPool,
+                               goalNode.preconditions,
+                               testData.npc_world_state);
+                break;
+
+            case G_NodeState.failed:
+
+                normalNode = new G_Node(goalNode,
+                   testData.deliver_wood,
+                   goalNode.HCost,
+                   new List<G_Action>(),        // we basically rebuild the normal node to give it empty actions: 0 actions available
+                   goalNode.preconditions,      // it should still have unmet preconditions
+                   testData.npc_world_state);
+                break;
+        }
+
+        normalNode.ProcessNode();
+
+        Assert.AreEqual(targetState, normalNode.NodeState);
 
     }
 

@@ -110,6 +110,10 @@ namespace GOAP
             met = true;
         }
 
+        public void UnMeet()        // this is mostly a function for tests purposes
+        {
+            met = false;
+        }
 
         public static G_Condition Clone (G_Condition conditionToClone)
         {

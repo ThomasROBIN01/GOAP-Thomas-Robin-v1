@@ -112,7 +112,7 @@ namespace GOAP
             woodstock_inventory = An.InventoryState("woodstock_inventory").WithInventory(woodstock_inventory_component);
             tree_inventory = An.InventoryState("tree_inventory").WithInventory(tree_inventory_component);
             shop_inventory = An.InventoryState("shop_inventory").WithInventory(shop_inventory_component);
-            at_location = An.AtLocation().WithName("at_location");
+            at_location = An.AtLocation().WithName("at_location").WithLocationType(null);
 
             #endregion
 

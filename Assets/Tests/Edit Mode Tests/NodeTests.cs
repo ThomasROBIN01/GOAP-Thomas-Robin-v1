@@ -6,9 +6,6 @@ using GOAP;
 
 public class NodeTests
 {
-    // constructor for normal nodes and for goal nodes
-
-
     // Process preconditions test - checking for fulfilled preconditions from the world state
 
 
@@ -23,23 +20,38 @@ public class NodeTests
     // Return plan - return the whole plan as a list
 
 
-    [TestCase(TestName = "Goal Node")]
-    [TestCase(TestName = "Normal Node")]
-    public void Constructor()
+    [TestCase(true, 0, 1, 1, TestName = "Goal Node")]
+    [TestCase(false, 10, 3, 3, TestName = "Normal Node")]
+    public void Constructor(bool testGoalNode, int hCost, int unmetCount, int preconCount)
     {
         GatherWoodTestData testData = new GatherWoodTestData();
 
         G_Node goalNode = new G_Node(testData.npc_world_state.actionPool, testData.gather_wood.goalEffects, testData.npc_world_state);
 
-        Assert.NotNull(goalNode);
-        Assert.AreEqual(G_NodeState.open, goalNode.NodeState);
-        Assert.AreEqual(null, goalNode.ParentNode);
-        Assert.AreEqual(null, goalNode.NodeAction);
-        Assert.AreEqual(0, goalNode.HCost);
-        Assert.AreEqual(1, goalNode.UnmetPreconditions);
-        Assert.NotNull(goalNode.preconditions);
-        Assert.AreEqual(goalNode.preconditions.Count, 1);
-        Assert.AreEqual(true, goalNode.IsGoalNode);
+
+
+        G_Node normalNode = new G_Node(goalNode, testData.deliver_wood, goalNode.HCost, testData.npc_world_state.actionPool, goalNode.preconditions, testData.npc_world_state);
+
+        G_Node testNode = testGoalNode ? goalNode : normalNode;     // if testNode = testGoalNode, then test Node = goalNode; if not testNode = normalNode
+
+        if(testGoalNode)
+        {
+            testNode = goalNode;
+        }
+        else
+        {
+            testNode = normalNode;
+        }
+
+        Assert.NotNull(testNode);
+        Assert.AreEqual(G_NodeState.open, testNode.NodeState);
+        Assert.AreEqual(testGoalNode, testNode.ParentNode == null);
+        Assert.AreEqual(testGoalNode, testNode.NodeAction == null);
+        Assert.AreEqual(hCost, testNode.HCost);
+        Assert.AreEqual(unmetCount, testNode.UnmetPreconditions);
+        Assert.AreEqual(preconCount, testNode.preconditions.Count);
+        Assert.NotNull(testNode.preconditions);
+        Assert.AreEqual(testGoalNode, testNode.IsGoalNode);
     }
 
     [TestCase(TestName = "0 preconditions met by worldState")]

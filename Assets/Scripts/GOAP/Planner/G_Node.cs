@@ -30,6 +30,10 @@ namespace GOAP
         public int HCost
         { get { return hCost; } }
 
+        int priority = 0;
+        public int Priority
+        { get { return priority; } }
+
         int unmetPreconditions = 0;
         public int UnmetPreconditions
         { get { return unmetPreconditions; } }
@@ -90,8 +94,9 @@ namespace GOAP
 
             if (nodeAction != null)
             {
-                // hCost                        // we put this here mostly for our unit test
+                // we put this here mostly for our unit test
                 this.hCost = hCost + nodeAction.GetCost();
+                this.priority = nodeAction.GetPriority();
 
                 for (int i = 0; i < nodeAction.preconditions.Count; i++)        // Add the new actions preconditions to the current preconditions.. and pass that to the new node
                 {

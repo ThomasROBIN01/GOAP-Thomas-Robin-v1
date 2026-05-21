@@ -35,7 +35,7 @@ public class ActionTests
         }
 
         Assert.AreEqual(breadData.slice_bread.GetCost(), clone.GetCost());
-
+        Assert.AreEqual(breadData.slice_bread.GetPriority(), clone.GetPriority());
 
     }
 

@@ -10,6 +10,8 @@ namespace GOAP
         #region Values
         internal int cost = 10;    // internal means it's accessible internally within this class and its driving classes, because we will make child classes of G_Action
 
+        private int priority = 0;
+
         public List<G_Condition> preconditions = new List<G_Condition>();
 
         public List<G_Condition> effects = new List<G_Condition>();
@@ -17,12 +19,14 @@ namespace GOAP
         public void Construct (string name,
             List<G_Condition> preconditions,
             List<G_Condition> effects,
-            int cost = 10)
+            int cost = 10,
+            int priority = 0)
         {
             this.name = name;
             this.preconditions = preconditions;
             this.effects = effects;
             this.cost = cost;
+            this.priority = priority;
         }
         #endregion
 
@@ -73,6 +77,11 @@ namespace GOAP
             return cost; 
         }
 
+        public virtual int GetPriority()        // virutal like this we can overwrite this.
+        {
+            return priority;
+        }
+
         /// <summary>
         /// Creates a duplicate of this action instance
         /// </summary>
@@ -96,7 +105,8 @@ namespace GOAP
             clonedAction.Construct(this.name,
                 clonedPreconditions,
                 clonedEffects,
-                this.cost);
+                this.cost,
+                this.priority);
 
             return clonedAction;
         }

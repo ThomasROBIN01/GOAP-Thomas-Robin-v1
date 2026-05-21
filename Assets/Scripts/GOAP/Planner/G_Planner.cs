@@ -101,7 +101,8 @@ namespace GOAP
             return pool.OrderBy((node) => node.NodeState)       // node is a parameter name representing each node in the pool                                                                
                                                                 // OrderBy will use the number that have been attributed in the G_NodeState class:
                                                                 //      open = 0, closed = 1, failed = 2, success = 3
-                .ThenBy((node) => node.HCost)           // so we order these node by state, then by hCost
+                .ThenBy((node) => node.Priority)        // so we order these nodeS by state, then by priority,
+                .ThenBy((node) => node.HCost)           // then by hCost
                                                         // the reason we order them by state first, is to avoid process any node that has already been processed
 
                 .ToList();         // node is a G_Node, so we need to convert it to a List with ToList() to be able to use that OrderBy method

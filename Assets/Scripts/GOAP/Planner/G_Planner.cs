@@ -1,6 +1,8 @@
 using UnityEngine;
 using GOAP;
 using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
 
 namespace GOAP
 {
@@ -62,13 +64,32 @@ namespace GOAP
                     nodePool.AddRange(currentNode.GenerateChildNodes());
 
                     // Sort the node loop
+                    nodePool = SortPool(nodePool);
+
+                    if (nodePool[0].NodeState != G_NodeState.open)        // if after sorting the nodes, the first one is not opened, this means there is no opened node left, so it fails
+                    {
+                        success = false;
+                        break;
+                    }
 
                     // Continue loop
                 }
             }
-
             return success;
         }
+
+
+        public static List<G_Node> SortPool(List<G_Node> pool)
+        {
+            return pool.OrderBy((node) => node.NodeState)       // node is a parameter name representing each node in the pool                                                                
+                                                                // OrderBy will use the number that have been attributed in the G_NodeState class:
+                                                                //      open = 0, closed = 1, failed = 2, success = 3
+                .ThenBy((node) => node.HCost)           // so we order these node by state, then by hCost
+                                                        // the reason we order them by state first, is to avoid process any node that has already been processed
+
+                .ToList();         // node is a G_Node, so we need to convert it to a List with ToList() to be able to use that OrderBy method
+        }
+
     }
 
 }

@@ -76,9 +76,6 @@ namespace GOAP
             // action
             this.nodeAction = nodeAction;
 
-            // hCost
-            this.hCost = hCost + nodeAction.GetCost();
-
             // action pool
             this.nodeActionPool = new List<G_Action>(nodeActionPool);       // it will create a clone of the list nodeActionPool, so like this, we don't modify it
             this.nodeActionPool.Remove(this.nodeAction);                    // make sure we remove the action, so we don't reuse and replan it
@@ -91,9 +88,15 @@ namespace GOAP
 
             nodeState = G_NodeState.open;               // initialising to make sure the nodeState is opened
 
-            for (int i = 0; i < nodeAction.preconditions.Count; i++)        // Add the new actions preconditions to the current preconditions.. and pass that to the new node
+            if (nodeAction != null)
             {
-                this.preconditions.Add(G_Condition.Clone(nodeAction.preconditions[i]));
+                // hCost                        // we put this here mostly for our unit test
+                this.hCost = hCost + nodeAction.GetCost();
+
+                for (int i = 0; i < nodeAction.preconditions.Count; i++)        // Add the new actions preconditions to the current preconditions.. and pass that to the new node
+                {
+                    this.preconditions.Add(G_Condition.Clone(nodeAction.preconditions[i]));
+                }
             }
 
             if(processUnmetPreconditions)
@@ -233,19 +236,30 @@ namespace GOAP
 
             plan = AddToPlan(plan);
 
+            if (plan != null)
+            {
+                plan.Reverse();     // it plans it from the latest to the first, and we want the opposite
+            }
+
             return plan;
         }
 
         List<G_Action> AddToPlan(List<G_Action> plan)
         {
+            // Debug.Log(nodeAction.name + " was planned");
             plan.Add(nodeAction);       // add the current node action
 
-            if (parentNode != null && !parentNode.IsGoalNode)   // if the node is valid and is not the goal node, then, we return the plan
+            if (!parentNode.IsGoalNode && parentNode != null && nodeAction != null)   // if the node is valid and is not the goal node, then, we return the plan
             {
                 plan = parentNode.AddToPlan(plan);      // basically the parent node will call its parents node and keep going up the chain until it there's no parent node or the parent is the goal node
             }
+            else if (!IsGoalNode && nodeAction == null)
+            {
+                plan = null;
+                Debug.LogWarning($"Node action was null, returning null plan");
+            }
 
-            return plan;
+                return plan;
         }
 
         #endregion

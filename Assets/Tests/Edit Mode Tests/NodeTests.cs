@@ -191,10 +191,81 @@ public class NodeTests
         Assert.AreEqual(endNodeCount, nodePool.Count);
     }
 
-    [TestCase(TestName = "Standard Plan")]
-    [TestCase(TestName = "Null action in middle")]
-    public void ReturnPlan()
+
+    [TestCase(false, TestName = "Standard Plan")]
+    [TestCase(true, TestName = "Null action in middle")]
+    public void ReturnPlan(bool hasNullAction)
     {
+        GatherWoodTestData testData = new GatherWoodTestData();
+
+        G_Node goalNode = new G_Node(testData.npc_world_state.actionPool, testData.gather_wood.goalEffects, testData.npc_world_state);
+
+        G_Node deliver_wood_node = new G_Node(goalNode, testData.deliver_wood, goalNode.HCost, testData.npc_world_state.actionPool, goalNode.preconditions, testData.npc_world_state);
+
+        G_Node go_to_woodstock_node = new G_Node(deliver_wood_node, 
+                                                 testData.go_to_woodstock,
+                                                 deliver_wood_node.HCost,
+                                                 testData.npc_world_state.actionPool,
+                                                 deliver_wood_node.preconditions,
+                                                 testData.npc_world_state);
+
+        G_Node chop_tree_node = new G_Node(go_to_woodstock_node,
+                                           testData.chop_tree,
+                                           go_to_woodstock_node.HCost,
+                                           testData.npc_world_state.actionPool,
+                                           go_to_woodstock_node.preconditions,
+                                           testData.npc_world_state);
+
+        G_Node go_to_tree_node = new G_Node(chop_tree_node,
+                                            hasNullAction ? null : testData.go_to_tree,     // if hasNullAction is true, this parameter = null, if false, we'll use testData.go_to_tree
+                                            chop_tree_node.HCost,
+                                            testData.npc_world_state.actionPool,
+                                            chop_tree_node.preconditions,
+                                            testData.npc_world_state);
+
+        G_Node take_axe_node = new G_Node(go_to_tree_node,
+                                          testData.take_axe,
+                                          go_to_tree_node.HCost,
+                                          testData.npc_world_state.actionPool,
+                                          go_to_tree_node.preconditions,
+                                          testData.npc_world_state);
+
+        G_Node go_to_workshop_node = new G_Node(take_axe_node,
+                                                testData.go_to_workshop,
+                                                take_axe_node.HCost,
+                                                testData.npc_world_state.actionPool,
+                                                take_axe_node.preconditions,
+                                                testData.npc_world_state);
+
+
+        List<G_Action> plan = go_to_workshop_node.ReturnPlan();
+
+        /*
+            public G_Action deliver_wood;
+            public G_Action go_to_woodstock;
+            public G_Action chop_tree;
+            public G_Action go_to_tree;
+            public G_Action take_axe;
+            public G_Action go_to_workshop;
+        */
+
+        if (!hasNullAction)
+        {
+            Assert.AreEqual(true, plan != null);
+            Assert.AreEqual(6, plan.Count);
+
+            Assert.AreEqual("deliver_wood", plan[0].name);
+            Assert.AreEqual("go_to_woodstock", plan[1].name);
+            Assert.AreEqual("chop_tree", plan[2].name);
+            Assert.AreEqual("go_to_tree", plan[3].name);
+            Assert.AreEqual("take_axe", plan[4].name);
+            Assert.AreEqual("go_to_workshop", plan[5].name);
+        }
+        else
+        {
+            Assert.AreEqual(true, plan == null);
+        }
+        
 
     }
 }

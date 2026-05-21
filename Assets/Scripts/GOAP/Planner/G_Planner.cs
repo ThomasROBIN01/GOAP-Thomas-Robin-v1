@@ -24,9 +24,14 @@ namespace GOAP
 
             G_Node currentNode = null;
 
+            int poolCounter = 0;
+
             //while plan not found
             while (true)
             {
+                poolCounter++;
+                // Debug.Log($"Iteration: {poolCounter} =============================================");
+
                 //  get cheapest node
                 currentNode = nodePool[0];
 
@@ -65,6 +70,18 @@ namespace GOAP
 
                     // Sort the node loop
                     nodePool = SortPool(nodePool);
+
+                    //for (int i = 0; i < nodePool.Count; i++)
+                    //{
+                    //    if (nodePool[i].IsGoalNode)
+                    //    {
+                    //        Debug.Log($"Node: {i} goal node");
+                    //    }
+                    //    else
+                    //    {
+                    //        Debug.Log($"Node: {i} {nodePool[i].NodeAction.name} state {nodePool[i].NodeState} cost {nodePool[i].HCost}");
+                    //    }
+                    //}
 
                     if (nodePool[0].NodeState != G_NodeState.open)        // if after sorting the nodes, the first one is not opened, this means there is no opened node left, so it fails
                     {

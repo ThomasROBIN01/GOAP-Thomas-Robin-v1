@@ -236,10 +236,10 @@ namespace GOAP
 
             plan = AddToPlan(plan);
 
-            if (plan != null)
-            {
-                plan.Reverse();     // it plans it from the latest to the first, and we want the opposite
-            }
+            //if (plan != null)
+            //{
+            //    plan.Reverse();     // it plans it from the latest to the first, and we want the opposite
+            //}
 
             return plan;
         }

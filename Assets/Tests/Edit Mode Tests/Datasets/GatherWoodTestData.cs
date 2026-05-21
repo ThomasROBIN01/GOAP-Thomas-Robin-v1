@@ -100,7 +100,7 @@ namespace GOAP
             tree_inventory_component = tree_object.AddComponent<Inventory>();
             workshop_inventory_component = workshop_object.AddComponent<Inventory>();
             woodstock_inventory_component = woodstock_object.AddComponent<Inventory>();
-            shop_inventory_component = shop_object.AddComponent<Inventory>();
+            shop_inventory_component = shop_object.AddComponent<Inventory>(); 
 
             #endregion
 
@@ -267,6 +267,13 @@ namespace GOAP
             npc_world_state.goals.Add(gather_wood);
 
             #endregion
+        }
+
+        public void AddDataForStandardTest ()
+        {
+            workshop_inventory_component.AddToInventory(new ItemStack(axe,1));
+            tree_inventory_component.AddToInventory(new ItemStack(chopped_wood, 10));
+            shop_inventory_component.AddToInventory(new ItemStack(chopped_wood, 10));
         }
 
     }

@@ -198,8 +198,8 @@ namespace GOAP
                                                                            .WithExpectedValue(ItemStack.EmptyStack(chopped_wood)))   // we need the npc inventory to have no chopped wood to be able to buy some
 
                                             .WithPrecondition(A.Condition().WithState(npc_inventory)
-                                                                           .WithComparison(G_StateComparison.greater)
-                                                                           .WithExpectedValue(ItemStack.EmptyStack(money)))   // we also need the npc inventory to have some money (>0)
+                                                                           .WithComparison(G_StateComparison.greaterOrEqual)
+                                                                           .WithExpectedValue(new ItemStack(money, 1)))   // we also need the npc inventory to have some money (>0)
 
                                             .WithPrecondition(A.Condition().WithState(shop_inventory)
                                                                            .WithComparison(G_StateComparison.greater)
@@ -269,12 +269,16 @@ namespace GOAP
             #endregion
         }
 
-        public void AddDataForStandardTest ()
+        public void AddDataForTest (bool hasShop)
         {
             workshop_inventory_component.AddToInventory(new ItemStack(axe,1));
             tree_inventory_component.AddToInventory(new ItemStack(chopped_wood, 10));
-            shop_inventory_component.AddToInventory(new ItemStack(chopped_wood, 10));
-        }
 
+            if (hasShop)
+            {
+                shop_inventory_component.AddToInventory(new ItemStack(chopped_wood, 10));
+                npc_inventory_component.AddToInventory(new ItemStack(money, 1));
+            }
+        }
     }
 }

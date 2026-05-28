@@ -162,7 +162,12 @@ namespace GOAP
         {
             return state != null && state.isLocal;
         }
+        #endregion
 
+
+        #region Editor
+
+        [SerializeField] bool editorActive = false;
 
         #endregion
     }

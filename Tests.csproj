@@ -56,6 +56,7 @@
     <Compile Include="Assets\Tests\Edit Mode Tests\BoolStateTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\AtLocationTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\LambdaTests.cs" />
+    <Compile Include="Assets\Tests\Edit Mode Tests\LocalStateTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\GoalTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\NodeTests.cs" />
     <Compile Include="Assets\Tests\Edit Mode Tests\ActionTests.cs" />

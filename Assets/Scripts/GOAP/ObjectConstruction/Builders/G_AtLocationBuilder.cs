@@ -12,22 +12,23 @@ namespace GOAP
         // any values to be transferred into the build object
         string name = "";
         LocationType value;
+        bool isLocal = false;
 
         // Constructor
-        public G_AtLocationBuilder()
+        public G_AtLocationBuilder(string name)
         {
-
+            this.name = name;
         }
         #endregion
 
         #region With Functions
         // with functions
-        public G_AtLocationBuilder WithName(string name)
-        {
-            this.name = name;
-            return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
-                                // Instead, using return.this allows to chain on to the end of it. 
-        }
+        //public G_AtLocationBuilder WithName(string name)
+        //{
+        //    this.name = name;
+        //    return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
+        //                        // Instead, using return.this allows to chain on to the end of it. 
+        //}
 
         public G_AtLocationBuilder WithLocationType(LocationType value)
         {
@@ -36,6 +37,11 @@ namespace GOAP
                                 // Instead, using return.this allows to chain on to the end of it. 
         }
 
+        public G_AtLocationBuilder IsLocal(bool isLocal)
+        {
+            this.isLocal = isLocal;
+            return this;
+        }
         #endregion
 
         #region ObjectCreation
@@ -47,7 +53,7 @@ namespace GOAP
         public G_AtLocation Build()         
         {
             G_AtLocation state = ScriptableObject.CreateInstance<G_AtLocation>();
-            state.Construct(name, value);
+            state.Construct(name, value, isLocal);
             return state;
         }
 

@@ -11,9 +11,10 @@ namespace GOAP
 
         #region Basic Controls
 
-        public override void Construct(string name, object value)
+        public override void Construct(string name, object value, bool isLocal)
         {
             this.name = name;
+            this.isLocal = isLocal;
             SetValue(value);
         }
 

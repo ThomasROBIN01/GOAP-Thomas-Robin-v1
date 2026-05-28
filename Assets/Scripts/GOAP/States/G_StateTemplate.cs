@@ -10,9 +10,10 @@ namespace GOAP
 
         #region Basic Controls
 
-        public override void Construct(string name, object value)       // virtual type to be overwritten by inheriting classes
+        public override void Construct(string name, object value, bool isLocal)
         {
-            this.name = name;   // we didn't declare this name variable at the beginning, because the "object" type contain by default a name, which we are referencing here.
+            this.name = name;
+            this.isLocal = isLocal;
             SetValue(value);
         }
 

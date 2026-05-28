@@ -12,22 +12,23 @@ namespace GOAP
         // any values to be transferred into the build object
         string name = "";
         int value;
+        bool isLocal = false;
 
         // Constructor
-        public G_IntStateBuilder()
+        public G_IntStateBuilder(string name)
         {
-
+            this.name = name;
         }
         #endregion
 
         #region With Functions
         // with functions
-        public G_IntStateBuilder WithName(string name)
-        {
-            this.name = name;
-            return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
-                                // Instead, using return.this allows to chain on to the end of it. 
-        }
+        //public G_IntStateBuilder WithName(string name)
+        //{
+        //    this.name = name;
+        //    return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
+        //                        // Instead, using return.this allows to chain on to the end of it. 
+        //}
 
         public G_IntStateBuilder WithValue(int value)
         {
@@ -36,6 +37,11 @@ namespace GOAP
                                 // Instead, using return.this allows to chain on to the end of it. 
         }
 
+        public G_IntStateBuilder IsLocal(bool isLocal)
+        {
+            this.isLocal = isLocal;
+            return this;
+        }
         #endregion
 
         #region ObjectCreation
@@ -47,7 +53,7 @@ namespace GOAP
         public G_IntState Build()         
         {
             G_IntState state = ScriptableObject.CreateInstance<G_IntState>();
-            state.Construct(name, value);
+            state.Construct(name, value, isLocal);
 
             return state;
         }

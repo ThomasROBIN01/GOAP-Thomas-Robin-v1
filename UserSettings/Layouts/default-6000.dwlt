@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1918
     height: 980
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 37
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -122,14 +122,14 @@ MonoBehaviour:
     y: 594
     width: 1097
     height: 330
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
   m_Spl:
-    ID: 131
+    ID: 108
     splitterInitialOffset: 677
     currentActiveSplitter: -1
     realSizes:
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 12}
     runProgress:
-      RunGuid: 2575832a-2ef2-4c84-8a04-e17a4f7f76c7
+      RunGuid: 465084d1-0ab3-47bb-a95d-0bb0d7a7dcae
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -360,9 +360,9 @@ MonoBehaviour:
           assemblyNames: []
         filters:
         - testMode: 1
-          testNames:
-          - NodeTests.GenerateChildNodes
-          groupNames: []
+          testNames: []
+          groupNames:
+          - .*
           categoryNames: []
           assemblyNames: []
         runSynchronously: 0
@@ -376,7 +376,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 1.0000004
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -385,7 +385,7 @@ MonoBehaviour:
       name: GOAP-Thomas-Robin-v1
       fullName: GOAP-Thomas-Robin-v1
       resultStatus: 1
-      duration: 0.1165258
+      duration: 0.0831522
       messages: 
       output: 
       stacktrace: 
@@ -396,12 +396,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1205
+    - id: 1209
       uniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.1165258
+      duration: 0.0831522
       messages: 
       output: 
       stacktrace: 
@@ -410,14 +410,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1213
+      parentId: 1217
       parentUniqueId: '[GOAP-Thomas-Robin-v1][suite]'
     - id: 1001
       uniqueId: 'Tests.dll/[Tests][ActionTests][suite]'
       name: ActionTests
       fullName: ActionTests
       resultStatus: 1
-      duration: 0.00067670003
+      duration: 0.0186926
       messages: 
       output: 
       stacktrace: 
@@ -426,14 +426,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1002
       uniqueId: 'Tests.dll/ActionTests/[Tests][ActionTests.ActionCloning]'
       name: ActionCloning
       fullName: ActionTests.ActionCloning
       resultStatus: 1
-      duration: 0.0003378
+      duration: 0.0178848
       messages: 
       output: 
       stacktrace: 
@@ -450,7 +450,7 @@ MonoBehaviour:
       name: TestEffectAgainstPreconditions
       fullName: ActionTests.TestEffectAgainstPreconditions
       resultStatus: 1
-      duration: 0.0003389
+      duration: 0.0008078
       messages: 
       output: 
       stacktrace: 
@@ -467,7 +467,7 @@ MonoBehaviour:
       name: AtLocationTests
       fullName: AtLocationTests
       resultStatus: 1
-      duration: 0.0014269
+      duration: 0.0012983
       messages: 
       output: 
       stacktrace: 
@@ -476,14 +476,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1002
       uniqueId: 'Tests.dll/AtLocationTests/[Tests][AtLocationTests.AtLocationClone]'
       name: AtLocationClone
       fullName: AtLocationTests.AtLocationClone
       resultStatus: 1
-      duration: 0.0004876
+      duration: 0.0004767
       messages: 
       output: 
       stacktrace: 
@@ -500,7 +500,7 @@ MonoBehaviour:
       name: AtLocationTestState
       fullName: AtLocationTests.AtLocationTestState
       resultStatus: 1
-      duration: 0.00093930005
+      duration: 0.0008216
       messages: 
       output: 
       stacktrace: 
@@ -517,7 +517,7 @@ MonoBehaviour:
       name: State Tree vs Expected Tree
       fullName: AtLocationTests.State Tree vs Expected Tree
       resultStatus: 1
-      duration: 0.0006372
+      duration: 0.0005058
       messages: 
       output: 
       stacktrace: 
@@ -535,7 +535,7 @@ MonoBehaviour:
       name: State Null vs Expected Null
       fullName: AtLocationTests.State Null vs Expected Null
       resultStatus: 1
-      duration: 0.0001187
+      duration: 0.0001068
       messages: 
       output: 
       stacktrace: 
@@ -553,7 +553,7 @@ MonoBehaviour:
       name: State Tree vs Expected Null
       fullName: AtLocationTests.State Tree vs Expected Null
       resultStatus: 1
-      duration: 0.0000916
+      duration: 0.0001302
       messages: 
       output: 
       stacktrace: 
@@ -571,7 +571,7 @@ MonoBehaviour:
       name: State Null vs Expected Tree
       fullName: AtLocationTests.State Null vs Expected Tree
       resultStatus: 1
-      duration: 0.0000918
+      duration: 0.0000788
       messages: 
       output: 
       stacktrace: 
@@ -588,7 +588,7 @@ MonoBehaviour:
       name: BoolStateTests
       fullName: BoolStateTests
       resultStatus: 1
-      duration: 0.0017014
+      duration: 0.0018037
       messages: 
       output: 
       stacktrace: 
@@ -597,14 +597,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1003
       uniqueId: 'Tests.dll/BoolStateTests/[Tests][BoolStateTests.Clone]'
       name: Clone
       fullName: BoolStateTests.Clone
       resultStatus: 1
-      duration: 0.000783
+      duration: 0.000831
       messages: 
       output: 
       stacktrace: 
@@ -621,7 +621,7 @@ MonoBehaviour:
       name: Construct
       fullName: BoolStateTests.Construct
       resultStatus: 1
-      duration: 0.0001588
+      duration: 0.0001735
       messages: 
       output: 
       stacktrace: 
@@ -638,7 +638,7 @@ MonoBehaviour:
       name: TestState
       fullName: BoolStateTests.TestState
       resultStatus: 1
-      duration: 0.0007596
+      duration: 0.0007992
       messages: 
       output: 
       stacktrace: 
@@ -655,7 +655,7 @@ MonoBehaviour:
       name: Equals - True
       fullName: BoolStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0005044
+      duration: 0.0005179
       messages: 
       output: 
       stacktrace: 
@@ -673,7 +673,7 @@ MonoBehaviour:
       name: Equals - False
       fullName: BoolStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0000985
+      duration: 0.0001037
       messages: 
       output: 
       stacktrace: 
@@ -691,7 +691,7 @@ MonoBehaviour:
       name: Not Equals - True
       fullName: BoolStateTests.Not Equals - True
       resultStatus: 1
-      duration: 0.00008
+      duration: 0.0000961
       messages: 
       output: 
       stacktrace: 
@@ -709,7 +709,7 @@ MonoBehaviour:
       name: Not Equals - False
       fullName: BoolStateTests.Not Equals - False
       resultStatus: 1
-      duration: 0.0000767
+      duration: 0.0000815
       messages: 
       output: 
       stacktrace: 
@@ -726,7 +726,7 @@ MonoBehaviour:
       name: ConditionTests
       fullName: ConditionTests
       resultStatus: 1
-      duration: 0.0265948
+      duration: 0.0273191
       messages: 
       output: 
       stacktrace: 
@@ -735,14 +735,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1126
       uniqueId: 'Tests.dll/ConditionTests/[Tests][ConditionTests.AtLocationConditionCompare][suite]'
       name: AtLocationConditionCompare
       fullName: ConditionTests.AtLocationConditionCompare
       resultStatus: 1
-      duration: 0.0013086
+      duration: 0.0010856
       messages: 
       output: 
       stacktrace: 
@@ -759,7 +759,7 @@ MonoBehaviour:
       name: Equals tree vs Equals tree
       fullName: ConditionTests.Equals tree vs Equals tree
       resultStatus: 1
-      duration: 0.0007156
+      duration: 0.000488
       messages: 
       output: 
       stacktrace: 
@@ -777,7 +777,7 @@ MonoBehaviour:
       name: Equals null vs Equals null
       fullName: ConditionTests.Equals null vs Equals null
       resultStatus: 1
-      duration: 0.0001436
+      duration: 0.0001289
       messages: 
       output: 
       stacktrace: 
@@ -795,7 +795,7 @@ MonoBehaviour:
       name: Equals null vs Equals tree
       fullName: ConditionTests.Equals null vs Equals tree
       resultStatus: 1
-      duration: 0.0001206
+      duration: 0.000112
       messages: 
       output: 
       stacktrace: 
@@ -813,7 +813,7 @@ MonoBehaviour:
       name: Equals tree vs Equals null
       fullName: ConditionTests.Equals tree vs Equals null
       resultStatus: 1
-      duration: 0.0001065
+      duration: 0.0001079
       messages: 
       output: 
       stacktrace: 
@@ -831,7 +831,7 @@ MonoBehaviour:
       name: Greater tree vs Equals tree
       fullName: ConditionTests.Greater tree vs Equals tree
       resultStatus: 1
-      duration: 0.0001102
+      duration: 0.0001228
       messages: 
       output: 
       stacktrace: 
@@ -849,7 +849,7 @@ MonoBehaviour:
       name: Greater null vs Equals null
       fullName: ConditionTests.Greater null vs Equals null
       resultStatus: 1
-      duration: 0.0001121
+      duration: 0.000126
       messages: 
       output: 
       stacktrace: 
@@ -866,7 +866,7 @@ MonoBehaviour:
       name: CompareConditionToEffect_Bool
       fullName: ConditionTests.CompareConditionToEffect_Bool
       resultStatus: 1
-      duration: 0.00272
+      duration: 0.0027047
       messages: 
       output: 
       stacktrace: 
@@ -883,7 +883,7 @@ MonoBehaviour:
       name: Equal True vs Equal True
       fullName: ConditionTests.Equal True vs Equal True
       resultStatus: 1
-      duration: 0.0006335
+      duration: 0.0006208
       messages: 
       output: 
       stacktrace: 
@@ -901,7 +901,7 @@ MonoBehaviour:
       name: Equal True vs Equal False
       fullName: ConditionTests.Equal True vs Equal False
       resultStatus: 1
-      duration: 0.0001968
+      duration: 0.0001789
       messages: 
       output: 
       stacktrace: 
@@ -919,7 +919,7 @@ MonoBehaviour:
       name: Equal False vs Equal True
       fullName: ConditionTests.Equal False vs Equal True
       resultStatus: 1
-      duration: 0.000172
+      duration: 0.0001575
       messages: 
       output: 
       stacktrace: 
@@ -937,7 +937,7 @@ MonoBehaviour:
       name: Equal False vs Equal False
       fullName: ConditionTests.Equal False vs Equal False
       resultStatus: 1
-      duration: 0.000144
+      duration: 0.0001441
       messages: 
       output: 
       stacktrace: 
@@ -955,7 +955,7 @@ MonoBehaviour:
       name: Not Equal True vs Not Equal True
       fullName: ConditionTests.Not Equal True vs Not Equal True
       resultStatus: 1
-      duration: 0.0001309
+      duration: 0.0001349
       messages: 
       output: 
       stacktrace: 
@@ -973,7 +973,7 @@ MonoBehaviour:
       name: Not Equal True vs Not Equal False
       fullName: ConditionTests.Not Equal True vs Not Equal False
       resultStatus: 1
-      duration: 0.0001445
+      duration: 0.0001346
       messages: 
       output: 
       stacktrace: 
@@ -991,7 +991,7 @@ MonoBehaviour:
       name: Not Equal False vs Not Equal True
       fullName: ConditionTests.Not Equal False vs Not Equal True
       resultStatus: 1
-      duration: 0.0001318
+      duration: 0.0001327
       messages: 
       output: 
       stacktrace: 
@@ -1009,7 +1009,7 @@ MonoBehaviour:
       name: Not Equal False vs Not Equal False
       fullName: ConditionTests.Not Equal False vs Not Equal False
       resultStatus: 1
-      duration: 0.0001276
+      duration: 0.0001322
       messages: 
       output: 
       stacktrace: 
@@ -1027,7 +1027,7 @@ MonoBehaviour:
       name: Equal True vs Not Equal True
       fullName: ConditionTests.Equal True vs Not Equal True
       resultStatus: 1
-      duration: 0.0001299
+      duration: 0.0001331
       messages: 
       output: 
       stacktrace: 
@@ -1045,7 +1045,7 @@ MonoBehaviour:
       name: Equal True vs Not Equal False
       fullName: ConditionTests.Equal True vs Not Equal False
       resultStatus: 1
-      duration: 0.0001305
+      duration: 0.0001333
       messages: 
       output: 
       stacktrace: 
@@ -1063,7 +1063,7 @@ MonoBehaviour:
       name: Equal False vs Not Equal True
       fullName: ConditionTests.Equal False vs Not Equal True
       resultStatus: 1
-      duration: 0.0001296
+      duration: 0.0001319
       messages: 
       output: 
       stacktrace: 
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       name: Equal False vs Not Equal False
       fullName: ConditionTests.Equal False vs Not Equal False
       resultStatus: 1
-      duration: 0.0001322
+      duration: 0.0001321
       messages: 
       output: 
       stacktrace: 
@@ -1099,7 +1099,7 @@ MonoBehaviour:
       name: Not Equal True vs Equal True
       fullName: ConditionTests.Not Equal True vs Equal True
       resultStatus: 1
-      duration: 0.00013
+      duration: 0.0001289
       messages: 
       output: 
       stacktrace: 
@@ -1117,7 +1117,7 @@ MonoBehaviour:
       name: Not Equal True vs Equal False
       fullName: ConditionTests.Not Equal True vs Equal False
       resultStatus: 1
-      duration: 0.0001275
+      duration: 0.0001322
       messages: 
       output: 
       stacktrace: 
@@ -1135,7 +1135,7 @@ MonoBehaviour:
       name: Not Equal False vs Equal True
       fullName: ConditionTests.Not Equal False vs Equal True
       resultStatus: 1
-      duration: 0.0001283
+      duration: 0.0001341
       messages: 
       output: 
       stacktrace: 
@@ -1153,7 +1153,7 @@ MonoBehaviour:
       name: Not Equal False vs Equal False
       fullName: ConditionTests.Not Equal False vs Equal False
       resultStatus: 1
-      duration: 0.0001309
+      duration: 0.0001434
       messages: 
       output: 
       stacktrace: 
@@ -1170,7 +1170,7 @@ MonoBehaviour:
       name: CompareConditionToEffect_Float
       fullName: ConditionTests.CompareConditionToEffect_Float
       resultStatus: 1
-      duration: 0.0096982
+      duration: 0.0101724
       messages: 
       output: 
       stacktrace: 
@@ -1187,7 +1187,7 @@ MonoBehaviour:
       name: Precondition = 5 vs Effect = 5
       fullName: ConditionTests.Precondition = 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0010018
+      duration: 0.0011246
       messages: 
       output: 
       stacktrace: 
@@ -1205,7 +1205,7 @@ MonoBehaviour:
       name: Precondition = 5 vs Effect = 4
       fullName: ConditionTests.Precondition = 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0002466
+      duration: 0.0003909
       messages: 
       output: 
       stacktrace: 
@@ -1223,7 +1223,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 4
       fullName: ConditionTests.Precondition > 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.000273
+      duration: 0.0004203
       messages: 
       output: 
       stacktrace: 
@@ -1241,7 +1241,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 5
       fullName: ConditionTests.Precondition > 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0002246
+      duration: 0.0002776
       messages: 
       output: 
       stacktrace: 
@@ -1259,7 +1259,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 6
       fullName: ConditionTests.Precondition > 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.000221
+      duration: 0.0002389
       messages: 
       output: 
       stacktrace: 
@@ -1277,7 +1277,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 4
       fullName: ConditionTests.Precondition > 5 vs Effect > 4
       resultStatus: 1
-      duration: 0.0002246
+      duration: 0.0002398
       messages: 
       output: 
       stacktrace: 
@@ -1295,7 +1295,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 5
       fullName: ConditionTests.Precondition > 5 vs Effect > 5
       resultStatus: 1
-      duration: 0.0002203
+      duration: 0.0002284
       messages: 
       output: 
       stacktrace: 
@@ -1313,7 +1313,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 6
       fullName: ConditionTests.Precondition > 5 vs Effect > 6
       resultStatus: 1
-      duration: 0.0002218
+      duration: 0.0002318
       messages: 
       output: 
       stacktrace: 
@@ -1331,7 +1331,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 4
       fullName: ConditionTests.Precondition > 5 vs Effect >= 4
       resultStatus: 1
-      duration: 0.0002392
+      duration: 0.0002277
       messages: 
       output: 
       stacktrace: 
@@ -1349,7 +1349,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 5
       fullName: ConditionTests.Precondition > 5 vs Effect >= 5
       resultStatus: 1
-      duration: 0.0002231
+      duration: 0.0002241
       messages: 
       output: 
       stacktrace: 
@@ -1367,7 +1367,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 6
       fullName: ConditionTests.Precondition > 5 vs Effect >= 6
       resultStatus: 1
-      duration: 0.0002277
+      duration: 0.0002563
       messages: 
       output: 
       stacktrace: 
@@ -1385,7 +1385,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect = 4
       fullName: ConditionTests.Precondition < 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0002742
+      duration: 0.0002956
       messages: 
       output: 
       stacktrace: 
@@ -1403,7 +1403,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect = 5
       fullName: ConditionTests.Precondition < 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0002223
+      duration: 0.0002311
       messages: 
       output: 
       stacktrace: 
@@ -1421,7 +1421,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect = 6
       fullName: ConditionTests.Precondition < 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.0002197
+      duration: 0.0002293
       messages: 
       output: 
       stacktrace: 
@@ -1439,7 +1439,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect < 4
       fullName: ConditionTests.Precondition < 5 vs Effect < 4
       resultStatus: 1
-      duration: 0.0002308
+      duration: 0.0002304
       messages: 
       output: 
       stacktrace: 
@@ -1457,7 +1457,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect < 5
       fullName: ConditionTests.Precondition < 5 vs Effect < 5
       resultStatus: 1
-      duration: 0.0002416
+      duration: 0.0002266
       messages: 
       output: 
       stacktrace: 
@@ -1475,7 +1475,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect < 6
       fullName: ConditionTests.Precondition < 5 vs Effect < 6
       resultStatus: 1
-      duration: 0.0002612
+      duration: 0.0002309
       messages: 
       output: 
       stacktrace: 
@@ -1493,7 +1493,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect <= 4
       fullName: ConditionTests.Precondition > 5 vs Effect <= 4
       resultStatus: 1
-      duration: 0.00025
+      duration: 0.0002256
       messages: 
       output: 
       stacktrace: 
@@ -1511,7 +1511,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect <= 5
       fullName: ConditionTests.Precondition > 5 vs Effect <= 5
       resultStatus: 1
-      duration: 0.0002379
+      duration: 0.0002248
       messages: 
       output: 
       stacktrace: 
@@ -1529,7 +1529,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect <= 6
       fullName: ConditionTests.Precondition > 5 vs Effect <= 6
       resultStatus: 1
-      duration: 0.0002374
+      duration: 0.0002249
       messages: 
       output: 
       stacktrace: 
@@ -1547,7 +1547,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect = 4
       fullName: ConditionTests.Precondition >= 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0003278
+      duration: 0.0002783
       messages: 
       output: 
       stacktrace: 
@@ -1565,7 +1565,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect = 5
       fullName: ConditionTests.Precondition >= 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.000241
+      duration: 0.0002267
       messages: 
       output: 
       stacktrace: 
@@ -1583,7 +1583,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect = 6
       fullName: ConditionTests.Precondition >= 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.0002213
+      duration: 0.0002244
       messages: 
       output: 
       stacktrace: 
@@ -1601,7 +1601,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 4
       fullName: ConditionTests.Precondition >= 5 vs Effect > 4
       resultStatus: 1
-      duration: 0.0002231
+      duration: 0.0002442
       messages: 
       output: 
       stacktrace: 
@@ -1619,7 +1619,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 5
       fullName: ConditionTests.Precondition >= 5 vs Effect > 5
       resultStatus: 1
-      duration: 0.0002192
+      duration: 0.0002249
       messages: 
       output: 
       stacktrace: 
@@ -1637,7 +1637,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 6
       fullName: ConditionTests.Precondition >= 5 vs Effect > 6
       resultStatus: 1
-      duration: 0.0002187
+      duration: 0.0002264
       messages: 
       output: 
       stacktrace: 
@@ -1655,7 +1655,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect >= 4
       fullName: ConditionTests.Precondition >= 5 vs Effect >= 4
       resultStatus: 1
-      duration: 0.0002281
+      duration: 0.0002239
       messages: 
       output: 
       stacktrace: 
@@ -1673,7 +1673,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect >= 5
       fullName: ConditionTests.Precondition >= 5 vs Effect >= 5
       resultStatus: 1
-      duration: 0.0002411
+      duration: 0.0002316
       messages: 
       output: 
       stacktrace: 
@@ -1691,7 +1691,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect >= 6
       fullName: ConditionTests.Precondition >= 5 vs Effect >= 6
       resultStatus: 1
-      duration: 0.0002213
+      duration: 0.0002273
       messages: 
       output: 
       stacktrace: 
@@ -1709,7 +1709,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect = 4
       fullName: ConditionTests.Precondition <= 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0002828
+      duration: 0.0002796
       messages: 
       output: 
       stacktrace: 
@@ -1727,7 +1727,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect = 5
       fullName: ConditionTests.Precondition <= 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0002253
+      duration: 0.0002257
       messages: 
       output: 
       stacktrace: 
@@ -1745,7 +1745,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect = 6
       fullName: ConditionTests.Precondition <= 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.0002227
+      duration: 0.0002249
       messages: 
       output: 
       stacktrace: 
@@ -1763,7 +1763,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 4
       fullName: ConditionTests.Precondition <= 5 vs Effect < 4
       resultStatus: 1
-      duration: 0.000221
+      duration: 0.0002278
       messages: 
       output: 
       stacktrace: 
@@ -1781,7 +1781,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 5
       fullName: ConditionTests.Precondition <= 5 vs Effect < 5
       resultStatus: 1
-      duration: 0.0002198
+      duration: 0.0002239
       messages: 
       output: 
       stacktrace: 
@@ -1799,7 +1799,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 6
       fullName: ConditionTests.Precondition <= 5 vs Effect < 6
       resultStatus: 1
-      duration: 0.00022
+      duration: 0.0002267
       messages: 
       output: 
       stacktrace: 
@@ -1817,7 +1817,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect <= 4
       fullName: ConditionTests.Precondition <= 5 vs Effect <= 4
       resultStatus: 1
-      duration: 0.0002185
+      duration: 0.0002235
       messages: 
       output: 
       stacktrace: 
@@ -1835,7 +1835,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect <= 5
       fullName: ConditionTests.Precondition <= 5 vs Effect <= 5
       resultStatus: 1
-      duration: 0.0002203
+      duration: 0.0002268
       messages: 
       output: 
       stacktrace: 
@@ -1853,7 +1853,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect <= 6
       fullName: ConditionTests.Precondition <= 5 vs Effect <= 6
       resultStatus: 1
-      duration: 0.0002274
+      duration: 0.0002262
       messages: 
       output: 
       stacktrace: 
@@ -1870,7 +1870,7 @@ MonoBehaviour:
       name: CompareConditionToEffect_Intt
       fullName: ConditionTests.CompareConditionToEffect_Intt
       resultStatus: 1
-      duration: 0.0108177
+      duration: 0.0110263005
       messages: 
       output: 
       stacktrace: 
@@ -1887,7 +1887,7 @@ MonoBehaviour:
       name: Precondition = 5 vs Effect = 5
       fullName: ConditionTests.Precondition = 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0010009
+      duration: 0.0010238
       messages: 
       output: 
       stacktrace: 
@@ -1905,7 +1905,7 @@ MonoBehaviour:
       name: Precondition = 5 vs Effect = 4
       fullName: ConditionTests.Precondition = 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0002588
+      duration: 0.0002518
       messages: 
       output: 
       stacktrace: 
@@ -1923,7 +1923,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 4
       fullName: ConditionTests.Precondition > 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0003505
+      duration: 0.0002854
       messages: 
       output: 
       stacktrace: 
@@ -1941,7 +1941,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 5
       fullName: ConditionTests.Precondition > 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0003378
+      duration: 0.0002376
       messages: 
       output: 
       stacktrace: 
@@ -1959,7 +1959,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect = 6
       fullName: ConditionTests.Precondition > 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.0002848
+      duration: 0.0002467
       messages: 
       output: 
       stacktrace: 
@@ -1977,7 +1977,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 4
       fullName: ConditionTests.Precondition > 5 vs Effect > 4
       resultStatus: 1
-      duration: 0.0003417
+      duration: 0.0002318
       messages: 
       output: 
       stacktrace: 
@@ -1995,7 +1995,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 5
       fullName: ConditionTests.Precondition > 5 vs Effect > 5
       resultStatus: 1
-      duration: 0.0002518
+      duration: 0.0002338
       messages: 
       output: 
       stacktrace: 
@@ -2013,7 +2013,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect > 6
       fullName: ConditionTests.Precondition > 5 vs Effect > 6
       resultStatus: 1
-      duration: 0.0002318
+      duration: 0.0002323
       messages: 
       output: 
       stacktrace: 
@@ -2031,7 +2031,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 4
       fullName: ConditionTests.Precondition > 5 vs Effect >= 4
       resultStatus: 1
-      duration: 0.0002267
+      duration: 0.0002334
       messages: 
       output: 
       stacktrace: 
@@ -2049,7 +2049,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 5
       fullName: ConditionTests.Precondition > 5 vs Effect >= 5
       resultStatus: 1
-      duration: 0.0002527
+      duration: 0.0002325
       messages: 
       output: 
       stacktrace: 
@@ -2067,7 +2067,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect >= 6
       fullName: ConditionTests.Precondition > 5 vs Effect >= 6
       resultStatus: 1
-      duration: 0.0002266
+      duration: 0.0002373
       messages: 
       output: 
       stacktrace: 
@@ -2085,7 +2085,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect = 4
       fullName: ConditionTests.Precondition < 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0003141
+      duration: 0.0002794
       messages: 
       output: 
       stacktrace: 
@@ -2103,7 +2103,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect = 5
       fullName: ConditionTests.Precondition < 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0002296
+      duration: 0.0002326
       messages: 
       output: 
       stacktrace: 
@@ -2121,7 +2121,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect = 6
       fullName: ConditionTests.Precondition < 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.000228
+      duration: 0.0002349
       messages: 
       output: 
       stacktrace: 
@@ -2139,7 +2139,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect < 4
       fullName: ConditionTests.Precondition < 5 vs Effect < 4
       resultStatus: 1
-      duration: 0.0002401
+      duration: 0.0002298
       messages: 
       output: 
       stacktrace: 
@@ -2157,7 +2157,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect < 5
       fullName: ConditionTests.Precondition < 5 vs Effect < 5
       resultStatus: 1
-      duration: 0.0002643
+      duration: 0.0002511
       messages: 
       output: 
       stacktrace: 
@@ -2175,7 +2175,7 @@ MonoBehaviour:
       name: Precondition < 5 vs Effect < 6
       fullName: ConditionTests.Precondition < 5 vs Effect < 6
       resultStatus: 1
-      duration: 0.0002337
+      duration: 0.0002338
       messages: 
       output: 
       stacktrace: 
@@ -2193,7 +2193,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect <= 4
       fullName: ConditionTests.Precondition > 5 vs Effect <= 4
       resultStatus: 1
-      duration: 0.0002411
+      duration: 0.0002339
       messages: 
       output: 
       stacktrace: 
@@ -2211,7 +2211,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect <= 5
       fullName: ConditionTests.Precondition > 5 vs Effect <= 5
       resultStatus: 1
-      duration: 0.0002492
+      duration: 0.0002348
       messages: 
       output: 
       stacktrace: 
@@ -2229,7 +2229,7 @@ MonoBehaviour:
       name: Precondition > 5 vs Effect <= 6
       fullName: ConditionTests.Precondition > 5 vs Effect <= 6
       resultStatus: 1
-      duration: 0.0002528
+      duration: 0.0002334
       messages: 
       output: 
       stacktrace: 
@@ -2247,7 +2247,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect = 4
       fullName: ConditionTests.Precondition >= 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0003102
+      duration: 0.000325
       messages: 
       output: 
       stacktrace: 
@@ -2265,7 +2265,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect = 5
       fullName: ConditionTests.Precondition >= 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0002291
+      duration: 0.0002358
       messages: 
       output: 
       stacktrace: 
@@ -2283,7 +2283,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect = 6
       fullName: ConditionTests.Precondition >= 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.0002289
+      duration: 0.0002339
       messages: 
       output: 
       stacktrace: 
@@ -2301,7 +2301,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 3
       fullName: ConditionTests.Precondition >= 5 vs Effect > 3
       resultStatus: 1
-      duration: 0.0002444
+      duration: 0.0002344
       messages: 
       output: 
       stacktrace: 
@@ -2319,7 +2319,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 4
       fullName: ConditionTests.Precondition >= 5 vs Effect > 4
       resultStatus: 1
-      duration: 0.000231
+      duration: 0.0002346
       messages: 
       output: 
       stacktrace: 
@@ -2337,7 +2337,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 5
       fullName: ConditionTests.Precondition >= 5 vs Effect > 5
       resultStatus: 1
-      duration: 0.0002267
+      duration: 0.0002359
       messages: 
       output: 
       stacktrace: 
@@ -2355,7 +2355,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect > 6
       fullName: ConditionTests.Precondition >= 5 vs Effect > 6
       resultStatus: 1
-      duration: 0.0002309
+      duration: 0.0002479
       messages: 
       output: 
       stacktrace: 
@@ -2373,7 +2373,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect >= 4
       fullName: ConditionTests.Precondition >= 5 vs Effect >= 4
       resultStatus: 1
-      duration: 0.0002286
+      duration: 0.0002334
       messages: 
       output: 
       stacktrace: 
@@ -2391,7 +2391,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect >= 5
       fullName: ConditionTests.Precondition >= 5 vs Effect >= 5
       resultStatus: 1
-      duration: 0.0002264
+      duration: 0.0004396
       messages: 
       output: 
       stacktrace: 
@@ -2409,7 +2409,7 @@ MonoBehaviour:
       name: Precondition >= 5 vs Effect >= 6
       fullName: ConditionTests.Precondition >= 5 vs Effect >= 6
       resultStatus: 1
-      duration: 0.0002292
+      duration: 0.0003211
       messages: 
       output: 
       stacktrace: 
@@ -2427,7 +2427,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect = 4
       fullName: ConditionTests.Precondition <= 5 vs Effect = 4
       resultStatus: 1
-      duration: 0.0003319
+      duration: 0.0004361
       messages: 
       output: 
       stacktrace: 
@@ -2445,7 +2445,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect = 5
       fullName: ConditionTests.Precondition <= 5 vs Effect = 5
       resultStatus: 1
-      duration: 0.0002422
+      duration: 0.0002991
       messages: 
       output: 
       stacktrace: 
@@ -2463,7 +2463,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect = 6
       fullName: ConditionTests.Precondition <= 5 vs Effect = 6
       resultStatus: 1
-      duration: 0.0002315
+      duration: 0.0002645
       messages: 
       output: 
       stacktrace: 
@@ -2481,7 +2481,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 4
       fullName: ConditionTests.Precondition <= 5 vs Effect < 4
       resultStatus: 1
-      duration: 0.0002307
+      duration: 0.0002338
       messages: 
       output: 
       stacktrace: 
@@ -2499,7 +2499,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 5
       fullName: ConditionTests.Precondition <= 5 vs Effect < 5
       resultStatus: 1
-      duration: 0.0002273
+      duration: 0.0002414
       messages: 
       output: 
       stacktrace: 
@@ -2517,7 +2517,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 6
       fullName: ConditionTests.Precondition <= 5 vs Effect < 6
       resultStatus: 1
-      duration: 0.0002359
+      duration: 0.0002436
       messages: 
       output: 
       stacktrace: 
@@ -2535,7 +2535,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect < 7
       fullName: ConditionTests.Precondition <= 5 vs Effect < 7
       resultStatus: 1
-      duration: 0.0002287
+      duration: 0.0002556
       messages: 
       output: 
       stacktrace: 
@@ -2553,7 +2553,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect <= 4
       fullName: ConditionTests.Precondition <= 5 vs Effect <= 4
       resultStatus: 1
-      duration: 0.0002248
+      duration: 0.000232
       messages: 
       output: 
       stacktrace: 
@@ -2571,7 +2571,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect <= 5
       fullName: ConditionTests.Precondition <= 5 vs Effect <= 5
       resultStatus: 1
-      duration: 0.0002312
+      duration: 0.0002369
       messages: 
       output: 
       stacktrace: 
@@ -2589,7 +2589,7 @@ MonoBehaviour:
       name: Precondition <= 5 vs Effect <= 6
       fullName: ConditionTests.Precondition <= 5 vs Effect <= 6
       resultStatus: 1
-      duration: 0.0002311
+      duration: 0.0002316
       messages: 
       output: 
       stacktrace: 
@@ -2606,7 +2606,7 @@ MonoBehaviour:
       name: DoesStateMeetCondition
       fullName: ConditionTests.DoesStateMeetCondition
       resultStatus: 1
-      duration: 0.0006569
+      duration: 0.00060559995
       messages: 
       output: 
       stacktrace: 
@@ -2623,7 +2623,7 @@ MonoBehaviour:
       name: Use Internal State
       fullName: ConditionTests.Use Internal State
       resultStatus: 1
-      duration: 0.0004996
+      duration: 0.0004381
       messages: 
       output: 
       stacktrace: 
@@ -2641,7 +2641,7 @@ MonoBehaviour:
       name: Use Parameter State
       fullName: ConditionTests.Use Parameter State
       resultStatus: 1
-      duration: 0.0001573
+      duration: 0.0001675
       messages: 
       output: 
       stacktrace: 
@@ -2658,7 +2658,7 @@ MonoBehaviour:
       name: InventoryConditionCompare
       fullName: ConditionTests.InventoryConditionCompare
       resultStatus: 1
-      duration: 0.0013934
+      duration: 0.0017245
       messages: 
       output: 
       stacktrace: 
@@ -2675,7 +2675,7 @@ MonoBehaviour:
       name: Both equal to 1 item
       fullName: ConditionTests.Both equal to 1 item
       resultStatus: 1
-      duration: 0.0009512
+      duration: 0.0011213
       messages: 
       output: 
       stacktrace: 
@@ -2693,7 +2693,7 @@ MonoBehaviour:
       name: Not equal to same quantity
       fullName: ConditionTests.Not equal to same quantity
       resultStatus: 1
-      duration: 0.0001833
+      duration: 0.0002738
       messages: 
       output: 
       stacktrace: 
@@ -2711,7 +2711,7 @@ MonoBehaviour:
       name: Different Items
       fullName: ConditionTests.Different Items
       resultStatus: 1
-      duration: 0.0001331
+      duration: 0.0001683
       messages: 
       output: 
       stacktrace: 
@@ -2729,7 +2729,7 @@ MonoBehaviour:
       name: Equal 1 vs Greater 0
       fullName: ConditionTests.Equal 1 vs Greater 0
       resultStatus: 1
-      duration: 0.0001258
+      duration: 0.0001611
       messages: 
       output: 
       stacktrace: 
@@ -2746,7 +2746,7 @@ MonoBehaviour:
       name: FloatStateTests
       fullName: FloatStateTests
       resultStatus: 1
-      duration: 0.0029384
+      duration: 0.0030271
       messages: 
       output: 
       stacktrace: 
@@ -2755,14 +2755,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1010
       uniqueId: 'Tests.dll/FloatStateTests/[Tests][FloatStateTests.Clone]'
       name: Clone
       fullName: FloatStateTests.Clone
       resultStatus: 1
-      duration: 0.0009485
+      duration: 0.0008654
       messages: 
       output: 
       stacktrace: 
@@ -2779,7 +2779,7 @@ MonoBehaviour:
       name: TestState
       fullName: FloatStateTests.TestState
       resultStatus: 1
-      duration: 0.0019899001
+      duration: 0.0021617
       messages: 
       output: 
       stacktrace: 
@@ -2796,7 +2796,7 @@ MonoBehaviour:
       name: Equals - True
       fullName: FloatStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0005203
+      duration: 0.000529
       messages: 
       output: 
       stacktrace: 
@@ -2814,7 +2814,7 @@ MonoBehaviour:
       name: Equals - False
       fullName: FloatStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0001435
+      duration: 0.0001454
       messages: 
       output: 
       stacktrace: 
@@ -2832,7 +2832,7 @@ MonoBehaviour:
       name: Greater - Lesser Test Value
       fullName: FloatStateTests.Greater - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001269
+      duration: 0.0001121
       messages: 
       output: 
       stacktrace: 
@@ -2850,7 +2850,7 @@ MonoBehaviour:
       name: Greater - Equal Test Value
       fullName: FloatStateTests.Greater - Equal Test Value
       resultStatus: 1
-      duration: 0.0001029
+      duration: 0.0001145
       messages: 
       output: 
       stacktrace: 
@@ -2868,7 +2868,7 @@ MonoBehaviour:
       name: Greater - Greater Test Value
       fullName: FloatStateTests.Greater - Greater Test Value
       resultStatus: 1
-      duration: 0.0001303
+      duration: 0.0001281
       messages: 
       output: 
       stacktrace: 
@@ -2886,7 +2886,7 @@ MonoBehaviour:
       name: Greater or Equal - Lesser Test Value
       fullName: FloatStateTests.Greater or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0000992
+      duration: 0.0001415
       messages: 
       output: 
       stacktrace: 
@@ -2904,7 +2904,7 @@ MonoBehaviour:
       name: Greater or Equal - Equal Test Value
       fullName: FloatStateTests.Greater or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0000974
+      duration: 0.0001377
       messages: 
       output: 
       stacktrace: 
@@ -2922,7 +2922,7 @@ MonoBehaviour:
       name: Greater or Equal - Greater Test Value
       fullName: FloatStateTests.Greater or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001011
+      duration: 0.0001288
       messages: 
       output: 
       stacktrace: 
@@ -2940,7 +2940,7 @@ MonoBehaviour:
       name: Lesser - Lesser Test Value
       fullName: FloatStateTests.Lesser - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001343
+      duration: 0.000132
       messages: 
       output: 
       stacktrace: 
@@ -2958,7 +2958,7 @@ MonoBehaviour:
       name: Lesser - Equal Test Value
       fullName: FloatStateTests.Lesser - Equal Test Value
       resultStatus: 1
-      duration: 0.0001087
+      duration: 0.0001092
       messages: 
       output: 
       stacktrace: 
@@ -2976,7 +2976,7 @@ MonoBehaviour:
       name: Lesser - Greater Test Value
       fullName: FloatStateTests.Lesser - Greater Test Value
       resultStatus: 1
-      duration: 0.0000977
+      duration: 0.0001074
       messages: 
       output: 
       stacktrace: 
@@ -2994,7 +2994,7 @@ MonoBehaviour:
       name: Lesser or Equal - Lesser Test Value
       fullName: FloatStateTests.Lesser or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001175
+      duration: 0.0001032
       messages: 
       output: 
       stacktrace: 
@@ -3012,7 +3012,7 @@ MonoBehaviour:
       name: Lesser or Equal - Equal Test Value
       fullName: FloatStateTests.Lesser or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001017
+      duration: 0.0001357
       messages: 
       output: 
       stacktrace: 
@@ -3030,7 +3030,7 @@ MonoBehaviour:
       name: Lesser or Equal - Greater Test Value
       fullName: FloatStateTests.Lesser or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001084
+      duration: 0.0001371
       messages: 
       output: 
       stacktrace: 
@@ -3047,7 +3047,7 @@ MonoBehaviour:
       name: GoalTests
       fullName: GoalTests
       resultStatus: 1
-      duration: 0.0164748
+      duration: 0.0015688
       messages: 
       output: 
       stacktrace: 
@@ -3056,14 +3056,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1150
       uniqueId: 'Tests.dll/GoalTests/[Tests][GoalTests.CloneTest]'
       name: CloneTest
       fullName: GoalTests.CloneTest
       resultStatus: 1
-      duration: 0.0164748
+      duration: 0.0015688
       messages: 
       output: 
       stacktrace: 
@@ -3080,7 +3080,7 @@ MonoBehaviour:
       name: IntStateTests
       fullName: IntStateTests
       resultStatus: 1
-      duration: 0.0023312
+      duration: 0.0023510999
       messages: 
       output: 
       stacktrace: 
@@ -3089,14 +3089,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1027
       uniqueId: 'Tests.dll/IntStateTests/[Tests][IntStateTests.Clone]'
       name: Clone
       fullName: IntStateTests.Clone
       resultStatus: 1
-      duration: 0.0003778
+      duration: 0.0003602
       messages: 
       output: 
       stacktrace: 
@@ -3113,7 +3113,7 @@ MonoBehaviour:
       name: TestState
       fullName: IntStateTests.TestState
       resultStatus: 1
-      duration: 0.0019534
+      duration: 0.0019909
       messages: 
       output: 
       stacktrace: 
@@ -3130,7 +3130,7 @@ MonoBehaviour:
       name: Equals - True
       fullName: IntStateTests.Equals - True
       resultStatus: 1
-      duration: 0.0005322
+      duration: 0.0005374
       messages: 
       output: 
       stacktrace: 
@@ -3148,7 +3148,7 @@ MonoBehaviour:
       name: Equals - False
       fullName: IntStateTests.Equals - False
       resultStatus: 1
-      duration: 0.0001324
+      duration: 0.0001276
       messages: 
       output: 
       stacktrace: 
@@ -3166,7 +3166,7 @@ MonoBehaviour:
       name: Greater - Lesser Test Value
       fullName: IntStateTests.Greater - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001188
+      duration: 0.0001078
       messages: 
       output: 
       stacktrace: 
@@ -3184,7 +3184,7 @@ MonoBehaviour:
       name: Greater - Equal Test Value
       fullName: IntStateTests.Greater - Equal Test Value
       resultStatus: 1
-      duration: 0.0001171
+      duration: 0.000123
       messages: 
       output: 
       stacktrace: 
@@ -3202,7 +3202,7 @@ MonoBehaviour:
       name: Greater - Greater Test Value
       fullName: IntStateTests.Greater - Greater Test Value
       resultStatus: 1
-      duration: 0.0001089
+      duration: 0.0001323
       messages: 
       output: 
       stacktrace: 
@@ -3220,7 +3220,7 @@ MonoBehaviour:
       name: Greater or Equal - Lesser Test Value
       fullName: IntStateTests.Greater or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001081
+      duration: 0.0001044
       messages: 
       output: 
       stacktrace: 
@@ -3238,7 +3238,7 @@ MonoBehaviour:
       name: Greater or Equal - Equal Test Value
       fullName: IntStateTests.Greater or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001062
+      duration: 0.0001235
       messages: 
       output: 
       stacktrace: 
@@ -3256,7 +3256,7 @@ MonoBehaviour:
       name: Greater or Equal - Greater Test Value
       fullName: IntStateTests.Greater or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.0001039
+      duration: 0.000104
       messages: 
       output: 
       stacktrace: 
@@ -3274,7 +3274,7 @@ MonoBehaviour:
       name: Lesser - Lesser Test Value
       fullName: IntStateTests.Lesser - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001014
+      duration: 0.0001026
       messages: 
       output: 
       stacktrace: 
@@ -3292,7 +3292,7 @@ MonoBehaviour:
       name: Lesser - Equal Test Value
       fullName: IntStateTests.Lesser - Equal Test Value
       resultStatus: 1
-      duration: 0.0001144
+      duration: 0.0001038
       messages: 
       output: 
       stacktrace: 
@@ -3310,7 +3310,7 @@ MonoBehaviour:
       name: Lesser - Greater Test Value
       fullName: IntStateTests.Lesser - Greater Test Value
       resultStatus: 1
-      duration: 0.0001009
+      duration: 0.000101
       messages: 
       output: 
       stacktrace: 
@@ -3328,7 +3328,7 @@ MonoBehaviour:
       name: Lesser or Equal - Lesser Test Value
       fullName: IntStateTests.Lesser or Equal - Lesser Test Value
       resultStatus: 1
-      duration: 0.0001022
+      duration: 0.0001007
       messages: 
       output: 
       stacktrace: 
@@ -3346,7 +3346,7 @@ MonoBehaviour:
       name: Lesser or Equal - Equal Test Value
       fullName: IntStateTests.Lesser or Equal - Equal Test Value
       resultStatus: 1
-      duration: 0.0001049
+      duration: 0.0001203
       messages: 
       output: 
       stacktrace: 
@@ -3364,7 +3364,7 @@ MonoBehaviour:
       name: Lesser or Equal - Greater Test Value
       fullName: IntStateTests.Lesser or Equal - Greater Test Value
       resultStatus: 1
-      duration: 0.000102
+      duration: 0.0001025
       messages: 
       output: 
       stacktrace: 
@@ -3381,7 +3381,7 @@ MonoBehaviour:
       name: InventoryStateTests
       fullName: InventoryStateTests
       resultStatus: 1
-      duration: 0.0016964999
+      duration: 0.0016723
       messages: 
       output: 
       stacktrace: 
@@ -3390,14 +3390,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1159
       uniqueId: 'Tests.dll/InventoryStateTests/[Tests][InventoryStateTests.InventoryCloneTest]'
       name: InventoryCloneTest
       fullName: InventoryStateTests.InventoryCloneTest
       resultStatus: 1
-      duration: 0.0004684
+      duration: 0.000477
       messages: 
       output: 
       stacktrace: 
@@ -3414,7 +3414,7 @@ MonoBehaviour:
       name: InventoryTestState
       fullName: InventoryStateTests.InventoryTestState
       resultStatus: 1
-      duration: 0.0012280999
+      duration: 0.0011953
       messages: 
       output: 
       stacktrace: 
@@ -3431,7 +3431,7 @@ MonoBehaviour:
       name: All valid
       fullName: InventoryStateTests.All valid
       resultStatus: 1
-      duration: 0.0007461
+      duration: 0.0007351
       messages: 
       output: 
       stacktrace: 
@@ -3449,7 +3449,7 @@ MonoBehaviour:
       name: State invalid
       fullName: InventoryStateTests.State invalid
       resultStatus: 1
-      duration: 0.0001192
+      duration: 0.000118
       messages: 
       output: 
       stacktrace: 
@@ -3467,7 +3467,7 @@ MonoBehaviour:
       name: Expected Value invalid
       fullName: InventoryStateTests.Expected Value invalid
       resultStatus: 1
-      duration: 0.0001149
+      duration: 0.0001101
       messages: 
       output: 
       stacktrace: 
@@ -3485,7 +3485,7 @@ MonoBehaviour:
       name: Item invalid
       fullName: InventoryStateTests.Item invalid
       resultStatus: 1
-      duration: 0.0001201
+      duration: 0.0001211
       messages: 
       output: 
       stacktrace: 
@@ -3503,7 +3503,7 @@ MonoBehaviour:
       name: Item invalid and Expected Value 0
       fullName: InventoryStateTests.Item invalid and Expected Value 0
       resultStatus: 1
-      duration: 0.0001278
+      duration: 0.000111
       messages: 
       output: 
       stacktrace: 
@@ -3520,7 +3520,7 @@ MonoBehaviour:
       name: LambdaTests
       fullName: LambdaTests
       resultStatus: 1
-      duration: 0.0111587
+      duration: 0.00081470003
       messages: 
       output: 
       stacktrace: 
@@ -3529,14 +3529,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1185
       uniqueId: 'Tests.dll/LambdaTests/[Tests][LambdaTests.ListFind][suite]'
       name: ListFind
       fullName: LambdaTests.ListFind
       resultStatus: 1
-      duration: 0.0111587
+      duration: 0.00081470003
       messages: 
       output: 
       stacktrace: 
@@ -3552,7 +3552,7 @@ MonoBehaviour:
       name: ListFind(True,"Jeremy","Jeremy")
       fullName: LambdaTests.ListFind(True,"Jeremy","Jeremy")
       resultStatus: 1
-      duration: 0.0106374
+      duration: 0.0004926
       messages: 
       output: 
       stacktrace: 
@@ -3569,7 +3569,7 @@ MonoBehaviour:
       name: ListFind(True,"Nicolas","Nicolas")
       fullName: LambdaTests.ListFind(True,"Nicolas","Nicolas")
       resultStatus: 1
-      duration: 0.0001275
+      duration: 0.0000395
       messages: 
       output: 
       stacktrace: 
@@ -3586,7 +3586,7 @@ MonoBehaviour:
       name: ListFind(True,"Thomas","Thomas")
       fullName: LambdaTests.ListFind(True,"Thomas","Thomas")
       resultStatus: 1
-      duration: 0.0000684
+      duration: 0.0000333
       messages: 
       output: 
       stacktrace: 
@@ -3603,7 +3603,7 @@ MonoBehaviour:
       name: ListFind(True,"Steve",null)
       fullName: LambdaTests.ListFind(True,"Steve",null)
       resultStatus: 1
-      duration: 0.0000606
+      duration: 0.0000427
       messages: 
       output: 
       stacktrace: 
@@ -3620,7 +3620,7 @@ MonoBehaviour:
       name: ListFind(False,"Jeremy","Jeremy")
       fullName: LambdaTests.ListFind(False,"Jeremy","Jeremy")
       resultStatus: 1
-      duration: 0.000112
+      duration: 0.0000879
       messages: 
       output: 
       stacktrace: 
@@ -3637,7 +3637,7 @@ MonoBehaviour:
       name: ListFind(False,"Nicolas","Nicolas")
       fullName: LambdaTests.ListFind(False,"Nicolas","Nicolas")
       resultStatus: 1
-      duration: 0.0000494
+      duration: 0.000035
       messages: 
       output: 
       stacktrace: 
@@ -3654,7 +3654,7 @@ MonoBehaviour:
       name: ListFind(False,"Thomas","Thomas")
       fullName: LambdaTests.ListFind(False,"Thomas","Thomas")
       resultStatus: 1
-      duration: 0.0000578
+      duration: 0.000033
       messages: 
       output: 
       stacktrace: 
@@ -3671,7 +3671,7 @@ MonoBehaviour:
       name: ListFind(False,"Steve",null)
       fullName: LambdaTests.ListFind(False,"Steve",null)
       resultStatus: 1
-      duration: 0.0000456
+      duration: 0.0000507
       messages: 
       output: 
       stacktrace: 
@@ -3688,7 +3688,7 @@ MonoBehaviour:
       name: NodeTests
       fullName: NodeTests
       resultStatus: 1
-      duration: 0.0515264
+      duration: 0.0154593
       messages: 
       output: 
       stacktrace: 
@@ -3697,14 +3697,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1205
+      parentId: 1209
       parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
     - id: 1189
       uniqueId: 'Tests.dll/NodeTests/[Tests][NodeTests.Constructor][suite]'
       name: Constructor
       fullName: NodeTests.Constructor
       resultStatus: 1
-      duration: 0.0227091
+      duration: 0.0054295002
       messages: 
       output: 
       stacktrace: 
@@ -3720,7 +3720,7 @@ MonoBehaviour:
       name: Goal Node
       fullName: NodeTests.Goal Node
       resultStatus: 1
-      duration: 0.022125
+      duration: 0.0049227
       messages: 
       output: 
       stacktrace: 
@@ -3737,7 +3737,7 @@ MonoBehaviour:
       name: Normal Node
       fullName: NodeTests.Normal Node
       resultStatus: 1
-      duration: 0.0005841
+      duration: 0.0005068
       messages: 
       output: 
       stacktrace: 
@@ -3754,7 +3754,7 @@ MonoBehaviour:
       name: GenerateChildNodes
       fullName: NodeTests.GenerateChildNodes
       resultStatus: 1
-      duration: 0.0246906
+      duration: 0.0043276
       messages: 
       output: 
       stacktrace: 
@@ -3771,7 +3771,7 @@ MonoBehaviour:
       name: Generates a node
       fullName: NodeTests.Generates a node
       resultStatus: 1
-      duration: 0.0214896
+      duration: 0.0012777
       messages: 
       output: 
       stacktrace: 
@@ -3789,7 +3789,7 @@ MonoBehaviour:
       name: Generates multiple nodes
       fullName: NodeTests.Generates multiple nodes
       resultStatus: 1
-      duration: 0.002739
+      duration: 0.0026706
       messages: 
       output: 'deliver_wood
 
@@ -3815,7 +3815,7 @@ MonoBehaviour:
       name: Fails to generate any node
       fullName: NodeTests.Fails to generate any node
       resultStatus: 1
-      duration: 0.000462
+      duration: 0.0003793
       messages: 
       output: 
       stacktrace: 
@@ -3832,7 +3832,7 @@ MonoBehaviour:
       name: ProcessNode
       fullName: NodeTests.ProcessNode
       resultStatus: 1
-      duration: 0.0023028
+      duration: 0.0019459999
       messages: 
       output: 
       stacktrace: 
@@ -3848,7 +3848,7 @@ MonoBehaviour:
       name: Closed
       fullName: NodeTests.Closed
       resultStatus: 1
-      duration: 0.0013672
+      duration: 0.0010322
       messages: 
       output: 
       stacktrace: 
@@ -3865,7 +3865,7 @@ MonoBehaviour:
       name: Success
       fullName: NodeTests.Success
       resultStatus: 1
-      duration: 0.0005039
+      duration: 0.0005171
       messages: 
       output: 
       stacktrace: 
@@ -3882,7 +3882,7 @@ MonoBehaviour:
       name: Failure
       fullName: NodeTests.Failure
       resultStatus: 1
-      duration: 0.0004317
+      duration: 0.0003967
       messages: 
       output: 
       stacktrace: 
@@ -3899,7 +3899,7 @@ MonoBehaviour:
       name: ProcessPreconditions
       fullName: NodeTests.ProcessPreconditions
       resultStatus: 1
-      duration: 0.0016295001
+      duration: 0.0015893
       messages: 
       output: 
       stacktrace: 
@@ -3916,7 +3916,7 @@ MonoBehaviour:
       name: 0 preconditions met by worldState
       fullName: NodeTests.0 preconditions met by worldState
       resultStatus: 1
-      duration: 0.0007827
+      duration: 0.0007497
       messages: 
       output: 
       stacktrace: 
@@ -3934,7 +3934,7 @@ MonoBehaviour:
       name: Some preconditions met by worldState
       fullName: NodeTests.Some preconditions met by worldState
       resultStatus: 1
-      duration: 0.0004094
+      duration: 0.0003914
       messages: 
       output: 
       stacktrace: 
@@ -3952,7 +3952,7 @@ MonoBehaviour:
       name: All preconditions met by worldState
       fullName: NodeTests.All preconditions met by worldState
       resultStatus: 1
-      duration: 0.0004374
+      duration: 0.0004482
       messages: 
       output: 
       stacktrace: 
@@ -3969,7 +3969,7 @@ MonoBehaviour:
       name: ReturnPlan
       fullName: NodeTests.ReturnPlan
       resultStatus: 1
-      duration: 0.0001944
+      duration: 0.0021668999
       messages: 
       output: 
       stacktrace: 
@@ -3985,7 +3985,7 @@ MonoBehaviour:
       name: Standard Plan
       fullName: NodeTests.Standard Plan
       resultStatus: 1
-      duration: 0.0001586
+      duration: 0.0010982
       messages: 
       output: 
       stacktrace: 
@@ -4003,9 +4003,11 @@ MonoBehaviour:
       name: Null action in middle
       fullName: NodeTests.Null action in middle
       resultStatus: 1
-      duration: 0.0000358
+      duration: 0.0010687
       messages: 
-      output: 
+      output: 'Node action was null, returning null plan
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -4015,13 +4017,100 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1202
       parentUniqueId: 'Tests.dll/NodeTests/[Tests][NodeTests.ReturnPlan][suite]'
-    m_ResultText: Generates a node (0.021s)
+    - id: 1205
+      uniqueId: 'Tests.dll/[Tests][PlannerTests][suite]'
+      name: PlannerTests
+      fullName: PlannerTests
+      resultStatus: 1
+      duration: 0.0091452
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1209
+      parentUniqueId: '[Tests][C:/Users/robint/Documents/GitHub/GOAP-Thomas-Robin-v1/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1208
+      uniqueId: 'Tests.dll/PlannerTests/[Tests][PlannerTests.LoggerPlan][suite]'
+      name: LoggerPlan
+      fullName: PlannerTests.LoggerPlan
+      resultStatus: 1
+      duration: 0.0091452
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1205
+      parentUniqueId: 'Tests.dll/[Tests][PlannerTests][suite]'
+    - id: 1206
+      uniqueId: 'Tests.dll/PlannerTests/LoggerPlan/[Tests][PlannerTests.Standard
+        Expected Plan]'
+      name: Standard Expected Plan
+      fullName: PlannerTests.Standard Expected Plan
+      resultStatus: 1
+      duration: 0.006413
+      messages: 
+      output: 'go_to_workshop
+
+        take_axe
+
+        go_to_tree
+
+        chop_tree
+
+        go_to_woodstock
+
+        deliver_wood
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1208
+      parentUniqueId: 'Tests.dll/PlannerTests/[Tests][PlannerTests.LoggerPlan][suite]'
+    - id: 1207
+      uniqueId: 'Tests.dll/PlannerTests/LoggerPlan/[Tests][PlannerTests.Shop Plan]'
+      name: Shop Plan
+      fullName: PlannerTests.Shop Plan
+      resultStatus: 1
+      duration: 0.0027322
+      messages: 
+      output: 'go_to_shop
+
+        buy_wood
+
+        go_to_woodstock
+
+        deliver_wood
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1208
+      parentUniqueId: 'Tests.dll/PlannerTests/[Tests][PlannerTests.LoggerPlan][suite]'
+    m_ResultText: GOAP-Thomas-Robin-v1 (179 tests) (0.083s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 327}
-      m_SelectedIDs: 8aa7078a
-      m_LastClickedID: -1979209846
-      m_ExpandedIDs: 691b348dc896e1a182e474ad0457a3bc4275edd5388ed2db209503e7ea9092e81b8ba0f199d6f3f625fd99fb540f78007b5c48066dfb670eacc444295500964913ce9f58565f7d5c1b5ba560db528164e7777c6dededd771ffffff7f
+      scrollPos: {x: 0, y: 423}
+      m_SelectedIDs: 25fd99fb
+      m_LastClickedID: -73794267
+      m_ExpandedIDs: 691b348dc896e1a182e474ad0457a3bc4275edd5388ed2db209503e7ea9092e81b8ba0f199d6f3f625fd99fb540f78007b5c48066dfb670e0541e124acc44429fa20f639fbcb06435500964913ce9f58565f7d5c1b5ba560db528164e7777c6dededd771ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -4051,7 +4140,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: 2575832a-2ef2-4c84-8a04-e17a4f7f76c7
+      RunGuid: 465084d1-0ab3-47bb-a95d-0bb0d7a7dcae
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -4063,9 +4152,9 @@ MonoBehaviour:
           assemblyNames: []
         filters:
         - testMode: 1
-          testNames:
-          - NodeTests.GenerateChildNodes
-          groupNames: []
+          testNames: []
+          groupNames:
+          - .*
           categoryNames: []
           assemblyNames: []
         runSynchronously: 0
@@ -4079,7 +4168,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 1.0000004
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -4118,7 +4207,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: 2575832a-2ef2-4c84-8a04-e17a4f7f76c7
+      RunGuid: 465084d1-0ab3-47bb-a95d-0bb0d7a7dcae
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -4130,9 +4219,9 @@ MonoBehaviour:
           assemblyNames: []
         filters:
         - testMode: 1
-          testNames:
-          - NodeTests.GenerateChildNodes
-          groupNames: []
+          testNames: []
+          groupNames:
+          - .*
           categoryNames: []
           assemblyNames: []
         runSynchronously: 0
@@ -4146,7 +4235,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 1.0000004
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -4508,8 +4597,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1921
-    y: 681
+    x: 0
+    y: 618
     width: 1096
     height: 304
   m_SerializedDataModeController:
@@ -4536,7 +4625,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests/Edit Mode Tests
+    - Assets/Scripts/GOAP/Actions
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -4546,27 +4635,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Tests/Edit Mode Tests
+  - Assets/Scripts/GOAP/Actions
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\robint\Documents\GitHub\GOAP-Thomas-Robin-v1
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 100}
+    scrollPos: {x: 0, y: 164}
     m_SelectedIDs:
-    - m_Data: 46252
+    - m_Data: 46236
     m_LastClickedID:
-      m_Data: 46252
+      m_Data: 46236
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45924
-    - m_Data: 45926
     - m_Data: 45928
     - m_Data: 45930
     - m_Data: 45932
     - m_Data: 45934
     - m_Data: 45936
+    - m_Data: 45938
+    - m_Data: 45940
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4599,13 +4688,13 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45924
-    - m_Data: 45926
     - m_Data: 45928
     - m_Data: 45930
     - m_Data: 45932
     - m_Data: 45934
     - m_Data: 45936
+    - m_Data: 45938
+    - m_Data: 45940
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4761,29 +4850,31 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -50436
-      - m_Data: -49242
-      - m_Data: -48628
-      - m_Data: -47406
-      - m_Data: -46174
-      - m_Data: -45034
-      - m_Data: -43384
-      - m_Data: -42922
-      - m_Data: -42460
-      - m_Data: -41414
-      - m_Data: -40866
-      - m_Data: -38392
-      - m_Data: -35162
-      - m_Data: -31908
-      - m_Data: -27118
-      - m_Data: -25770
-      - m_Data: -16542
-      - m_Data: -15992
-      - m_Data: -14478
-      - m_Data: -8332
-      - m_Data: -7192
-      - m_Data: -5996
-      - m_Data: -2468
+      - m_Data: -43002
+      - m_Data: -41934
+      - m_Data: -41396
+      - m_Data: -39350
+      - m_Data: -37804
+      - m_Data: -31662
+      - m_Data: -29702
+      - m_Data: -29234
+      - m_Data: -28190
+      - m_Data: -26640
+      - m_Data: -25566
+      - m_Data: -23014
+      - m_Data: -22552
+      - m_Data: -21512
+      - m_Data: -20466
+      - m_Data: -16242
+      - m_Data: -15098
+      - m_Data: -13474
+      - m_Data: -12932
+      - m_Data: -11378
+      - m_Data: -7258
+      - m_Data: -6282
+      - m_Data: -5232
+      - m_Data: -4186
+      - m_Data: -3120
       - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -5533,8 +5624,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 618
+    x: 1921
+    y: 681
     width: 1096
     height: 304
   m_SerializedDataModeController:

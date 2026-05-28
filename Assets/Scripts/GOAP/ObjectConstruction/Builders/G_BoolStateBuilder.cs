@@ -10,26 +10,33 @@ namespace GOAP
         // any values to be transferred into the build object
         string name = "";
         bool value = false;
+        bool isLocal = false;
 
         // Constructor
-        public G_BoolStateBuilder()
+        public G_BoolStateBuilder(string name)
         {
-
+            this.name = name;
         }
         #endregion
 
         #region With Functions
         // with functions
-        public G_BoolStateBuilder WithName(string name)
-        {
-            this.name = name;
-            return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
-                                // Instead, using return.this allows to chain on to the end of it. 
-        }
+        //public G_BoolStateBuilder WithName(string name)
+        //{
+        //    this.name = name;
+        //    return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
+        //                        // Instead, using return.this allows to chain on to the end of it. 
+        //}
 
         public G_BoolStateBuilder WithValue(bool value)
         {
             this.value = value;
+            return this;
+        }
+
+        public G_BoolStateBuilder IsLocal(bool isLocal)
+        {
+            this.isLocal = isLocal;
             return this;
         }
         #endregion
@@ -45,7 +52,7 @@ namespace GOAP
             // If an object inherits from a ScriptableObject (or MonoBehaviour), we must use ScriptableObject.CreateInstance: 
             G_BoolState state = ScriptableObject.CreateInstance<G_BoolState>();
 
-            state.Construct(name, value);
+            state.Construct(name, value, isLocal);
             return state;
         }
 

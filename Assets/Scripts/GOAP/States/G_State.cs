@@ -8,12 +8,14 @@ namespace GOAP
     {
         // the value we are storing
         object value;   // "object" type can be of any type of variable
+        public bool isLocal = false;
 
         #region Basic Controls
 
-        public virtual void Construct(string name, object value)       // virtual type to be overwritten by inheriting classes
+        public virtual void Construct(string name, object value, bool isLocal)       // virtual type to be overwritten by inheriting classes
         {
             this.name = name;   // we didn't declare this name variable at the beginning, because the "object" type contain by default a name, which we are referencing here.
+            this.isLocal = isLocal;
             SetValue(value);
         }
 
@@ -31,7 +33,7 @@ namespace GOAP
         {
             // G_State clone = new G_State();  // this would be ideal, but unfortunately, Unity doesn't support this, so we need to use the CreateInstance instead below
             G_State clone = ScriptableObject.CreateInstance<G_State>();
-            clone.Construct(this.name, this.value);
+            clone.Construct(this.name, this.value, this.isLocal);
             return clone;
         }
 

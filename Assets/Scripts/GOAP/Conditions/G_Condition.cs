@@ -4,22 +4,26 @@ using System.Collections.Generic;
 
 namespace GOAP
 {
+    [System.Serializable]   // to access it in the Inspector
     public class G_Condition
     {
         #region Variables
 
+        [SerializeField]
         G_State state;  // the state being tested by the condition
         public G_State State
         {
             get { return state; }   // we will be able to read the value through this property but not able to set it
         }
 
+        [SerializeField]
         G_StateComparison comparison;   // the actual comparison for the condition
         public G_StateComparison Comparison
         {
             get { return comparison; }
         }
 
+        [SerializeField]        // to access in the Inspector, however object types are not supported in the Unity Editor
         object expectedValue;   // the value we will be comparing to the current value in the state
         public object ExpectedValue
         {

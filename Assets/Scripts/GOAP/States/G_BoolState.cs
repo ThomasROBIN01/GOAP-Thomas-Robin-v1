@@ -39,7 +39,7 @@ namespace GOAP
 
             // Replaced with:
 
-            return A.BoolState().WithName(name).WithValue(value);   // This is just a much more efficient clone than what was above.
+            return A.BoolState(name).WithValue(value);   // This is just a much more efficient clone than what was above.
         }
 
         #endregion

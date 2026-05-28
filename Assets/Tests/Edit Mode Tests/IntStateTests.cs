@@ -14,7 +14,7 @@ public class IntStateTests
 
         // We don't need the 2 previous lines anymore as the one below is doing this in a more readable manner:
 
-        G_IntState testState = An.IntState().WithName("test").WithValue(5);     // Creation of a int state builder using chaining (with the ".").
+        G_IntState testState = An.IntState("test").WithValue(5);     // Creation of a int state builder using chaining (with the ".").
                                                                                 // As testState is a IntState type, this triggers the automatic Build from G_IntStateBuilder, 
                                                                                 // and we don't need to Build it here: we don't need the testState.Build() as below:
                                                                                 // testState = An.IntState().WithName("test").WithValue(true).Build();
@@ -50,7 +50,7 @@ public class IntStateTests
 
     public void TestState(int stateValue, G_StateComparison comparison, int testValue, bool expectedResult)
     {
-        G_IntState testState = An.IntState().WithName("test").WithValue(stateValue);
+        G_IntState testState = An.IntState("test").WithValue(stateValue);
 
         bool result = testState.TestState(testState, comparison, testValue);
         Assert.AreEqual(expectedResult, result);

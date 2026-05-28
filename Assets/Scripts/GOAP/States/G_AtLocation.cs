@@ -29,7 +29,7 @@ namespace GOAP
 
         public override G_State Clone()
         {
-            return An.AtLocation().WithName(name).WithLocationType(value);
+            return An.AtLocation(name).WithLocationType(value).IsLocal(isLocal);
 
         }
 

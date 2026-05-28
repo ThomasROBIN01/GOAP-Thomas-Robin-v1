@@ -30,7 +30,7 @@ namespace GOAP
 
         public override G_State Clone()
         {
-            G_Inventory clone = An.InventoryState(name).WithInventory(value);
+            G_Inventory clone = An.InventoryState(name).WithInventory(value).IsLocal(isLocal);
             return clone;
         }
 

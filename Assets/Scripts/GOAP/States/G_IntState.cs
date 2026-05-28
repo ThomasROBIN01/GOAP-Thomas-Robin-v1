@@ -39,7 +39,7 @@ namespace GOAP
 
             // Replaced with:
 
-            return An.IntState().WithName(name).WithValue(value);   // This is just a much more efficient clone than what was above.
+            return An.IntState(name).WithValue(value).IsLocal(isLocal);   // This is just a much more efficient clone than what was above.
 
         }
 

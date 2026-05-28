@@ -12,7 +12,7 @@ public class ConditionTests
     [TestCase(true, TestName = "Use Parameter State")]
     public void DoesStateMeetCondition(bool useParameter)
     {
-        G_BoolState boolState = A.BoolState().WithName("test").WithValue(true);
+        G_BoolState boolState = A.BoolState("test").WithValue(true);
 
         G_Condition condition = A.Condition().WithState(boolState).WithComparison(G_StateComparison.equal).WithExpectedValue(true);
 
@@ -66,7 +66,7 @@ public class ConditionTests
         bool expectedResult)
     {
         // Arrange
-        G_BoolState boolState = A.BoolState().WithName("test").WithValue(true);
+        G_BoolState boolState = A.BoolState("test").WithValue(true);
 
         G_Condition preCondition = A.Condition().WithState(boolState).WithComparison(preComparison).WithExpectedValue(preExpectedValue);
 
@@ -195,7 +195,7 @@ public class ConditionTests
         bool expectedResult)
     {
         // Arrange
-        G_FloatState floatState = A.FloatState().WithName("test").WithValue(5);
+        G_FloatState floatState = A.FloatState("test").WithValue(5);
 
         G_Condition preCondition = A.Condition().WithState(floatState).WithComparison(preComparison).WithExpectedValue(preExpectedValue);
 
@@ -327,7 +327,7 @@ public class ConditionTests
         bool expectedResult)
     {
         // Arrange
-        G_IntState intState = An.IntState().WithName("test").WithValue(5);
+        G_IntState intState = An.IntState("test").WithValue(5);
 
         G_Condition preCondition = A.Condition().WithState(intState).WithComparison(preComparison).WithExpectedValue(preExpectedValue);
 
@@ -355,7 +355,7 @@ public class ConditionTests
     public void AtLocationConditionCompare(G_StateComparison preCompare, bool validPreExpectedValue, G_StateComparison effectCompare, bool validEffectExpectedValue, bool expectedResult)
     {
         LocationType tree = A.LocationType("tree");
-        G_AtLocation at_location = An.AtLocation().WithName("at_location").WithLocationType(tree);
+        G_AtLocation at_location = An.AtLocation("at_location").WithLocationType(tree);
 
         LocationType preExpectedValue = null;
         LocationType effectExpectedValue = null;

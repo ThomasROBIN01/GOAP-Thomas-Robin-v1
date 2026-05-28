@@ -14,7 +14,7 @@ public class FloatStateTests
 
         // We don't need the 2 previous lines anymore as the one below is doing this in a more readable manner:
 
-        G_FloatState testState = A.FloatState().WithName("test").WithValue(5);     // Creation of a float state builder using chaining (with the ".").
+        G_FloatState testState = A.FloatState("test").WithValue(5);     // Creation of a float state builder using chaining (with the ".").
                                                                                     // As testState is a FloatState type, this triggers the automatic Build from G_FloatStateBuilder, 
                                                                                     // and we don't need to Build it here: we don't need the testState.Build() as below:
                                                                                     // testState = A.FloatState().WithName("test").WithValue(true).Build();
@@ -50,7 +50,7 @@ public class FloatStateTests
 
     public void TestState(float stateValue, G_StateComparison comparison, float testValue, bool expectedResult)
     {
-        G_FloatState testState = A.FloatState().WithName("test").WithValue(stateValue);
+        G_FloatState testState = A.FloatState("test").WithValue(stateValue);
 
         bool result = testState.TestState(testState, comparison, testValue);
         Assert.AreEqual(expectedResult, result);

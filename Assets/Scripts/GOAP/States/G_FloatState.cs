@@ -40,7 +40,7 @@ namespace GOAP
 
             // Replaced with:
 
-            return A.FloatState().WithName(name).WithValue(value);   // This is just a much more efficient clone than what was above.
+            return A.FloatState(name).WithValue(value).IsLocal(isLocal);   // This is just a much more efficient clone than what was above.
 
         }
 

@@ -7,6 +7,7 @@ namespace GOAP
     {
         // the value we are storing
         object value;   // "object" type can be of any type of variable
+        bool isLocal = false;
 
         #region Basic Controls
 
@@ -31,7 +32,7 @@ namespace GOAP
         {
             // G_State clone = new G_State();  // this would be ideal, but unfortunately, Unity doesn't support this, so we need to use the CreateInstance instead below
             G_State clone = ScriptableObject.CreateInstance<G_State>();
-            clone.Construct(this.name, this.value);
+            clone.Construct(this.name, this.value, this.isLocal);
             return clone;
         }
 

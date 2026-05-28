@@ -5,7 +5,7 @@ namespace GOAP
     /// <summary>
     /// This is just a template that will be used as a base and renamed with the actual class builder name that we want to create, rather than having to rewrite all of this everytime.
     /// </summary>
-    public class BuilderTemplate
+    public class G_StateBuilder
     {
         #region Basic Values
 
@@ -15,7 +15,7 @@ namespace GOAP
         object value = null;
 
         // Constructor
-        public BuilderTemplate(string name)
+        public G_StateBuilder(string name)
         {
             this.name = name;
         }
@@ -23,11 +23,11 @@ namespace GOAP
 
         #region With Functions
         // with functions
-        public BuilderTemplate WithValue(object value)
+        public G_StateBuilder WithValue(object value)
         {
             this.value = value;
-            return this;        // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
-                                // Instead, using return.this allows to chain on to the end of it. 
+            return this;         // return this instance. Not returning, will require to call this function accross multiple lines (see commented example in the BoolStateTests script)
+                                 // Instead, using return.this allows to chain on to the end of it. 
         }
 
         #endregion
@@ -38,17 +38,18 @@ namespace GOAP
         /// replace object type with the class type we want to build
         /// </summary>
         /// <returns></returns>
-        public object Build()         
+        public G_State Build()         
         {
-            object returedObject = name;
-            return returedObject;
+            G_State state = ScriptableObject.CreateInstance<G_State>();
+            state.Construct(this.name, this.value, this.isLocal);
+            return state;
         }
 
-        //public static implicit operator object(BuilderTemplate builder)        // This tells the compiler: “If someone tries to use a BuilderTemplate where an "object" type is expected… automatically call Build().”
-        //                                                                       // This triggers only when the compiler needs an "object" type.
-        //{
-        //    return builder.Build();
-        //}
+        public static implicit operator G_State(G_StateBuilder builder)        // This tells the compiler: “If someone tries to use a BuilderTemplate where an "object" type is expected… automatically call Build().”
+                                                                               // This triggers only when the compiler needs an "object" type.
+        {
+            return builder.Build();
+        }
         // We got an error with this function because we can't convert an object to a BuilderTemplate, so we just comment this for now
         // and will uncomment and change this depending on the class builder
 

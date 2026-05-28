@@ -12,7 +12,7 @@ public class BoolStateTests
     {
         G_BoolState testState = ScriptableObject.CreateInstance<G_BoolState>();  // Everytime we are creating a new object, we create a new instance, and then construct it (below)
 
-        testState.Construct("test", true);  
+        testState.Construct("test", true, false);  
         
         // This allows to test the Construct function, but we could have used the more readibable, instead of these 2 previous lines:
         // G_BoolState testState = A.BoolState().WithName("test").WithValue(true);
@@ -31,7 +31,7 @@ public class BoolStateTests
 
         // We don't need the 2 previous lines anymore as the one below is doing this in a more readable manner:
 
-        G_BoolState testState = A.BoolState().WithName("test").WithValue(true);     // Creation of a bool state builder using chaining (with the ".").
+        G_BoolState testState = A.BoolState("test").WithValue(true);     // Creation of a bool state builder using chaining (with the ".").
                                                                                     // As testState is a BoolState type, this triggers the automatic Build from G_BoolStateBuilder, 
                                                                                     // and we don't need to Build it here: we don't need the testState.Build() as below:
                                                                                     // testState = A.BoolState().WithName("test").WithValue(true).Build();
@@ -62,7 +62,7 @@ public class BoolStateTests
 
         // We don't need the 2 previous lines anymore as the one below is doing this in a more readable manner:
 
-        G_BoolState testState = A.BoolState().WithName("test").WithValue(actualValue);
+        G_BoolState testState = A.BoolState("test").WithValue(actualValue);
 
         bool result = testState.TestState(testState, comparison, expectedValue);
 

@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace GOAP
 {
@@ -115,6 +117,26 @@ namespace GOAP
             met = false;
         }
 
+        public void SetState (G_State state)
+        {
+            this.state = state;
+        }
+
+        public void TrySwitchToLocalState (List<G_State> localStates)
+        {
+            if (CanSwitchToLocalState())
+            {
+                // we look through localState and see if there's one with the same name:
+                G_State stateHolder = localStates.Find((localState) => this.IsStateTheConditionState(localState));
+
+                // if there is:
+                if (stateHolder != null)
+                {
+                    this.SetState(stateHolder);
+                }
+            }
+        }
+
         public static G_Condition Clone (G_Condition conditionToClone)
         {
             //return new G_Condition(conditionToClone.state, conditionToClone.expectedValue, conditionToClone.comparison, conditionToClone.met);
@@ -126,6 +148,17 @@ namespace GOAP
                 .WithExpectedValue(conditionToClone.expectedValue)
                 .WithMet(conditionToClone.met);
         }
+
+        #endregion
+
+
+        #region Conditions
+
+        bool CanSwitchToLocalState ()
+        {
+            return state != null && state.isLocal;
+        }
+
 
         #endregion
     }

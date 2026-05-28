@@ -25,6 +25,20 @@ namespace GOAP
             this.priority = priority;
         }
 
+        public void TransferToLocalWorldStates(List<G_State> localStates)
+        {
+            for (int i = 0; i < triggerConditions.Count; i++)
+            {
+                triggerConditions[i].TrySwitchToLocalState(localStates);
+            }
+
+            for (int i = 0; i < goalEffects.Count; i++)
+            {
+                goalEffects[i].TrySwitchToLocalState(localStates);
+            }
+        }
+
+
         public virtual G_Goal Clone()
         {
             G_Goal clonedGoal = ScriptableObject.CreateInstance<G_Goal>();

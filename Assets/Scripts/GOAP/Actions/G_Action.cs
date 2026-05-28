@@ -82,6 +82,19 @@ namespace GOAP
             return priority;
         }
 
+        public void TransferToLocalWorldStates(List<G_State> localStates)
+        {
+            for (int i = 0; i < preconditions.Count; i++)
+            {
+                preconditions[i].TrySwitchToLocalState(localStates);
+            }
+
+            for (int i = 0; i < effects.Count; i++)
+            {
+                effects[i].TrySwitchToLocalState(localStates);
+            }
+        }
+
         /// <summary>
         /// Creates a duplicate of this action instance
         /// </summary>
@@ -142,7 +155,6 @@ namespace GOAP
         {
 
         }
-
 
         #endregion
     }

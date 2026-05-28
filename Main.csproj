@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_ActionBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\States\G_AtLocation.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_InventoryBuilder.cs" />
+    <Compile Include="Assets\Scripts\Game Scripts\NPC\NPC_GOAP_Handler.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_IntStateBuilder.cs" />
     <Compile Include="Assets\Scripts\GOAP\Planner\G_Node.cs" />
     <Compile Include="Assets\Scripts\GOAP\ObjectConstruction\Builders\G_ConditionBuilder.cs" />

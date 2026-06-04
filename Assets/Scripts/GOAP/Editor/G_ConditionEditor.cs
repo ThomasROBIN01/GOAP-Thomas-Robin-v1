@@ -55,6 +55,7 @@ public class G_ConditionEditor : PropertyDrawer     // Property Drawer: to be ab
         if (stateProperty.objectReferenceValue != null)
         {
             // build custom Editor
+            ((G_State)stateProperty.objectReferenceValue).Editor(this, ref height, position, property, label);
         }
     }
 

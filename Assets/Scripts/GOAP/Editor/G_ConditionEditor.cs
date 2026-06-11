@@ -11,8 +11,22 @@ public class G_ConditionEditor : PropertyDrawer     // Property Drawer: to be ab
     // GetPropertyHeight (default function from Property Drawer) for setting the height of the Custom Drawer, to place it in Editor interface
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
-        return (base.GetPropertyHeight(property, label) + EditorGUIUtility.standardVerticalSpacing) * 2;     // this is the basic UI object in Unity
-                                                                                                             // *2 to get enough spacing
+        int heightMulitplier = 1;
+
+        SerializedProperty stateProperty = property.FindPropertyRelative("state");
+        SerializedProperty active = property.FindPropertyRelative("editorActive");
+
+        if (stateProperty.objectReferenceValue != null && active.boolValue)
+        {
+            heightMulitplier = (stateProperty.objectReferenceValue as G_State).GetEditorHeight();
+        }
+        else if (stateProperty.objectReferenceValue == null && active.boolValue)
+        {
+            heightMulitplier = 2;
+        }
+
+        return (base.GetPropertyHeight(property, label) + EditorGUIUtility.standardVerticalSpacing) * heightMulitplier;     // this is the basic UI object in Unity
+                                                                                                                            // *heightMulitplier to get enough spacing
     }
 
     // OnGUI (default function from Property Drawer) for writing the contents of the Custom Drawer

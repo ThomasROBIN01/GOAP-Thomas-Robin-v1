@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9170e4fc05b150e4e89c52f2ce1216c6, type: 3}
   m_Name: TestAction
   m_EditorClassIdentifier: Main::GOAP.G_Action
-  preconditions: []
+  preconditions:
+  - state: {fileID: 11400000, guid: 18e894f11d428e249adcef9a3f67781e, type: 2}
+    comparison: 0
+    editorActive: 1
   effects: []

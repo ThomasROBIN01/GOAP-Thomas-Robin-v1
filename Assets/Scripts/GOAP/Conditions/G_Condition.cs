@@ -23,7 +23,8 @@ namespace GOAP
             get { return comparison; }
         }
 
-        [SerializeField]        // to access in the Inspector, however object types are not supported in the Unity Editor
+        [SerializeReference]        // to access in the Inspector, however object types are not supported in the Unity Editor
+                                    // SerializedField would not work well, so we use SerializeReference instead as it is what will be used in G_BoolState : managedReferenceValue
         object expectedValue;   // the value we will be comparing to the current value in the state
         public object ExpectedValue
         {

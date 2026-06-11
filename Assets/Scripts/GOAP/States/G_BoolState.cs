@@ -1,5 +1,6 @@
 using NUnit.Framework.Internal;
 using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace GOAP
@@ -183,6 +184,47 @@ namespace GOAP
         }
 
         #endregion
+
+
+#if UNITY_EDITOR        // that will only compiled if this in built tag is present
+        #region Editor
+
+        public override int GetEditorHeight()
+        {
+            return 3;
+        }
+
+        public override void Editor(G_ConditionEditor propertyDrawer, ref float height, Rect position, SerializedProperty property, GUIContent label)
+        {
+            position = propertyDrawer.GetFormattedRect(position, property, label);
+            EditorGUI.BeginChangeCheck();       // check ppt for information regarding the BeginChangeCheck() and EndChangeCheck() functions
+
+            SerializedProperty expectedValue = property.FindPropertyRelative("expectedValue");
+
+            if (expectedValue.managedReferenceValue == null || !(expectedValue.managedReferenceValue is bool))
+            {
+                expectedValue.managedReferenceValue = null;
+                expectedValue.managedReferenceValue = EditorGUI.Toggle(position, false);
+            }
+
+
+            bool toggleValue = EditorGUI.Toggle(position, (bool)expectedValue.managedReferenceValue);
+
+            if (toggleValue != (bool)expectedValue.managedReferenceValue)
+            {
+                expectedValue.managedReferenceValue = toggleValue;
+            }
+
+            propertyDrawer.IncrementHeight(out height, property, label);
+
+            if (EditorGUI.EndChangeCheck())
+            {
+                property.serializedObject.ApplyModifiedProperties();        // Check ppt for Serialized Object information
+            }
+        }
+
+        #endregion
+#endif
 
     }
 }
